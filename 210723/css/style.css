@@ -801,6 +801,10 @@ img {
   .container .sec2 .agenda .cont .cell2 .inner + .inner .inner-box .p2 + .p2 {
     margin-bottom: 0rem;
   }
+  .container .sec3 h2 {
+    font-size: 2.22222222rem;
+    margin-bottom: 3.33333333rem;
+  }
   .container .sec3 .ps {
     width: 100%;
     padding-top: 0rem;
