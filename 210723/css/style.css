@@ -130,15 +130,10 @@ img {
 }
 .container .sec1 .btn {
   font-size: 1.11111111rem;
-  color: #fff;
-  font-weight: 700;
-  width: 11.44444444rem;
-  height: 2.5rem;
-  line-height: 2.5rem;
-  background-color: #1473e7;
-  display: inline-block;
-  border-radius: 1.27777778rem;
+  color: #1473e7;
   margin-top: 1.66666667rem;
+  font-weight: 700;
+  display: inline-block;
 }
 .container .sec2 {
   background: url("../img/agenda.png") center center no-repeat;
@@ -514,18 +509,6 @@ img {
   .container .sec1 .txt span {
     font-weight: 700;
   }
-  .container .sec1 .btn {
-    font-size: 1.11111111rem;
-    color: #fff;
-    font-weight: 700;
-    width: 11.44444444rem;
-    height: 2.5rem;
-    line-height: 2.5rem;
-    background-color: #1473e7;
-    display: inline-block;
-    border-radius: 1.27777778rem;
-    margin-top: 1.66666667rem;
-  }
   .container .sec2 .agenda {
     width: 41.66666667rem;
   }
@@ -706,15 +689,9 @@ img {
   }
   .container .sec1 .btn {
     font-size: 1.88888889rem;
-    width: 17.5rem;
-    height: 4.33333333rem;
-    line-height: 4.33333333rem;
-    border-radius: 2.16666667rem;
-    margin-top: 3.33333333rem;
     text-align: center;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 5.55555556rem;
   }
   .container .sec2 {
     padding-top: 3.88888889rem;
