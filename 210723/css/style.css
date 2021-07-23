@@ -137,7 +137,6 @@ img {
 }
 .container .sec2 {
   background: url("../img/agenda.png") center center no-repeat;
-  height: 48.88888889rem;
   background-size: cover;
   padding-top: 3.88888889rem;
   padding-right: 0rem;
@@ -160,6 +159,9 @@ img {
   font-size: 1.11111111rem;
   margin-bottom: 2.38888889rem;
   text-align: left;
+}
+.container .sec2 .agenda .cont:last-child {
+  margin-bottom: 0rem;
 }
 .container .sec2 .agenda .cont div .p1 {
   width: 10rem;
@@ -210,6 +212,9 @@ img {
   line-height: 1.77777778rem;
   display: block;
   margin-bottom: 1.11111111rem;
+}
+.container .sec2 .agenda .cont .cell2 .inner .inner-box .p2 + .p2 {
+  margin-bottom: 0rem;
 }
 .container .sec2 .agenda .cont .cell2 .inner + .inner {
   width: 28.88888889rem;
@@ -515,6 +520,9 @@ img {
   .container .sec2 .agenda .cont {
     margin-bottom: 1.11111111rem;
   }
+  .container .sec2 .agenda .cont:last-child {
+    margin-bottom: 0rem;
+  }
   .container .sec2 .agenda .cont .cell2 .inner {
     width: 100%;
     border-bottom: 1px solid #666;
@@ -522,12 +530,16 @@ img {
   }
   .container .sec2 .agenda .cont .cell2 .inner + .inner {
     width: 100%;
-    margin-bottom: 1.11111111rem;
+    margin-bottom: 0rem;
     border-bottom: 0;
     padding-top: 0.55555556rem;
+    padding-bottom: 0rem;
   }
   .container .sec2 .agenda .cont .cell2 .inner + .inner .p1 {
     width: 10rem;
+  }
+  .container .sec2 .agenda .cont .cell2 .inner + .inner .p2 + .p2 {
+    margin-bottom: 0rem;
   }
   .container .sec3 .ps {
     width: 41.66666667rem;
@@ -701,7 +713,7 @@ img {
     background: url("../img/agenda-m.png") top center;
     background-size: cover;
     width: 100%;
-    height: 73rem;
+    height: auto;
   }
   .container .sec2 .agenda {
     width: 100%;
@@ -714,8 +726,15 @@ img {
     font-size: 1.66666667rem;
     margin-bottom: 2.77777778rem;
   }
+  .container .sec2 .agenda .cont:last-child {
+    margin-bottom: 0rem;
+  }
   .container .sec2 .agenda .cont div .p1 {
     width: 11.66666667rem;
+    vertical-align: top;
+  }
+  .container .sec2 .agenda .cont div .p2 {
+    width: calc(100% - 12.22222222rem);
   }
   .container .sec2 .agenda .cont div p {
     line-height: 3.33333333rem;
@@ -762,17 +781,25 @@ img {
   }
   .container .sec2 .agenda .cont .cell2 .inner + .inner {
     width: 100%;
-    margin-bottom: 1.11111111rem;
     padding-top: 1.11111111rem;
     border-bottom: 0;
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
   }
   .container .sec2 .agenda .cont .cell2 .inner + .inner .p1 {
     width: 11.66666667rem;
+  }
+  .container .sec2 .agenda .cont .cell2 .inner + .inner .inner-box {
+    width: calc(100% - 12.22222222rem);
   }
   .container .sec2 .agenda .cont .cell2 .inner + .inner .inner-box .p2 {
     font-size: 1.55555556rem;
     line-height: 2.11111111rem;
     margin-bottom: 1.11111111rem;
+    width: 100%;
+  }
+  .container .sec2 .agenda .cont .cell2 .inner + .inner .inner-box .p2 + .p2 {
+    margin-bottom: 0rem;
   }
   .container .sec3 .ps {
     width: 100%;

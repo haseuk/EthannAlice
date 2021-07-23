@@ -32,10 +32,11 @@ img { backface-visibility: hidden; }
     }
     .btn { .fs(20); color:#1473e7; .mt(30); .bold; .ib; }
   }
-  .sec2 { background: url("../img/agenda.png") center center no-repeat; .h(880); .cover; .p(70,0); .-box; .tc;
+  .sec2 { background: url("../img/agenda.png") center center no-repeat;  .cover; .p(70,0); .-box; .tc;
     .agenda { .w(988); .ib; color:#fff;
       h2 { .fs(28); .bold; .mb(20); }
       .cont { .fs(20); .mb(43); .tl;
+        &:last-child { .mb(0); }
         div {
           .p1 { .w(180); }
           p { .ib; .lh(45); }
@@ -54,6 +55,7 @@ img { backface-visibility: hidden; }
           .inner { .ib; .vat; .w(460);
             .inner-box { .ib;
               .p2 { .fs(18); .lh(32); .block; .mb(20); }
+              .p2 + .p2 { .mb(0); }
             }
           }
           .inner + .inner { .w(520);
@@ -165,10 +167,12 @@ img { backface-visibility: hidden; }
     .sec2 {
       .agenda { .w(750);
         .cont { .mb(20);
+          &:last-child { .mb(0); }
           .cell2 {
             .inner { .wf; .-b(#666); .pb(10); }
-            .inner + .inner { .wf; .mb(20); .-b; .pt(10);
+            .inner + .inner { .wf; .mb(0); .-b; .pt(10); .pb(0);
               .p1 { .w(180); }
+              .p2 + .p2 { .mb(0); }
             }
           }
         }
@@ -232,12 +236,14 @@ img { backface-visibility: hidden; }
       .txt { .fs(28); .lh(40); }
       .btn { .fs(34); .tc; .block; .mt(100); }
     }
-    .sec2 { .p(70,40); background: url("../img/agenda-m.png") top center; .cover; .wh(100%,1314);
+    .sec2 { .p(70,40); background: url("../img/agenda-m.png") top center; .cover; .wf; height: auto;
       .agenda { .wf;
         h2 { .fs(40); .mb(40); }
         .cont { .fs(30); .mb(50);
+          &:last-child {.mb(0); }
           div {
-            .p1 { .w(210); }
+            .p1 { .w(210); .vat; }
+            .p2 {  .sv(220); width: calc(100% - @_sv); }
             p { .lh(60); }
           }
           .cell1 {
@@ -256,10 +262,11 @@ img { backface-visibility: hidden; }
                 .p2 { .fs(18); .lh(32); .block; .mb(20); }
               }
             }
-            .inner + .inner { .wf; .mb(20); .pt(20); .-b;
+            .inner + .inner { .wf; .pt(20); .-b; .mb(0); .pb(0);
               .p1 { .w(210); }
-              .inner-box {
-                .p2 { .fs(28); .lh(38); .mb(20); }
+              .inner-box { .sv(220); width: calc(100% - @_sv);
+                .p2 { .fs(28); .lh(38); .mb(20); .wf; }
+                .p2 + .p2 { .mb(0); }
               }
             }
           }
