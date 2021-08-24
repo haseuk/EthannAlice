@@ -4,6 +4,7 @@
 @media screen and (min-width: 741px) {
   #campaign {
     max-width: 1920px;
+    min-width: 950px;
     margin-left: auto;
     margin-right: auto;
     font-size: 18px;
@@ -35,36 +36,49 @@
     background: url("../img/pc/top-visual.png") top center no-repeat;
     background-size: cover;
     height: 926px;
+    padding-top: 328px;
+    box-sizing: border-box;
+  }
+  #campaign section.top .tit {
+    font-size: 22px;
+    line-height: 30px;
+    text-shadow: 0 0 13px rgba(255, 255, 255, 0.7);
+  }
+  #campaign section.top .tit s {
+    color: #fff;
+    display: inline-block;
+    padding-top: 2px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    background-color: #e30613;
   }
   #campaign section.morning {
     background: url("../img/pc/morning1.png") top center no-repeat;
     background-size: cover;
-    height: 940px;
+    height: 1140px;
     overflow: hidden;
     position: relative;
   }
-  #campaign section.morning > p {
+  #campaign section.morning .cheer {
     font-size: 20px;
-    color: #fff;
-    margin-top: 247px;
     line-height: 28px;
+    color: #fff;
+    margin-top: 355px;
     font-weight: 300;
   }
-  #campaign section.morning > p i,
-  #campaign section.morning > p s {
+  #campaign section.morning .cheer s {
     font-weight: 700;
-  }
-  #campaign section.morning > p s {
-    color: #f8ef8b;
+    color: #ffeb7c;
   }
   #campaign section.morning .date {
-    margin-top: 27px;
     text-align: left;
-    width: 834px;
-    padding-left: 170px;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    left: 50%;
+    top: 461px;
+    right: auto;
+    bottom: auto;
+    margin-left: -279px;
   }
   #campaign section.morning .date p {
     font-size: 20px;
@@ -86,24 +100,58 @@
     padding-top: 2px;
     box-sizing: border-box;
   }
-  #campaign section.morning .pic {
-    width: 834px;
-    height: 430px;
+  #campaign section.morning .btn {
+    font-size: 0px;
+    display: inline-block;
     position: absolute;
     left: 50%;
-    top: 449px;
+    top: 500px;
     right: auto;
     bottom: auto;
-    margin-left: -417px;
-    text-align: center;
-    overflow: hidden;
+    margin-left: 138px;
+    width: 147px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/winner-btn.png');
+    background-size: contain;
+    cursor: pointer;
+    z-index: 1;
+  }
+  #campaign section.morning .notice {
+    margin-top: 112px;
+  }
+  #campaign section.morning .notice p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  #campaign section.morning .pic {
+    width: 833px;
+    height: 430px;
+    margin-top: 30px;
+    position: relative;
+    display: inline-block;
+  }
+  #campaign section.morning .pic:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    right: auto;
+    top: auto;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/shadow.png');
+    background-size: contain;
+    width: 902px;
+    height: 30px;
   }
   #campaign section.morning .pic p {
     font-size: 28px;
     color: #fff;
     text-align: left;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 62px;
     background-color: #000;
     display: inline-block;
     position: absolute;
@@ -111,50 +159,51 @@
     top: 0px;
     right: auto;
     bottom: auto;
-    padding-left: 15px;
+    padding-top: 0px;
+    padding-right: 19px;
+    padding-bottom: 0px;
+    padding-left: 19px;
     box-sizing: border-box;
+    z-index: 2;
   }
   #campaign section.morning .pic p:after {
     content: '';
     display: block;
     position: absolute;
-    right: -60px;
+    right: -62px;
     top: 0px;
     left: auto;
     bottom: auto;
-    height: 60px;
     display: inline-block;
-    border-top: 60px solid #000;
-    border-right: 60px solid transparent;
+    border-top: 62px solid #000;
+    border-right: 62px solid transparent;
   }
   #campaign section.morning .pic img {
     display: inline-block;
     height: 430px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
   }
   #campaign section.rule {
     background: url("../img/pc/rule.png") top center no-repeat;
     background-size: cover;
-    height: 1270px;
+    height: 408px;
     max-width: 946px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10px;
-    box-sizing: border-box;
     position: relative;
-    margin-top: 10px;
-    overflow: hidden;
+    border-bottom: 2px dotted #b6b6b6;
   }
   #campaign section.rule .rule-box {
-    position: absolute;
-    left: 50%;
-    top: 154px;
-    right: auto;
-    bottom: auto;
-    margin-left: -420px;
+    padding-top: 160px;
   }
   #campaign section.rule .rule-box p {
     font-size: 20px;
-    line-height: 28px;
+    line-height: 26px;
     font-weight: 300;
     display: inline-block;
     width: 180px;
@@ -166,69 +215,21 @@
   #campaign section.rule .rule-box p s {
     font-weight: 700;
   }
-  #campaign section.rule a {
+  #campaign section.rule .btn {
     font-size: 0px;
-    position: absolute;
-    width: 381px;
-    height: 85px;
-    left: 50%;
-    top: 280px;
-    right: auto;
-    bottom: auto;
-    transform: translateX(-50%);
-  }
-  #campaign section.rule .kit {
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 300;
-    width: 700px;
-    position: absolute;
-    left: 50%;
-    top: 585px;
-    right: auto;
-    bottom: auto;
-    transform: translateX(-50%);
-  }
-  #campaign section.rule .kit s {
-    font-weight: 700;
-    color: #e30613;
-  }
-  #campaign section.rule .stuff {
-    width: 835px;
-    height: 94px;
-    text-align: center;
-    padding-top: 18px;
-    padding-right: 0px;
-    padding-bottom: 18px;
-    padding-left: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid #e6e6e6;
-    margin-top: 1100px;
-    box-sizing: border-box;
-  }
-  #campaign section.rule .stuff p {
-    font-size: 20px;
-    color: #666;
-    font-weight: 300;
-  }
-  #campaign section.rule .stuff p s {
-    color: #000;
-    font-weight: 700;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 330px;
+    height: 74px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 50px;
   }
   #campaign section.event {
     background: url("../img/pc/event.png") top center no-repeat;
     background-size: cover;
-    height: 675px;
-    max-width: 1136px;
+    height: 739px;
+    max-width: 946px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 75px;
-    position: relative;
-    text-align: left;
   }
   #campaign section.event:after {
     content: '';
@@ -311,39 +312,529 @@
   #campaign section.event .gift p:nth-child(2) {
     margin-right: 47px;
   }
+  #campaign section.user-event {
+    border-bottom: 2px dotted #b6b6b6;
+    max-width: 946px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+  }
+  #campaign section.user-event .inner {
+    padding-bottom: 70px;
+    position: relative;
+  }
+  #campaign section.user-event .inner h2 {
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/evt-tit.png');
+    background-size: contain;
+    width: 946px;
+    height: 243px;
+  }
+  #campaign section.user-event .inner .msg-tit {
+    font-size: 20px;
+    font-weight: 300;
+    color: #666;
+    line-height: 28px;
+    margin-top: -93px;
+  }
+  #campaign section.user-event .inner .msg-tit s {
+    font-weight: 700;
+    color: #000;
+  }
+  #campaign section.user-event .inner .toon {
+    border: 2px solid #eee;
+    display: inline-block;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 35px;
+    margin-right: 0px;
+    margin-bottom: 35px;
+    margin-left: 0px;
+  }
+  #campaign section.user-event .inner .toon .img {
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/event-toon.png');
+    background-size: contain;
+    width: 771px;
+    height: 674px;
+  }
+  #campaign section.user-event .inner .toon .result {
+    font-size: 23px;
+    position: absolute;
+    left: 50%;
+    top: 600px;
+    right: auto;
+    bottom: auto;
+    width: 239px;
+    height: 106px;
+    margin-left: -273px;
+  }
+  #campaign section.user-event .inner .toon .result .click {
+    font-size: 0px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/click.png');
+    background-size: contain;
+    cursor: pointer;
+  }
+  #campaign section.user-event .inner .toon .result span {
+    font-size: 23px;
+    display: inline-block;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+  }
+  #campaign section.user-event .inner .toon .user-msg {
+    font-size: 0px;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    display: none;
+  }
+  #campaign section.user-event .inner .toon .user-msg input {
+    font-size: 23px;
+    color: #666;
+    width: 600px;
+    height: 67px;
+    border: 2px solid #cfcfcf;
+    border-radius: 34px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    padding-left: 24px;
+    box-sizing: border-box;
+  }
+  #campaign section.user-event .inner .toon .user-msg .confirm {
+    width: 154px;
+    height: 69px;
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/evt-btn.png');
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  #campaign section.user-event .inner .toon .f-msg {
+    text-align: left;
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    box-sizing: border-box;
+    zoom: 1;
+    display: none;
+  }
+  #campaign section.user-event .inner .toon .f-msg:after {
+    content: '';
+    display: block;
+    clear: both;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  #campaign section.user-event .inner .toon .f-msg h3 {
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/f-msg.png');
+    background-size: contain;
+    width: 465px;
+    height: 42px;
+    display: inline-block;
+  }
+  #campaign section.user-event .inner .toon .f-msg .user-txt {
+    font-size: 24px;
+    color: #666;
+    float: right;
+    margin-top: 10px;
+  }
+  #campaign section.user-event .inner .toon.toon2 .img {
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/event-toon2.png');
+    background-size: contain;
+    width: 771px;
+    height: 674px;
+  }
+  #campaign section.user-event .inner .toon.toon2 .click {
+    display: none;
+  }
+  #campaign section.user-event .inner .user-agree {
+    padding-top: 0px;
+    padding-right: 75px;
+    padding-bottom: 0px;
+    padding-left: 75px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    display: none;
+  }
+  #campaign section.user-event .inner .user-agree table {
+    table-layout: fixed;
+    text-align: left;
+  }
+  #campaign section.user-event .inner .user-agree table tr th {
+    padding-top: 16px;
+  }
+  #campaign section.user-event .inner .user-agree table tr th {
+    font-size: 22px;
+    font-weight: 700;
+    vertical-align: top;
+  }
+  #campaign section.user-event .inner .user-agree table tr td {
+    font-size: 0px;
+    color: #666;
+  }
+  #campaign section.user-event .inner .user-agree table tr td input {
+    font-size: 20px;
+  }
+  #campaign section.user-event .inner .user-agree table tr td input[type=text] {
+    width: 100%;
+    line-height: 40px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    margin-top: 8px;
+    margin-right: 0px;
+    margin-bottom: 8px;
+    margin-left: 0px;
+  }
+  #campaign section.user-event .inner .user-agree table tr td input[type=text].post-input {
+    width: 67%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3%;
+  }
+  #campaign section.user-event .inner .user-agree table tr td .post-btn {
+    font-size: 20px;
+    width: 30%;
+    background-color: #552705;
+    line-height: 42px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 21px;
+  }
+  #campaign section.user-event .inner .user-agree table tr td .txt {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-top: 25px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    height: 140px;
+    overflow: auto;
+  }
+  #campaign section.user-event .inner .user-agree table tr td .txt b {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    display: block;
+  }
+  #campaign section.user-event .inner .user-agree table tr td label {
+    display: inline-block;
+    width: 130px;
+  }
+  #campaign section.user-event .inner .user-agree table tr td label input[type=radio] + i {
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-image: url('../img/m/chk.png');
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #campaign section.user-event .inner .user-agree table tr td label input[type=radio]:checked + i {
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-image: url('../img/m/chked.png');
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #campaign section.user-event .inner .user-agree table tr td label s {
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 39px;
+    margin-left: 8px;
+    padding-top: 4px;
+  }
+  #campaign section.user-event .inner .user-agree table tr td label + label {
+    width: 200px;
+  }
+  #campaign section.user-event .inner .user-agree table tr.agree th {
+    padding-top: 30px;
+  }
+  #campaign section.user-event .inner .btns {
+    font-size: 0px;
+    margin-top: 10px;
+  }
+  #campaign section.user-event .inner .btns .btn {
+    display: inline-block;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+    margin-top: 0px;
+    margin-right: 14px;
+    margin-bottom: 0px;
+    margin-left: 14px;
+  }
+  #campaign section.user-event .inner .btns .btn.save {
+    background-image: url('../img/pc/save.png');
+    width: 332px;
+    height: 75px;
+  }
+  #campaign section.user-event .inner .btns .btn.edit {
+    background-image: url('../img/pc/edit.png');
+    width: 254px;
+    height: 75px;
+  }
+  #campaign section.user-event .inner .btns .btn.submit {
+    background-image: url('../img/pc/submit.png');
+    width: 254px;
+    height: 75px;
+  }
+  #campaign section.user-event .inner .btns .btn.save2 {
+    background-image: url('../img/pc/save2.png');
+    width: 254px;
+    height: 75px;
+  }
+  #campaign section.user-event .inner .btns .btn.share {
+    background-image: url('../img/pc/share.png');
+    width: 254px;
+    height: 75px;
+  }
+  #campaign section.user-event[data-step='1'] {
+    display: inline-block;
+  }
+  #campaign section.user-event[data-step='1'] .inner .toon .user-msg.on {
+    display: block;
+  }
+  #campaign section.user-event[data-step='1'] .inner .btns .save {
+    display: inline-block;
+  }
+  #campaign section.user-event[data-step='2'] {
+    display: inline-block;
+  }
+  #campaign section.user-event[data-step='2'] .inner .toon .result .click {
+    display: none;
+  }
+  #campaign section.user-event[data-step='2'] .inner .toon .img {
+    background-image: url('../img/pc/event-toon2.png');
+  }
+  #campaign section.user-event[data-step='2'] .inner .toon .user-msg {
+    display: none;
+  }
+  #campaign section.user-event[data-step='2'] .inner .user-agree {
+    display: block;
+  }
+  #campaign section.user-event[data-step='2'] .inner .btns .edit,
+  #campaign section.user-event[data-step='2'] .inner .btns .submit {
+    display: inline-block;
+  }
+  #campaign section.user-event[data-step='3'] {
+    display: inline-block;
+  }
+  #campaign section.user-event[data-step='3'] .inner .toon .result .click {
+    display: none;
+  }
+  #campaign section.user-event[data-step='3'] .inner .toon .img {
+    background-image: url('../img/m/event-toon2.png');
+  }
+  #campaign section.user-event[data-step='3'] .inner .toon .user-msg {
+    display: none;
+  }
+  #campaign section.user-event[data-step='3'] .inner .toon .f-msg {
+    display: block;
+  }
+  #campaign section.user-event[data-step='3'] .inner .btns .save2,
+  #campaign section.user-event[data-step='3'] .inner .btns .share {
+    display: inline-block;
+  }
+  #campaign section.kit {
+    background-repeat: no-repeat;
+    background-image: url("../img/pc/event.png");
+    background-size: contain;
+    background-size: cover;
+    height: 739px;
+    position: relative;
+    max-width: 946px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #campaign section.kit .tit {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+    padding-top: 130px;
+    box-sizing: border-box;
+  }
+  #campaign section.kit .tit s {
+    font-weight: 700;
+    color: #e30613;
+  }
+  #campaign section.kit .stuff {
+    margin-top: 25px;
+    width: 100%;
+  }
+  #campaign section.kit .stuff p {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+  }
+  #campaign section.kit .stuff p s {
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  #campaign section.kit .stuff p s:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -10px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    width: 2px;
+    height: 20px;
+    background-color: #000;
+    margin-top: 2px;
+  }
+  #campaign section.event-bonus {
+    background: url("../img/pc/bonus.png") top center no-repeat;
+    background-size: cover;
+    height: 720px;
+    position: relative;
+  }
+  #campaign section.event-bonus .inner {
+    position: absolute;
+    left: 50%;
+    top: 266px;
+    right: auto;
+    bottom: auto;
+    margin-left: -474px;
+  }
+  #campaign section.event-bonus .inner p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+    text-align: left;
+  }
+  #campaign section.event-bonus .inner .txt s {
+    color: #e30613;
+    font-weight: 700;
+  }
+  #campaign section.event-bonus .inner span {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 6px;
+    color: #666;
+    display: block;
+    text-align: left;
+  }
+  #campaign section.event-bonus .inner .txt-box {
+    margin-top: 20px;
+  }
+  #campaign section.event-bonus .inner .txt-box p {
+    position: relative;
+    margin-bottom: 9px;
+  }
+  #campaign section.event-bonus .inner .txt-box p s {
+    font-weight: 700;
+    display: inline-block;
+    width: 115px;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+  #campaign section.event-bonus .inner .txt-box p s:after {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 20px;
+    background-color: #000;
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    right: auto;
+    bottom: auto;
+  }
+  #campaign section.event-bonus .inner .txt-box p:nth-child(1),
+  #campaign section.event-bonus .inner .txt-box p:nth-child(2) {
+    display: inline-block;
+  }
+  #campaign section.event-bonus .inner .txt-box p:nth-child(2) {
+    margin-left: 35px;
+  }
+  #campaign section.event-bonus .inner .gift {
+    margin-top: 125px;
+    text-align: left;
+  }
+  #campaign section.event-bonus .inner .gift p {
+    font-size: 18px;
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+  }
+  #campaign section.event-bonus .inner .gift p:nth-child(1) {
+    margin-right: 75px;
+  }
+  #campaign section.event-bonus .inner .gift p:nth-child(2) {
+    margin-right: 50px;
+  }
+  #campaign section.event-bonus .inner .gift p:nth-child(3) {
+    margin-right: 0px;
+  }
   #campaign section.buy {
     background: url("../img/pc/buy.png") top center no-repeat;
     background-size: cover;
     height: 282px;
   }
   #campaign section.buy .btns {
+    font-size: 0px;
     padding-top: 142px;
+    box-sizing: border-box;
   }
   #campaign section.buy .btns a {
-    font-size: 35px;
-    color: #fff;
-    text-align: center;
     display: inline-block;
-    width: 309px;
-    height: 68px;
-    line-height: 68px;
-    background-color: #e30613;
+    width: 307px;
+    height: 67px;
+    line-height: 67px;
     margin-top: 0px;
     margin-right: 6px;
     margin-bottom: 0px;
     margin-left: 6px;
-    box-shadow: 5px 5px 0 1px rgba(0, 0, 0, 0.2);
   }
   #campaign section.reason {
     background: url("../img/pc/reason.png") top center no-repeat;
     background-size: cover;
-    height: 382px;
+    height: 353px;
     position: relative;
   }
   #campaign section.reason .reason-list {
     position: absolute;
     left: 50%;
-    top: 162px;
+    top: 163px;
     right: auto;
     bottom: auto;
     margin-left: -196px;
@@ -352,43 +843,78 @@
     font-size: 20px;
     line-height: 28px;
     font-weight: 300;
-    margin-bottom: 34px;
+    margin-bottom: 31px;
     text-align: left;
   }
   #campaign section.reason .reason-list p s {
     font-weight: 700;
   }
   #campaign section.gallery {
-    padding-top: 80px;
+    padding-top: 75px;
     padding-right: 0px;
-    padding-bottom: 80px;
+    padding-bottom: 75px;
     padding-left: 0px;
+    box-sizing: border-box;
+    position: relative;
   }
   #campaign section.gallery h2 {
     display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url("../img/pc/gallery.png");
+    background-size: contain;
+    width: 325px;
+    height: 34px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   #campaign section.gallery p {
     font-size: 20px;
     line-height: 28px;
     font-weight: 300;
-    margin-top: 25px;
+    margin-top: 30px;
   }
   #campaign section.gallery p s {
     color: #e30613;
     font-weight: 700;
   }
   #campaign section.gallery .swiper-container {
-    margin-top: 55px;
-    margin-left: 40px;
+    margin-top: 40px;
+    width: 960px;
   }
   #campaign section.gallery .swiper-container .swiper-slide {
-    width: 270px;
-    height: 277px;
+    width: 303px;
+    height: 266px;
   }
   #campaign section.gallery .swiper-container .swiper-slide img {
     width: 100%;
     height: 100%;
     display: inline-block;
+  }
+  #campaign section.gallery .swiper-btn {
+    width: 27px;
+    height: 42px;
+    position: absolute;
+    left: 50%;
+    top: 308px;
+    right: auto;
+    bottom: auto;
+    margin-top: 0px;
+  }
+  #campaign section.gallery .swiper-btn:after {
+    display: none;
+  }
+  #campaign section.gallery .swiper-btn.swiper-button-prev {
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/prev.png');
+    background-size: contain;
+    margin-left: -550px;
+  }
+  #campaign section.gallery .swiper-btn.swiper-button-next {
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/next.png');
+    background-size: contain;
+    margin-left: 514px;
   }
 }
 /*# sourceMappingURL=style-pc.css.map */

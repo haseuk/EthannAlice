@@ -1,84 +1,122 @@
-<!doctype html>
-<html lang="ko">
+<!DOCTYPE html>
+<html dir="ltr" lang="ko-KR">
 <head>
-  <meta charset="UTF-8">
+  <title>Local activation DEMO</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>NUTELLA</title>
+  <link rel="preload" href="https://www.nutella.com/kr/ko/header-footer.html?callback=localActivationProcessJson" as="script">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="assets/images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#e20019">
+  
+  <link href="assets/css/header-footer.css" rel="stylesheet">
+
+
+  <!-- 누텔라 캠페인 작업 08.24-->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/style-m.css">
   <link rel="stylesheet" href="css/style-pc.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- 누텔라 캠페인 작업 08.24-->
+
 </head>
 <body>
-  <div id="campaign">
-    <section class="top">
-      <p class="tit">하루를 시작하는 행복한 방법을 소개합니다.<br>
-        이벤트에 참여하고   <s>특별한 모닝 KIT</s>  를 선물로 받아 보세요!
-      </p>
-    </section>
-    <section class="morning">
-      <p class="cheer">
-        아침을 행복하게 시작하는 방법!<br class="mo">
-        바로 <s>누텔라와 가족의 힘찬 응원</s>이에요!<br>
-        컷툰 속 주인공이 되어 우리 아이에게 애정이 듬뿍 담긴<br class="mo">
-        응원을 보내 주세요.<br>
-        추첨을 통해 <s>한정판 식빵 플레이트가 들어 있는<br class="mo">
-        모닝 KIT</s>를 선물로 드립니다.<br>
-      </p>
-      <div class="date">
-        <p><s>참여 기간</s> 2021. 10. 1(목) ~ 10. 22(금)</p>
-        <p><s>당첨자 발표</s> 1차 2021. 10. 11(월) / 2차 10.25(월)</p>
-      </div>
-<!-- ******* 당첨자 버튼 10.11에 노출 *******-->
-      <a class="btn">당첨자 확인하기</a>
-      <div class="notice">
-        <p>
-          *당첨자는 총 2회에 나누어 선발 후 KIT를 보내드릴 예정입니다.<br>
-          **당첨자는 누텔라 공식 인스타그램의 프로필 링크에서 확인하실 수 있습니다.
-        </p>
-      </div>
-      <div class="pic">
-        <p>Epi.우리집 식탁편</p>
-        <img src="img/m/pic.png" alt="">
-      </div>
-    </section>
+<header id="nutella-header" class="nutella-embed-container">
+  <div class="container">
+    <div class="main-menu">
+      <div class="region-header-top" id="nutella-embed-header-top"></div>
+      <div class="m-group" id="nutella-embed-header"><button class="navToggle"><span></span></button></div>
+      <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none"><path class="shape-overlays__path"></path><path class="shape-overlays__path"></path><path class="shape-overlays__path"></path><path class="shape-overlays__path"></path></svg>
+    </div>
+  </div>
+</header>
 
-    <section class="rule">
-      <div class="rule-box">
-        <p><s>누텔라가<br class="mo">필요한 상황</s><br> 확인</p>
-        <p><s>가족의 응원</s><br class="mo">입력</p>
-        <p>이벤트<br class="mo"><s>참여 정보 제출</s></p>
-        <p><s>컷툰 다운로드 및<br>보너스 이벤트</s><br class="mo">참여</p>
-      </div>
-      <a class="attend btn">참여하기</a>
-    </section>
 
-    <section class="user-event step1">
-      <div class="inner">
-        <h2></h2>
-        <p class="msg-tit">
-          아래의 <s>빈칸을 클릭</s>하여 우리 아이가 아침을 행복하게<br>
-          시작할 수 있도록 가족의 <s>응원 문구</s>를 적어 주세요!
-        </p>
-        <div class="toon">
-          <div class="img"></div>
-          <!--대사를 입력해 주세요-->
-          <div class="user-msg">
-            <input type="text" placeholder="대사를 입력해 주세요">
-            <a class="confirm">확인</a>
-          </div>
-          <div class="f-msg">
-            <h3></h3>
-            <p class="user-txt"><span></span>님의 이야기</p>
-          </div>
+<!-- 누텔라 캠페인 작업 08.24-->
+<div id="campaign">
+  <section class="top">
+    <p class="tit">하루를 시작하는 행복한 방법을 소개합니다.<br>
+      이벤트에 참여하고   <s>특별한 모닝 KIT</s>  를 선물로 받아 보세요!
+    </p>
+  </section>
+  <section class="morning">
+    <p class="cheer">
+      아침을 행복하게 시작하는 방법!<br class="mo">
+      바로 <s>누텔라와 가족의 힘찬 응원</s>이에요!<br>
+      컷툰 속 주인공이 되어 우리 아이에게 애정이 듬뿍 담긴<br class="mo">
+      응원을 보내 주세요.<br>
+      추첨을 통해 <s>한정판 식빵 플레이트가 들어 있는<br class="mo">
+      모닝 KIT</s>를 선물로 드립니다.<br>
+    </p>
+    <div class="date">
+      <p><s>참여 기간</s> 2021. 10. 1(목) ~ 10. 22(금)</p>
+      <p><s>당첨자 발표</s> 1차 2021. 10. 11(월) / 2차 10.25(월)</p>
+    </div>
+
+    <!-- ******* 당첨자 버튼 10.11에 노출 *******-->
+<!--          <a class="btn">당첨자 확인하기</a>-->
+    <div class="notice">
+      <p>
+        *당첨자는 총 2회에 나누어 선발 후 KIT를 보내드릴 예정입니다.<br>
+        **당첨자는 누텔라 공식 인스타그램의 프로필 링크에서 확인하실 수 있습니다.
+      </p>
+    </div>
+    <div class="pic">
+      <p>Epi.우리집 식탁편</p>
+      <img src="img/m/pic.png" alt="">
+    </div>
+  </section>
+
+  <section class="rule">
+    <div class="rule-box">
+      <p><s>누텔라가<br class="mo">필요한<br class="pc"> 상황</s><br class="mo"> 확인</p>
+      <p><s>가족의 응원</s><br>입력</p>
+      <p>이벤트<br><s>참여 정보 제출</s></p>
+      <p><s>컷툰 다운로드</s> 및<br><s>보너스 이벤트</s><br class="mo"> 참여</p>
+    </div>
+    <a class="attend btn" onclick="eventGo(1);">참여하기</a>
+  </section>
+
+  <!-- 지금 참여하기 누르면 열림-->
+  <section class="user-event" data-step>
+    <div class="inner">
+      <h2></h2>
+      <p class="msg-tit">
+        아래의 <s>빈칸을 클릭</s>하여 우리 아이가 아침을 행복하게<br class="mo">
+        시작할 수 있도록<br class="pc"> 가족의 <s>응원 문구</s>를 적어 주세요!
+      </p>
+      <div class="toon">
+        <div class="img"></div>
+        <div class="result">
+          <a class="click">click</a>
+          <span></span>
         </div>
 
+        <!--대사를 입력해 주세요-->
+        <div class="user-msg">
+          <input type="text" class="input-msg" placeholder="대사를 입력해 주세요">
+          <a class="confirm">확인</a>
+        </div>
 
-        <!--정보입력-->
-        <div class="user-agree">
+        <!--최종 대사 출력창-->
+        <div class="f-msg">
+          <h3></h3>
+          <p class="user-txt"><span></span>님의 이야기</p>
+        </div>
+      </div>
+
+
+      <!--정보입력-->
+      <div class="user-agree">
+        <form name="formValue">
           <table width="100%" cellpadding="0" cellspacing="0" border="0">
             <colgroup>
               <col width="23%">
@@ -86,31 +124,30 @@
             </colgroup>
             <tr>
               <th>성함</th>
-              <td><input type="text" placeholder="성함을 입력해 주세요."></td>
+              <td><input type="text" name="name" placeholder="성함을 입력해 주세요."></td>
             </tr>
             <tr>
               <th>닉네임</th>
-              <td><input type="text" placeholder="웹툰 아래에 표기될 닉네임을 입력해 주세요."></td>
+              <td><input type="text" name="nick" placeholder="웹툰 아래에 표기될 닉네임을 입력해 주세요."></td>
             </tr>
             <tr>
               <th>휴대폰 번호</th>
-              <td><input type="text" placeholder="010-1234-5678"></td>
+              <td><input type="text" name="tel" placeholder="010-1234-5678"></td>
             </tr>
             <tr>
               <th>주소</th>
               <td>
                 <input type="text" name="zip" placeholder="우편 번호를 검색하세요." class="post-input">
                 <a class="post-btn" onclick="openZipSearch()">우편번호 검색</a>
-                <input type="text" name="addr1" readonly>
+                <input type="text" name="addr1" placeholder="주소를 정확하게 입력하세요." readonly>
                 <input type="text" name="addr2" placeholder="상세주소를 입력하세요.">
               </td>
             </tr>
-            <tr>
+            <tr class="agree">
               <th>개인정보수집<br class="mo">동의</th>
               <td>
                 <div class="txt">
                   <b>* 개인정보 수집 및 이용 동의</b>
-                  <br>
                   개인정보를 수집하는 자 : ㈜페레로 아시아 리미티드 한국지점<br>
                   개인 정보 수집 및 이용 목적 : 이벤트 참여 확인 및 경품 제공<br>
                   수집하는 개인정보의 항목 : 이름, 연락처<br>
@@ -132,12 +169,11 @@
                 </label>
               </td>
             </tr>
-            <tr>
-              <th>개인정보 처리<br class="mo">위탁 동의</th>
+            <tr class="agree">
+              <th>개인정보 처리<br>위탁 동의</th>
               <td>
                 <div class="txt">
                   <b>* 개인정보 처리 위탁 동의</b>
-                  <br>
                   개인정보 처리를 위탁 받는 자 :<br>
                   ㈜이든앤앨리스마케팅<br>
                   개인정보 처리 위탁을 하는 업무의 내용 :<br>
@@ -160,41 +196,42 @@
                 </label>
               </td>
             </tr>
-
           </table>
-        </div>
-
-        <div class="btns">
-          <a class="save btn" onclick="step(2)">저장하기</a>
-          <a class="edit btn" onclick="step(1)">수정하기</a>
-          <a class="submit btn" onclick="step(3)">제출하기</a>
-          <a class="save2 btn">저장하기</a>
-          <a class="share btn">공유하기</a>
-        </div>
+        </form>
       </div>
-    </section>
 
-    <section class="kit">
-      <p class="tit">
-        우리 가족 행복한 아침의 비밀은 바로 누텔라!<br>
-        <s>누텔라 모닝 KIT와 함께</s> 간편하고 행복한 아침을 시작해 보세요.
+      <div class="btns">
+        <a class="save btn" onclick="eventGo(2)">저장하기</a>
+        <a class="edit btn" onclick="eventGo(1)">수정하기</a>
+        <a class="submit btn" onclick="eventGo(3)">제출하기</a>
+        <a class="save2 btn">저장하기</a>
+        <a class="share btn">공유하기</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="kit">
+    <p class="tit">
+      우리 가족 행복한 아침의 비밀은 바로 누텔라!<br>
+      <s>누텔라 모닝 KIT와 함께</s> 간편하고 행복한 아침을 시작해 보세요.
+    </p>
+    <div class="stuff">
+      <p>
+        <s>구성품</s>
+        누텔라 370g, 누텔라 스프레더, 식빵 플레이트,<br class="mo">
+        파리바게트 식빵 교환권, 소화가 잘되는 우유 2곽
       </p>
-      <div class="stuff">
-        <p>
-          <s>구성품</s>
-          누텔라 370g, 누텔라 스프레더, 식빵 플레이트,<br>
-          파리바게트 식빵 교환권, 소화가 잘되는 우유 2곽
-        </p>
-      </div>
-    </section>
-    <section class="event-bonus">
+    </div>
+  </section>
+  <section class="event-bonus">
+    <div class="inner">
       <p class="txt">
         필수 해시태그와 함께 선물 받으신<br class="mo">
         특별 모닝 KIT 또는 컷툰을<br>
         <s>SNS(인스타그램, 네이버 블로그)</s>에<br class="mo">
         자랑해 주세요!
       </p>
-      <span>*당첨자는 누텔라 공식 인스타그램의<br>프로필 링크에서 확인하실 수 있습니다.</span>
+      <span>*당첨자는 누텔라 공식 인스타그램의<br class="mo">프로필 링크에서 확인하실 수 있습니다.</span>
       <div class="txt-box">
         <p><s>참여 기간</s>2021.10.1(월) ~ 11.7(일)</p>
         <p><s>당첨자 발표</s>2021.11.15(월)</p>
@@ -206,79 +243,123 @@
         <p>SMEG 토스터기</p>
         <p>파리바게트 상품권</p>
       </div>
-    </section>
-    <section class="buy">
-      <div class="btns">
-        <a href="http://www.ssg.com/item/itemView.ssg?itemId=1000018205561&siteNo=6001&salestrNo=2498&tlidSrchWd=%EB%88%84%ED%85%94%EB%9D%BC&srchPgNo=1&src_area=ssglist" target="_blank">SSG.COM</a>
-        <a href="http://item.gmarket.co.kr/Item?goodscode=1590081022" target="_blank">Gmarket</a>
-        <a href="https://pages.coupang.com/f/s5882" target="_blank">coupang</a>
-      </div>
-    </section>
-    <section class="reason">
-      <div class="reason-list">
-        <p>전세계인의 아침을 깨우는 <s>헤이즐넛 코코아 스프레드</s>예요!</p>
-        <p>손쉽고 빠르게 만들어 <s>바쁜 아침을 행복하고 맛있게</s> 만들어요!</p>
-        <p>다양한 빵과 함께 먹을 때 <s>최고의 조합</s>을 자랑해요!</p>
-      </div>
-    </section>
-    <section class="gallery">
-      <h2></h2>
-      <p>여러분이 직접 만든 <s>다양한 컷툰 이야기</s>를 확인해 보세요.</p>
+    </div>
+  </section>
+  <section class="buy">
+    <div class="btns">
+      <a href="http://www.ssg.com/item/itemView.ssg?itemId=1000018205561&siteNo=6001&salestrNo=2498&tlidSrchWd=%EB%88%84%ED%85%94%EB%9D%BC&srchPgNo=1&src_area=ssglist" target="_blank">SSG.COM</a>
+      <a href="http://item.gmarket.co.kr/Item?goodscode=1590081022" target="_blank">Gmarket</a>
+      <a href="https://pages.coupang.com/f/s5882" target="_blank">coupang</a>
+    </div>
+  </section>
+  <section class="reason">
+    <div class="reason-list">
+      <p>전세계인의 아침을 깨우는 <s>헤이즐넛 코코아 스프레드</s>예요!</p>
+      <p>손쉽고 빠르게 만들어 <s>바쁜 아침을 행복하고 맛있게</s> 만들어요!</p>
+      <p>다양한 빵과 함께 먹을 때 <s>최고의 조합</s>을 자랑해요!</p>
+    </div>
+  </section>
+  <section class="gallery">
+    <h2></h2>
+    <p>여러분이 직접 만든 <s>다양한 컷툰 이야기</s>를 확인해 보세요.</p>
 
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/m/ai1.png" alt=""></div>
-          <div class="swiper-slide"><img src="img/m/ai1.png" alt=""></div>
-          <div class="swiper-slide"><img src="img/m/ai1.png" alt=""></div>
-          <div class="swiper-slide"><img src="img/m/ai1.png" alt=""></div>
-          <div class="swiper-slide"><img src="img/m/ai1.png" alt=""></div>
-          <div class="swiper-slide"><img src="img/m/ai1.png" alt=""></div>
-          <div class="swiper-slide"><img src="img/m/ai1.png" alt=""></div>
-        </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/m/ai1.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/m/ai1.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/m/ai1.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/m/ai1.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/m/ai1.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/m/ai1.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/m/ai1.png" alt=""></div>
       </div>
-      <div class="swiper-btn swiper-button-prev"></div>
-      <div class="swiper-btn swiper-button-next"></div>
-    </section>
+    </div>
+    <div class="swiper-btn swiper-button-prev"></div>
+    <div class="swiper-btn swiper-button-next"></div>
+  </section>
+</div>
+<!-- 누텔라 캠페인 작업 08.24-->
+
+
+
+
+<div class="region-footer-pre" id="nutella-embed-footer-pre"></div>
+<footer id="nutella-footer" class="nutella-embed-container">
+  <div class="container">
+    <div class="region-footer" id="nutella-embed-footer"></div>
+    <div class="region-copywrite" id="nutella-embed-copywrite"></div>
   </div>
+</footer>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
-  <script>
-    const swiper = new Swiper('.swiper-container', {
-      slidesPerView: "auto",
-      spaceBetween: 25,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
-  <script>
-    let attend = document.querySelector('.attend');
-    let userEvent = document.querySelector('.user-event');
-    let save = document.querySelector('.save');
-    attend.addEventListener('click', function() {
-      userEvent.classList.add('step1');
-    });
-    function step(e) {
-      if (e === 1 || e === 3) {
-        userEvent.classList.remove('step2');
-      } else if (e === 2) {
-        userEvent.classList.remove('step1');
-      }
-      userEvent.classList.add('step' + e);
-    }
 
-    //우편번호
-    function openZipSearch() {
-      new daum.Postcode({
-        oncomplete: function(data) {
-          $('[name=zip]').val(data.zonecode); // 우편번호 (5자리)
-          $('[name=addr1]').val(data.address);
-          $('[name=addr2]').val(data.buildingName);
-        }
-      }).open();
-    }
-  </script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<script src="https://www.nutella.com/kr/ko/header-footer.js"></script>
+
+<script src="https://static.addtoany.com/menu/page.js?t=1624611617" async></script>
+
+<script>
+  // You are allowed to override block's configuration. List here blocks which you want to attach to header and footer.
+  bdiHeaderFooterConfig.header_top.blocks = [
+    "headersociallinksblock"
+  ];
+  bdiHeaderFooterConfig.header.blocks = [
+    "nutella20_theme_branding", "nutella20_theme_main_menu"
+  ];
+  bdiHeaderFooterConfig.footer_pre.blocks = [
+    "addtoanybuttons", "newslettersubscription"
+  ];
+
+  bdiHeaderFooterConfig.footer.blocks = [
+    "mainnavigation", "nutella20_theme_footer",
+  ];
+  bdiHeaderFooterConfig.copywrite.blocks = [
+    "changecountryblock", "headersociallinksblock_2", "copyright", "badges"
+  ];
+
+  jQuery(document).ready(function () {
+    jQuery('#nutella-embed-header').bdiHeader();
+    jQuery('#nutella-embed-header-top').bdiTopHeader();
+    // jQuery('#nutella-embed-footer-pre').bdiPreFooter();
+    jQuery('#nutella-embed-footer').bdiFooter();
+    jQuery('#nutella-embed-copywrite').bdiCopy();
+  });
+</script>
+
+<script type="application/javascript" src="https://www.nutella.com/kr/ko/header-footer.html?callback=localActivationProcessJson"></script>
+<script src="assets/js/header-footer.js"></script>
+
+
+
+<!-- 누텔라 캠페인 작업 08.24-->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper-container', {
+    slidesPerView: "auto",
+    spaceBetween: 25,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+<script>
+  let userEvent = document.querySelector('.user-event');
+  let ck = document.querySelector('.click');
+  let userMsg = document.querySelector('.user-msg');
+  let toon = document.querySelector('.toon');
+
+  ck.addEventListener('click', function() {
+    userMsg.classList.add('on');
+    toon.classList.add('toon2');
+  });
+
+  function eventGo(e) {
+    userEvent.setAttribute('data-step', e);
+  }
+</script>
+<!-- 누텔라 캠페인 작업 08.24-->
+
+
 </body>
 </html>
