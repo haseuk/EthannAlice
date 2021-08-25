@@ -10,7 +10,7 @@
     text-align: center;
     letter-spacing: -0.05em;
     overflow: hidden;
-    border-top: 1.2vw solid #e30613;
+    border-top: 1.2vw solid #faf8f5;
     padding-top: 13.51351351vw;
     background-color: #fcfaf8;
   }
@@ -32,6 +32,9 @@
   }
   #campaign .pc {
     display: none;
+  }
+  #campaign section {
+    background-color: #fff;
   }
   #campaign section.top {
     background-repeat: no-repeat;
@@ -59,7 +62,7 @@
     background-repeat: no-repeat;
     background-image: url("../img/m/morning1.png");
     background-size: cover;
-    margin-bottom: 7.43243243vw;
+    padding-bottom: 7.43243243vw;
     overflow: hidden;
     position: relative;
   }
