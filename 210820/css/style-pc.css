@@ -35,7 +35,7 @@
   #campaign section.top {
     background: url("../img/pc/top-visual.png") top center no-repeat;
     background-size: cover;
-    height: 926px;
+    height: 916px;
     padding-top: 328px;
     box-sizing: border-box;
   }
@@ -336,6 +336,7 @@
     color: #666;
     line-height: 28px;
     margin-top: -93px;
+    display: none;
   }
   #campaign section.user-event .inner .msg-tit s {
     font-weight: 700;
@@ -457,16 +458,6 @@
     color: #666;
     float: right;
     margin-top: 10px;
-  }
-  #campaign section.user-event .inner .toon.toon2 .img {
-    background-repeat: no-repeat;
-    background-image: url('../img/pc/event-toon2.png');
-    background-size: contain;
-    width: 771px;
-    height: 674px;
-  }
-  #campaign section.user-event .inner .toon.toon2 .click {
-    display: none;
   }
   #campaign section.user-event .inner .user-agree {
     padding-top: 0px;
@@ -623,10 +614,23 @@
     width: 254px;
     height: 75px;
   }
+  #campaign section.user-event.toon2 .inner .toon .img {
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/event-toon2.png');
+    background-size: contain;
+    width: 771px;
+    height: 674px;
+  }
+  #campaign section.user-event.toon2 .inner .toon .result .click {
+    display: none;
+  }
+  #campaign section.user-event.toon2 .inner .toon .user-msg {
+    display: block;
+  }
   #campaign section.user-event[data-step='1'] {
     display: inline-block;
   }
-  #campaign section.user-event[data-step='1'] .inner .toon .user-msg.on {
+  #campaign section.user-event[data-step='1'] .inner .msg-tit1 {
     display: block;
   }
   #campaign section.user-event[data-step='1'] .inner .btns .save {
@@ -634,6 +638,16 @@
   }
   #campaign section.user-event[data-step='2'] {
     display: inline-block;
+  }
+  #campaign section.user-event[data-step='2'] .inner h2 {
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/evt-tit2.png');
+    background-size: contain;
+    width: 946px;
+    height: 243px;
+  }
+  #campaign section.user-event[data-step='2'] .inner .msg-tit2 {
+    display: block;
   }
   #campaign section.user-event[data-step='2'] .inner .toon .result .click {
     display: none;
@@ -654,11 +668,14 @@
   #campaign section.user-event[data-step='3'] {
     display: inline-block;
   }
+  #campaign section.user-event[data-step='3'] .inner .msg-tit3 {
+    display: block;
+  }
   #campaign section.user-event[data-step='3'] .inner .toon .result .click {
     display: none;
   }
   #campaign section.user-event[data-step='3'] .inner .toon .img {
-    background-image: url('../img/m/event-toon2.png');
+    background-image: url('../img/pc/event-toon2.png');
   }
   #campaign section.user-event[data-step='3'] .inner .toon .user-msg {
     display: none;

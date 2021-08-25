@@ -53,15 +53,23 @@
         <p>이벤트<br><s>참여 정보 제출</s></p>
         <p><s>컷툰 다운로드</s> 및<br><s>보너스 이벤트</s><br class="mo"> 참여</p>
       </div>
-      <a class="attend btn" onclick="eventGo(1);">참여하기</a>
+      <a href="#user-event" class="attend btn" onclick="eventGo(1);">참여하기</a>
     </section>
 
-    <section class="user-event" data-step="1">
+    <section id="user-event" class="user-event" data-step>
       <div class="inner">
         <h2></h2>
-        <p class="msg-tit">
+        <p class="msg-tit msg-tit1">
           아래의 <s>빈칸을 클릭</s>하여 우리 아이가 아침을 행복하게<br class="mo">
           시작할 수 있도록<br class="pc"> 가족의 <s>응원 문구</s>를 적어 주세요!
+        </p>
+        <p class="msg-tit msg-tit2">
+          완성된 그림을 확인해 주세요.<br>
+          아래 <s>개인정보를 제출</s>하면 이벤트 참여가 완료됩니다!
+        </p>
+        <p class="msg-tit msg-tit3">
+          더 많은 선물들이 여러분을 기다리고 있어요!<br>
+          여러분만의 응원 컷툰을 <s>필수 해시태그와 함께 공유</s>해 보세요.
         </p>
         <div class="toon">
           <div class="img"></div>
@@ -294,10 +302,9 @@
       },100)
     }
 
-    ck.addEventListener('click', function() {
-      userMsg.classList.add('on');
-      toon.classList.add('toon2');
-    });
+    // ck.addEventListener('click', function() {
+    //   userEvent.classList.add('toon2');
+    // });
 
     function editMsg() {
       result.innerHTML = null;

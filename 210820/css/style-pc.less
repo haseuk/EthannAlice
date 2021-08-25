@@ -9,7 +9,7 @@
     .pc { .ib; }
 
 
-    section.top { background: url("../img/pc/top-visual.png") top center no-repeat; .cover; .h(926); .pt(328); .-box;
+    section.top { background: url("../img/pc/top-visual.png") top center no-repeat; .cover; .h(916); .pt(328); .-box;
       .tit { .fs(22); .lh(30); text-shadow: 0 0 13px rgba(255,255,255,0.7);
         s { color:#fff; .ib; .p(2,5); .bgc(#e30613); }
       }
@@ -69,7 +69,7 @@
     section.user-event { border-bottom: 2px dotted #b6b6b6; .max-w(946); .mh-c; .hide;
       .inner { .pb(70); .rel;
         h2 { .contain('../img/pc/evt-tit.png'); .wh(946,243); }
-        .msg-tit { .fs(20); .light; color:#666; .lh(28); .mt(-93);
+        .msg-tit { .fs(20); .light; color:#666; .lh(28); .mt(-93); .hide;
           s { .bold; color:#000; }
         }
         .toon { .-a(#eee,2px); .ib; .p(12); .-box; .m(35,0);
@@ -86,10 +86,6 @@
           .f-msg { .tl; .p(20,0,10); .-box; .clear; .hide;
             h3 { .contain('../img/pc/f-msg.png'); .wh(465,42); .ib; }
             .user-txt { .fs(24); color:#666; .fr; .mt(10); }
-          }
-          &.toon2 {
-            .img { .contain('../img/pc/event-toon2.png'); .wh(771,674); }
-            .click { .hide; }
           }
         }
         .user-agree { .p(0,75); .-box; .mb(40); .-box; .hide;
@@ -129,16 +125,29 @@
         }
 
       }
-      &[data-step='1'] { .ib;
+      &.toon2 {
         .inner {
           .toon {
-            .user-msg.on { .block; }
+            .img { .contain('../img/pc/event-toon2.png'); .wh(771,674); }
+            .result {
+              .click { .hide; }
+            }
+            .user-msg { .block; }
           }
+        }
+      }
+
+      &[data-step='1'] { .ib;
+        .inner {
+          .msg-tit1 { .block; }
           .btns .save { .ib; }
         }
       }
+
       &[data-step='2'] { .ib;
         .inner {
+          h2 { .contain('../img/pc/evt-tit2.png'); .wh(946,243); }
+          .msg-tit2 { .block; }
           .toon {
             .result {
               .click { .hide; }
@@ -154,11 +163,12 @@
       }
       &[data-step='3'] { .ib;
         .inner {
+          .msg-tit3 { .block; }
           .toon {
             .result {
               .click { .hide; }
             }
-            .img { .bg('../img/m/event-toon2.png'); }
+            .img { .bg('../img/pc/event-toon2.png'); }
             .user-msg { .hide; }
             .f-msg { .block; }
           }

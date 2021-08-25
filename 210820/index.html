@@ -60,9 +60,8 @@
       <p><s>참여 기간</s> 2021. 10. 1(목) ~ 10. 22(금)</p>
       <p><s>당첨자 발표</s> 1차 2021. 10. 11(월) / 2차 10.25(월)</p>
     </div>
-
     <!-- ******* 당첨자 버튼 10.11에 노출 *******-->
-<!--          <a class="btn">당첨자 확인하기</a>-->
+    <!--      <a class="btn">당첨자 확인하기</a>-->
     <div class="notice">
       <p>
         *당첨자는 총 2회에 나누어 선발 후 KIT를 보내드릴 예정입니다.<br>
@@ -82,16 +81,23 @@
       <p>이벤트<br><s>참여 정보 제출</s></p>
       <p><s>컷툰 다운로드</s> 및<br><s>보너스 이벤트</s><br class="mo"> 참여</p>
     </div>
-    <a class="attend btn" onclick="eventGo(1);">참여하기</a>
+    <a href="#user-event" class="attend btn" onclick="eventGo(1);">참여하기</a>
   </section>
 
-  <!-- 지금 참여하기 누르면 열림-->
-  <section class="user-event" data-step>
+  <section id="user-event" class="user-event" data-step>
     <div class="inner">
       <h2></h2>
-      <p class="msg-tit">
+      <p class="msg-tit msg-tit1">
         아래의 <s>빈칸을 클릭</s>하여 우리 아이가 아침을 행복하게<br class="mo">
         시작할 수 있도록<br class="pc"> 가족의 <s>응원 문구</s>를 적어 주세요!
+      </p>
+      <p class="msg-tit msg-tit2">
+        완성된 그림을 확인해 주세요.<br>
+        아래 <s>개인정보를 제출</s>하면 이벤트 참여가 완료됩니다!
+      </p>
+      <p class="msg-tit msg-tit3">
+        더 많은 선물들이 여러분을 기다리고 있어요!<br>
+        여러분만의 응원 컷툰을 <s>필수 해시태그와 함께 공유</s>해 보세요.
       </p>
       <div class="toon">
         <div class="img"></div>
@@ -102,11 +108,9 @@
 
         <!--대사를 입력해 주세요-->
         <div class="user-msg">
-          <input type="text" class="input-msg" placeholder="대사를 입력해 주세요">
+          <input type="text" class="input-msg" placeholder="대사를 입력해 주세요" onkeyup="JavaScript:enterMsg();">
           <a class="confirm">확인</a>
         </div>
-
-        <!--최종 대사 출력창-->
         <div class="f-msg">
           <h3></h3>
           <p class="user-txt"><span></span>님의 이야기</p>
@@ -346,12 +350,9 @@
 <script>
   let userEvent = document.querySelector('.user-event');
   let ck = document.querySelector('.click');
-  let userMsg = document.querySelector('.user-msg');
-  let toon = document.querySelector('.toon');
 
   ck.addEventListener('click', function() {
-    userMsg.classList.add('on');
-    toon.classList.add('toon2');
+    userEvent.classList.add('toon2');
   });
 
   function eventGo(e) {
