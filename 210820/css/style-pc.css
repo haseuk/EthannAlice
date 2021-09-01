@@ -12,6 +12,7 @@
     text-align: center;
     letter-spacing: -0.05em;
     overflow: hidden;
+    margin-top: -192px;
   }
   #campaign input,
   #campaign select,
@@ -35,14 +36,20 @@
   #campaign section.top {
     background: url("../img/pc/top-visual.png") top center no-repeat;
     background-size: cover;
-    height: 916px;
-    padding-top: 328px;
+    height: 1026px;
     box-sizing: border-box;
+    position: relative;
   }
   #campaign section.top .tit {
-    font-size: 22px;
-    line-height: 30px;
-    text-shadow: 0 0 13px rgba(255, 255, 255, 0.7);
+    font-size: 30px;
+    line-height: 38px;
+    text-shadow: 0 0 13px rgba(255, 255, 255, 0.8);
+    position: absolute;
+    left: 50%;
+    top: 380px;
+    right: auto;
+    bottom: auto;
+    transform: translateX(-50%);
   }
   #campaign section.top .tit s {
     color: #fff;
@@ -52,49 +59,39 @@
     padding-bottom: 2px;
     padding-left: 5px;
     background-color: #e30613;
+    font-weight: 700;
   }
   #campaign section.morning {
     background: url("../img/pc/morning1.png") top center no-repeat;
     background-size: cover;
-    height: 1140px;
-    overflow: hidden;
+    height: 1083px;
+    margin-bottom: 40px;
     position: relative;
-  }
-  #campaign section.morning .cheer {
-    font-size: 20px;
-    line-height: 28px;
-    color: #fff;
-    margin-top: 355px;
-    font-weight: 300;
-  }
-  #campaign section.morning .cheer s {
-    font-weight: 700;
-    color: #ffeb7c;
   }
   #campaign section.morning .date {
     text-align: left;
     position: absolute;
     left: 50%;
-    top: 461px;
+    top: 348px;
     right: auto;
     bottom: auto;
-    margin-left: -279px;
+    margin-left: -275px;
   }
   #campaign section.morning .date p {
-    font-size: 20px;
+    font-size: 30px;
     color: #fff;
     font-weight: 300;
-    line-height: 29px;
-    margin-bottom: 8px;
+    line-height: 42px;
+    margin-bottom: 18px;
   }
   #campaign section.morning .date p s {
     font-weight: 700;
-    width: 121px;
-    height: 29px;
-    line-height: 29px;
+    width: 178px;
+    height: 42px;
+    line-height: 42px;
     margin-right: 17px;
     background-color: #000;
-    border-radius: 15px;
+    border-radius: 21px;
     display: inline-block;
     text-align: center;
     padding-top: 2px;
@@ -103,31 +100,27 @@
   #campaign section.morning .btn {
     font-size: 0px;
     display: inline-block;
-    position: absolute;
-    left: 50%;
-    top: 500px;
-    right: auto;
-    bottom: auto;
-    margin-left: 138px;
-    width: 147px;
-    height: 33px;
+    margin-top: 468px;
+    width: 253px;
+    height: 53px;
     background-repeat: no-repeat;
     background-image: url('../img/pc/winner-btn.png');
     background-size: contain;
     cursor: pointer;
     z-index: 1;
+    height: 0px;
   }
   #campaign section.morning .notice {
-    margin-top: 112px;
+    margin-top: 27px;
   }
   #campaign section.morning .notice p {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 25px;
+    line-height: 33px;
   }
   #campaign section.morning .pic {
     width: 833px;
     height: 430px;
-    margin-top: 30px;
+    margin-top: 39px;
     position: relative;
     display: inline-block;
   }
@@ -191,7 +184,7 @@
   #campaign section.rule {
     background: url("../img/pc/rule.png") top center no-repeat;
     background-size: cover;
-    height: 408px;
+    height: 426px;
     max-width: 946px;
     margin-left: auto;
     margin-right: auto;
@@ -199,7 +192,7 @@
     border-bottom: 2px dotted #b6b6b6;
   }
   #campaign section.rule .rule-box {
-    padding-top: 160px;
+    padding-top: 166px;
   }
   #campaign section.rule .rule-box p {
     font-size: 20px;
@@ -221,7 +214,7 @@
     height: 74px;
     display: inline-block;
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: 58px;
   }
   #campaign section.event {
     background: url("../img/pc/event.png") top center no-repeat;
@@ -692,17 +685,17 @@
     background-image: url("../img/pc/event.png");
     background-size: contain;
     background-size: cover;
-    height: 739px;
+    height: 832px;
     position: relative;
     max-width: 946px;
     margin-left: auto;
     margin-right: auto;
   }
   #campaign section.kit .tit {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 25px;
+    line-height: 33px;
     font-weight: 300;
-    padding-top: 130px;
+    padding-top: 143px;
     box-sizing: border-box;
   }
   #campaign section.kit .tit s {
@@ -710,32 +703,25 @@
     color: #e30613;
   }
   #campaign section.kit .stuff {
-    margin-top: 25px;
-    width: 100%;
+    margin-top: 452px;
+    width: 834px;
+    border: 2px solid #e6e6e6;
+    padding-top: 18px;
+    padding-right: 0px;
+    padding-bottom: 18px;
+    padding-left: 0px;
+    box-sizing: border-box;
+    display: inline-block;
   }
   #campaign section.kit .stuff p {
     font-size: 20px;
+    line-height: 28px;
     font-weight: 300;
     text-align: center;
   }
   #campaign section.kit .stuff p s {
     font-weight: 700;
-    position: relative;
-    display: inline-block;
-    margin-right: 15px;
-  }
-  #campaign section.kit .stuff p s:after {
-    content: '';
     display: block;
-    position: absolute;
-    left: -10px;
-    top: 0px;
-    right: auto;
-    bottom: auto;
-    width: 2px;
-    height: 20px;
-    background-color: #000;
-    margin-top: 2px;
   }
   #campaign section.event-bonus {
     background: url("../img/pc/bonus.png") top center no-repeat;
