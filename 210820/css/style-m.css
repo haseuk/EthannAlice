@@ -10,9 +10,8 @@
     text-align: center;
     letter-spacing: -0.05em;
     overflow: hidden;
-    border-top: 1.2vw solid #faf8f5;
-    padding-top: 13.51351351vw;
-    background-color: #fcfaf8;
+    padding-top: 6.75675676vw;
+    box-sizing: border-box;
   }
   #campaign input,
   #campaign select,
@@ -40,76 +39,75 @@
     background-repeat: no-repeat;
     background-image: url("../img/m/top-visual.png");
     background-size: contain;
-    height: 106.21621622vw;
-    padding-top: 35.67567568vw;
+    height: 114.32432432vw;
+    padding-top: 40.81081081vw;
     box-sizing: border-box;
   }
   #campaign section.top .tit {
-    font-size: 3.51351351vw;
-    line-height: 4.72972973vw;
-    text-shadow: 0 0 13px rgba(255, 255, 255, 0.7);
+    font-size: 3.78378378vw;
+    line-height: 5.40540541vw;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
   }
   #campaign section.top .tit s {
     color: #fff;
     display: inline-block;
-    padding-top: 0.54054054vw;
-    padding-right: 1.21621622vw;
-    padding-bottom: 0.54054054vw;
-    padding-left: 1.21621622vw;
+    padding-top: 0vw;
+    padding-right: 0.81081081vw;
+    padding-bottom: 0vw;
+    padding-left: 0.81081081vw;
+    margin-top: 0vw;
+    margin-right: 0.40540541vw;
+    margin-bottom: 0vw;
+    margin-left: 0.40540541vw;
+    box-sizing: border-box;
     background-color: #e30613;
+    text-shadow: none;
   }
   #campaign section.morning {
     background-repeat: no-repeat;
     background-image: url("../img/m/morning1.png");
     background-size: cover;
-    padding-bottom: 7.43243243vw;
+    height: 133.24324324vw;
+    padding-top: 38.37837838vw;
+    box-sizing: border-box;
     overflow: hidden;
     position: relative;
   }
-  #campaign section.morning .cheer {
-    font-size: 3.51351351vw;
-    line-height: 4.59459459vw;
-    color: #fff;
-    padding-top: 37.02702703vw;
-    font-weight: 300;
-  }
-  #campaign section.morning .cheer s {
-    font-weight: 700;
-    color: #ffeb7c;
-  }
   #campaign section.morning .date {
-    margin-top: 2.02702703vw;
     text-align: left;
     width: 100%;
-    padding-left: 17.16216216vw;
+    padding-left: 14.05405405vw;
     box-sizing: border-box;
   }
   #campaign section.morning .date p {
-    font-size: 3.24324324vw;
+    font-size: 3.64864865vw;
     color: #fff;
     font-weight: 300;
-    line-height: 4.32432432vw;
-    margin-bottom: 1.35135135vw;
+    line-height: 4.86486486vw;
+    margin-bottom: 1.62162162vw;
   }
   #campaign section.morning .date p s {
     font-weight: 700;
-    width: 18.10810811vw;
-    height: 4.18918919vw;
-    line-height: 4.18918919vw;
-    margin-right: 2.02702703vw;
+    width: 20.81081081vw;
+    height: 4.86486486vw;
+    line-height: 4.86486486vw;
+    margin-right: 3.78378378vw;
     background-color: #000;
-    border-radius: 2.16216216vw;
+    border-radius: 2.43243243vw;
     display: inline-block;
     text-align: center;
     padding-top: 0.27027027vw;
     box-sizing: border-box;
+  }
+  #campaign section.morning .date p:last-child {
+    margin-bottom: 0vw;
   }
   #campaign section.morning .btn {
     font-size: 0vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2.02702703vw;
+    margin-top: 2.56756757vw;
     width: 36.08108108vw;
     height: 7.43243243vw;
     background-repeat: no-repeat;
@@ -117,18 +115,21 @@
     background-size: contain;
     cursor: pointer;
     z-index: 1;
+    height: 0vw;
+    margin-top: 0vw;
+    pointer-events: none;
   }
   #campaign section.morning .notice {
     margin-top: 4.05405405vw;
   }
   #campaign section.morning .notice p {
-    font-size: 2.7027027vw;
-    line-height: 3.78378378vw;
+    font-size: 3.51351351vw;
+    line-height: 4.45945946vw;
   }
   #campaign section.morning .pic {
     width: 90.67567568vw;
     height: 46.75675676vw;
-    margin-top: 6.75675676vw;
+    margin-top: 4.86486486vw;
     position: relative;
     display: inline-block;
   }
@@ -193,12 +194,12 @@
     background-repeat: no-repeat;
     background-image: url("../img/m/rule.png");
     background-size: contain;
-    height: 60.27027027vw;
+    height: 61.48648649vw;
     border-bottom: 2px dotted #b6b6b6;
   }
   #campaign section.rule .rule-box {
     font-size: 0vw;
-    padding-top: 21.62162162vw;
+    padding-top: 22.2972973vw;
     box-sizing: border-box;
   }
   #campaign section.rule .rule-box p {
@@ -206,11 +207,11 @@
     line-height: 3.37837838vw;
     font-weight: 300;
     display: inline-block;
-    width: 19.32432432vw;
+    width: 19.59459459vw;
     margin-top: 0vw;
     margin-right: 2.02702703vw;
     margin-bottom: 0vw;
-    margin-left: 2.02702703vw;
+    margin-left: 1.89189189vw;
     vertical-align: top;
   }
   #campaign section.rule .rule-box p:last-child {
@@ -240,14 +241,14 @@
     background-image: url('../img/m/evt-tit.png');
     background-size: contain;
     width: 100vw;
-    height: 32.97297297vw;
+    height: 34.72972973vw;
   }
   #campaign section.user-event .inner .msg-tit {
-    font-size: 3.51351351vw;
+    font-size: 3.78378378vw;
     font-weight: 300;
     color: #666;
-    line-height: 4.59459459vw;
-    margin-top: -14.86486486vw;
+    line-height: 5.40540541vw;
+    margin-top: -15.67567568vw;
     display: none;
   }
   #campaign section.user-event .inner .msg-tit s {
@@ -255,11 +256,11 @@
     color: #000;
   }
   #campaign section.user-event .inner .toon {
-    border: 1px solid #eee;
+    border: 2px solid #eee;
     display: inline-block;
-    padding: 1.08108108vw;
+    padding: 1.35135135vw;
     box-sizing: border-box;
-    margin-top: 5.40540541vw;
+    margin-top: 5vw;
     margin-right: 0vw;
     margin-bottom: 2.7027027vw;
     margin-left: 0vw;
@@ -275,7 +276,7 @@
     font-size: 3.10810811vw;
     position: absolute;
     left: 50%;
-    top: 72.97297297vw;
+    top: 75.67567568vw;
     right: auto;
     bottom: auto;
     width: 27.02702703vw;
@@ -515,12 +516,12 @@
   }
   #campaign section.user-event .inner .btns .btn.save2 {
     background-image: url('../img/m/save2.png');
-    width: 37.56756757vw;
+    width: 43.37837838vw;
     height: 11.21621622vw;
   }
   #campaign section.user-event .inner .btns .btn.share {
     background-image: url('../img/m/share.png');
-    width: 37.56756757vw;
+    width: 43.24324324vw;
     height: 11.21621622vw;
   }
   #campaign section.user-event.toon2 .inner .toon .img {
@@ -553,7 +554,7 @@
     background-image: url('../img/m/evt-tit2.png');
     background-size: contain;
     width: 100vw;
-    height: 32.97297297vw;
+    height: 34.72972973vw;
   }
   #campaign section.user-event[data-step='2'] .inner .msg-tit2 {
     display: block;
@@ -576,6 +577,13 @@
   }
   #campaign section.user-event[data-step='3'] {
     display: inline-block;
+  }
+  #campaign section.user-event[data-step='3'] .inner h2 {
+    background-repeat: no-repeat;
+    background-image: url('../img/m/evt-tit2.png');
+    background-size: contain;
+    width: 100vw;
+    height: 34.72972973vw;
   }
   #campaign section.user-event[data-step='3'] .inner .msg-tit3 {
     display: block;
@@ -600,14 +608,14 @@
     background-repeat: no-repeat;
     background-image: url("../img/m/event.png");
     background-size: contain;
-    height: 96.75675676vw;
-    padding-top: 18.10810811vw;
+    height: 112.16216216vw;
+    padding-top: 19.05405405vw;
     position: relative;
     box-sizing: border-box;
   }
   #campaign section.kit .tit {
-    font-size: 3.51351351vw;
-    line-height: 4.59459459vw;
+    font-size: 3.78378378vw;
+    line-height: 5.40540541vw;
     font-weight: 300;
   }
   #campaign section.kit .tit s {
@@ -615,45 +623,30 @@
     color: #e30613;
   }
   #campaign section.kit .stuff {
-    margin-top: 3.37837838vw;
-    position: absolute;
-    left: 50%;
-    top: 31.08108108vw;
-    right: auto;
-    bottom: auto;
-    margin-left: -23.64864865vw;
+    width: 86.89189189vw;
+    margin-top: 50.81081081vw;
+    display: inline-block;
+    padding-top: 1.75675676vw;
+    padding-right: 0vw;
+    padding-bottom: 1.75675676vw;
+    padding-left: 0vw;
+    border: 2px solid #e6e6e6;
   }
   #campaign section.kit .stuff p {
-    font-size: 2.97297297vw;
+    font-size: 3.78378378vw;
     font-weight: 300;
-    text-indent: -6.48648649vw;
-    margin-left: 6.48648649vw;
+    line-height: 5.40540541vw;
   }
   #campaign section.kit .stuff p s {
     font-weight: 700;
-    position: relative;
-    display: inline-block;
-    margin-right: 2.02702703vw;
-  }
-  #campaign section.kit .stuff p s:after {
-    content: '';
     display: block;
-    position: absolute;
-    left: -7.83783784vw;
-    top: 0vw;
-    right: auto;
-    bottom: auto;
-    width: 0.27027027vw;
-    height: 2.7027027vw;
-    background-color: #000;
-    margin-top: 0.27027027vw;
   }
   #campaign section.event-bonus {
     background-repeat: no-repeat;
     background-image: url("../img/m/bonus.png");
     background-size: contain;
-    height: 121.89189189vw;
-    padding-top: 33.78378378vw;
+    height: 137.97297297vw;
+    padding-top: 36.35135135vw;
     padding-right: 0vw;
     padding-bottom: 0vw;
     padding-left: 4.05405405vw;
@@ -662,8 +655,8 @@
     position: relative;
   }
   #campaign section.event-bonus .txt {
-    font-size: 3.51351351vw;
-    line-height: 4.32432432vw;
+    font-size: 3.78378378vw;
+    line-height: 5.40540541vw;
     font-weight: 300;
   }
   #campaign section.event-bonus .txt s {
@@ -674,20 +667,21 @@
     font-size: 2.97297297vw;
     font-weight: 300;
     line-height: 4.05405405vw;
-    margin-top: 4.05405405vw;
+    margin-top: 5.54054054vw;
     color: #666;
     display: inline-block;
     text-indent: -1.35135135vw;
     margin-left: 1.35135135vw;
   }
   #campaign section.event-bonus .txt-box {
-    margin-top: 4.05405405vw;
+    margin-top: 8.51351351vw;
   }
   #campaign section.event-bonus .txt-box p {
     font-size: 3.24324324vw;
+    line-height: 4.32432432vw;
     padding-left: 2.02702703vw;
     position: relative;
-    margin-bottom: 2.43243243vw;
+    margin-bottom: 1.75675676vw;
     box-sizing: border-box;
   }
   #campaign section.event-bonus .txt-box p s {
@@ -698,7 +692,7 @@
   #campaign section.event-bonus .txt-box p s:after {
     content: '';
     display: block;
-    width: 0.40540541vw;
+    width: 0.27027027vw;
     height: 2.7027027vw;
     background-color: #000;
     position: absolute;
@@ -712,77 +706,71 @@
     display: inline-block;
   }
   #campaign section.event-bonus .txt-box p:nth-child(2) {
-    margin-left: 6.08108108vw;
+    margin-left: 2.02702703vw;
   }
   #campaign section.event-bonus .gift {
+    font-size: 0vw;
     position: absolute;
-    left: 22.16216216vw;
-    top: 108.10810811vw;
+    left: 19.32432432vw;
+    top: 124.32432432vw;
     right: auto;
     bottom: auto;
   }
   #campaign section.event-bonus .gift p {
     font-size: 2.43243243vw;
     display: inline-block;
-    width: 17.56756757vw;
+    width: 24.05405405vw;
     text-align: center;
   }
-  #campaign section.event-bonus .gift p:nth-child(1) {
-    margin-right: 10.13513514vw;
-  }
-  #campaign section.event-bonus .gift p:nth-child(2) {
-    margin-right: 6.08108108vw;
-  }
   #campaign section.event-bonus .gift p:nth-child(3) {
-    margin-right: 0vw;
+    width: 28.91891892vw;
   }
   #campaign section.buy {
     background-repeat: no-repeat;
     background-image: url("../img/m/buy.png");
     background-size: contain;
-    height: 35.81081081vw;
-    padding-top: 17.97297297vw;
+    height: 65.94594595vw;
+    padding-top: 22.02702703vw;
     box-sizing: border-box;
   }
   #campaign section.buy .btns {
     font-size: 0vw;
+    padding-left: 55.67567568vw;
+    box-sizing: border-box;
   }
   #campaign section.buy .btns a {
-    width: 29.45945946vw;
-    height: 8.91891892vw;
-    display: inline-block;
-    margin-top: 0vw;
-    margin-right: 0.54054054vw;
-    margin-bottom: 0vw;
-    margin-left: 0.54054054vw;
+    width: 38.24324324vw;
+    height: 9.18918919vw;
+    display: block;
+    margin-bottom: 2.83783784vw;
   }
   #campaign section.reason {
     background-repeat: no-repeat;
     background-image: url("../img/m/reason.png");
     background-size: contain;
-    height: 55.40540541vw;
+    height: 84.05405405vw;
     position: relative;
   }
   #campaign section.reason .reason-list {
-    padding-top: 26.21621622vw;
-    padding-right: 0vw;
-    padding-bottom: 0vw;
-    padding-left: 13.51351351vw;
+    padding-top: 28.51351351vw;
     box-sizing: border-box;
   }
   #campaign section.reason .reason-list p {
-    font-size: 3.51351351vw;
-    line-height: 6.48648649vw;
+    font-size: 4.72972973vw;
+    line-height: 6.08108108vw;
     font-weight: 300;
     text-align: left;
+    padding-left: 27.02702703vw;
+    box-sizing: border-box;
+    margin-bottom: 4.59459459vw;
   }
   #campaign section.reason .reason-list p s {
     font-weight: 700;
   }
   #campaign section.gallery {
-    padding-top: 10.13513514vw;
+    padding-top: 10.67567568vw;
     padding-right: 0vw;
-    padding-bottom: 10.13513514vw;
+    padding-bottom: 10.67567568vw;
     padding-left: 0vw;
     box-sizing: border-box;
     position: relative;
@@ -810,15 +798,39 @@
     margin-right: 10.81081081vw;
     margin-bottom: 0vw;
     margin-left: 10.81081081vw;
+    overflow: hidden;
   }
   #campaign section.gallery .swiper-container .swiper-slide {
     width: 37.43243243vw;
     height: 32.83783784vw;
+    position: relative;
   }
   #campaign section.gallery .swiper-container .swiper-slide img {
     width: 100%;
     height: 100%;
     display: inline-block;
+  }
+  #campaign section.gallery .swiper-container .swiper-slide .msg-box {
+    position: absolute;
+    left: 11.08108108vw;
+    top: 1.08108108vw;
+    right: auto;
+    bottom: auto;
+    width: 20.27027027vw;
+    height: 6.75675676vw;
+  }
+  #campaign section.gallery .swiper-container .swiper-slide .msg-box .gallery-msg {
+    font-size: 2.16216216vw;
+    color: #a0a0a0;
+    font-weight: 700;
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
   }
   #campaign section.gallery .swiper-btn {
     width: 3.64864865vw;
