@@ -1,0 +1,964 @@
+/*--------------------------------------------------------------------------------------------------------------
+*  Template
+*--------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1600px) {
+  #campaign {
+    max-width: 120rem;
+    min-width: 59.375rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-family: notokr, sans-serif;
+    text-align: center;
+    letter-spacing: -0.05em;
+    overflow: hidden;
+    margin-top: -8.75rem;
+  }
+  #campaign input,
+  #campaign select,
+  #campaign textarea {
+    outline: none;
+  }
+  #campaign table {
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+  #campaign img {
+    display: block;
+    backface-visibility: hidden;
+  }
+  #campaign .mo {
+    display: none;
+  }
+  #campaign .pc {
+    display: inline-block;
+  }
+  #campaign section.top {
+    background: url("../img/pc/top-visual.png") top center no-repeat;
+    background-size: cover;
+    height: 64.125rem;
+    box-sizing: border-box;
+    position: relative;
+  }
+  #campaign section.top .tit {
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
+    position: absolute;
+    left: 50%;
+    top: 23.75rem;
+    right: auto;
+    bottom: auto;
+    transform: translateX(-50%);
+  }
+  #campaign section.top .tit s {
+    color: #fff;
+    display: inline-block;
+    padding-top: 0.125rem;
+    padding-right: 0.3125rem;
+    padding-bottom: 0.125rem;
+    padding-left: 0.3125rem;
+    background-color: #e30613;
+    font-weight: 700;
+    text-shadow: none;
+  }
+  #campaign section.morning {
+    background: url("../img/pc/morning1.png") top center no-repeat;
+    background-size: cover;
+    height: 67.6875rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+  }
+  #campaign section.morning .date {
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    top: 21.75rem;
+    right: auto;
+    bottom: auto;
+    margin-left: -17.1875rem;
+  }
+  #campaign section.morning .date p {
+    font-size: 1.875rem;
+    color: #fff;
+    font-weight: 300;
+    line-height: 2.625rem;
+    margin-bottom: 1.125rem;
+  }
+  #campaign section.morning .date p s {
+    font-weight: 700;
+    width: 11.125rem;
+    height: 2.625rem;
+    line-height: 2.625rem;
+    margin-right: 1.0625rem;
+    background-color: #000;
+    border-radius: 1.3125rem;
+    display: inline-block;
+    text-align: center;
+    padding-top: 0.125rem;
+    box-sizing: border-box;
+  }
+  #campaign section.morning .btn {
+    font-size: 0rem;
+    display: inline-block;
+    margin-top: 29.25rem;
+    width: 15.8125rem;
+    height: 3.3125rem;
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/winner-btn.png');
+    background-size: contain;
+    cursor: pointer;
+    z-index: 1;
+    height: 0rem;
+    pointer-events: none;
+  }
+  #campaign section.morning .notice {
+    margin-top: 1.6875rem;
+  }
+  #campaign section.morning .notice p {
+    font-size: 1.5625rem;
+    line-height: 2.0625rem;
+  }
+  #campaign section.morning .pic {
+    width: 52.0625rem;
+    height: 26.875rem;
+    margin-top: 2.4375rem;
+    position: relative;
+    display: inline-block;
+  }
+  #campaign section.morning .pic:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -0.75rem;
+    right: auto;
+    top: auto;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/shadow.png');
+    background-size: contain;
+    width: 56.375rem;
+    height: 1.875rem;
+  }
+  #campaign section.morning .pic p {
+    font-size: 1.75rem;
+    color: #fff;
+    text-align: left;
+    font-weight: 700;
+    line-height: 3.875rem;
+    background-color: #000;
+    display: inline-block;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+    padding-top: 0rem;
+    padding-right: 1.1875rem;
+    padding-bottom: 0rem;
+    padding-left: 1.1875rem;
+    box-sizing: border-box;
+    z-index: 2;
+  }
+  #campaign section.morning .pic p:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -3.875rem;
+    top: 0rem;
+    left: auto;
+    bottom: auto;
+    display: inline-block;
+    border-top: 62px solid #000;
+    border-right: 62px solid transparent;
+  }
+  #campaign section.morning .pic img {
+    display: inline-block;
+    height: 26.875rem;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
+  }
+  #campaign section.rule {
+    background: url("../img/pc/rule.png") top center no-repeat;
+    background-size: cover;
+    height: 26.625rem;
+    max-width: 59.125rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-bottom: 2px dotted #b6b6b6;
+  }
+  #campaign section.rule .rule-box {
+    padding-top: 10.375rem;
+  }
+  #campaign section.rule .rule-box p {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    font-weight: 300;
+    display: inline-block;
+    width: 11.25rem;
+    margin-right: 2.1875rem;
+  }
+  #campaign section.rule .rule-box p:last-child {
+    margin-right: 0rem;
+  }
+  #campaign section.rule .rule-box p s {
+    font-weight: 700;
+  }
+  #campaign section.rule .btn {
+    font-size: 0rem;
+    width: 20.625rem;
+    height: 4.625rem;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 3.625rem;
+  }
+  #campaign section.event {
+    background: url("../img/pc/event.png") top center no-repeat;
+    background-size: cover;
+    height: 46.1875rem;
+    max-width: 59.125rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #campaign section.event:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 120rem;
+    height: 46.875rem;
+    left: 50%;
+    top: -4.6875rem;
+    right: auto;
+    bottom: auto;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+  #campaign section.event .txt,
+  #campaign section.event .txt-box,
+  #campaign section.event .gift {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 300;
+    position: absolute;
+    left: 50%;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+    margin-left: -29.75rem;
+  }
+  #campaign section.event .txt {
+    top: 11.625rem;
+  }
+  #campaign section.event .txt s {
+    color: #e30613;
+    font-weight: 700;
+  }
+  #campaign section.event .txt-box {
+    top: 19.125rem;
+  }
+  #campaign section.event .txt-box p {
+    padding-left: 0.9375rem;
+    position: relative;
+    margin-bottom: 1.125rem;
+    box-sizing: border-box;
+  }
+  #campaign section.event .txt-box p s {
+    font-weight: 700;
+    display: inline-block;
+    width: 6.875rem;
+  }
+  #campaign section.event .txt-box p s:after {
+    content: '';
+    display: block;
+    width: 0.1875rem;
+    height: 1.25rem;
+    background-color: #000;
+    position: absolute;
+    left: 0rem;
+    top: 0.1875rem;
+    right: auto;
+    bottom: auto;
+  }
+  #campaign section.event .txt-box p:nth-child(1),
+  #campaign section.event .txt-box p:nth-child(2) {
+    display: inline-block;
+  }
+  #campaign section.event .txt-box p:nth-child(2) {
+    margin-left: 2.8125rem;
+  }
+  #campaign section.event .gift {
+    position: absolute;
+    top: 36.25rem;
+  }
+  #campaign section.event .gift p {
+    font-size: 1.0625rem;
+    display: inline-block;
+    width: 8.125rem;
+    margin-right: 4.6875rem;
+    text-align: center;
+  }
+  #campaign section.event .gift p:nth-child(2) {
+    margin-right: 2.9375rem;
+  }
+  #campaign section.user-event {
+    border-bottom: 2px dotted #b6b6b6;
+    max-width: 59.125rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+  }
+  #campaign section.user-event .inner {
+    padding-bottom: 4.375rem;
+    position: relative;
+  }
+  #campaign section.user-event .inner h2 {
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/evt-tit.png');
+    background-size: contain;
+    width: 59.125rem;
+    height: 15.1875rem;
+  }
+  #campaign section.user-event .inner .msg-tit {
+    font-size: 1.5625rem;
+    font-weight: 300;
+    color: #666;
+    line-height: 2.0625rem;
+    margin-top: -5.8125rem;
+    display: none;
+  }
+  #campaign section.user-event .inner .msg-tit s {
+    font-weight: 700;
+    color: #000;
+  }
+  #campaign section.user-event .inner .toon {
+    border: 2px solid #eee;
+    display: inline-block;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    margin-top: 2.1875rem;
+    margin-right: 0rem;
+    margin-bottom: 2.1875rem;
+    margin-left: 0rem;
+  }
+  #campaign section.user-event .inner .toon .img {
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/event-toon.png');
+    background-size: contain;
+    width: 48.1875rem;
+    height: 42.125rem;
+  }
+  #campaign section.user-event .inner .toon .result {
+    font-size: 1.4375rem;
+    position: absolute;
+    left: 50%;
+    top: 38.125rem;
+    right: auto;
+    bottom: auto;
+    width: 14.9375rem;
+    height: 6.625rem;
+    margin-left: -17.0625rem;
+  }
+  #campaign section.user-event .inner .toon .result .click {
+    font-size: 0rem;
+    display: inline-block;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/click.png');
+    background-size: contain;
+    cursor: pointer;
+  }
+  #campaign section.user-event .inner .toon .result span {
+    font-size: 1.4375rem;
+    display: inline-block;
+    width: 12.5rem;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+  }
+  #campaign section.user-event .inner .toon .user-msg {
+    font-size: 0rem;
+    margin-top: 1.25rem;
+    margin-right: 0rem;
+    margin-bottom: 1.25rem;
+    margin-left: 0rem;
+    display: none;
+  }
+  #campaign section.user-event .inner .toon .user-msg input {
+    font-size: 1.4375rem;
+    color: #666;
+    width: 37.5rem;
+    height: 4.1875rem;
+    border: 2px solid #cfcfcf;
+    border-radius: 2.125rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.625rem;
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+  }
+  #campaign section.user-event .inner .toon .user-msg .confirm {
+    width: 9.625rem;
+    height: 4.3125rem;
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/evt-btn.png');
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  #campaign section.user-event .inner .toon .f-msg {
+    text-align: left;
+    padding-top: 1.25rem;
+    padding-right: 0rem;
+    padding-bottom: 0.625rem;
+    padding-left: 0rem;
+    box-sizing: border-box;
+    zoom: 1;
+    display: none;
+  }
+  #campaign section.user-event .inner .toon .f-msg:after {
+    content: '';
+    display: block;
+    clear: both;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  #campaign section.user-event .inner .toon .f-msg h3 {
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/f-msg.png');
+    background-size: contain;
+    width: 29.0625rem;
+    height: 2.625rem;
+    display: inline-block;
+  }
+  #campaign section.user-event .inner .toon .f-msg .user-txt {
+    font-size: 1.5rem;
+    color: #666;
+    float: right;
+    margin-top: 0.625rem;
+  }
+  #campaign section.user-event .inner .user-agree {
+    padding-top: 0rem;
+    padding-right: 4.6875rem;
+    padding-bottom: 0rem;
+    padding-left: 4.6875rem;
+    margin-bottom: 2.5rem;
+    box-sizing: border-box;
+    display: none;
+  }
+  #campaign section.user-event .inner .user-agree table {
+    table-layout: fixed;
+    text-align: left;
+  }
+  #campaign section.user-event .inner .user-agree table tr th {
+    padding-top: 1rem;
+  }
+  #campaign section.user-event .inner .user-agree table tr th {
+    font-size: 1.375rem;
+    font-weight: 700;
+    vertical-align: top;
+  }
+  #campaign section.user-event .inner .user-agree table tr td {
+    font-size: 0rem;
+    color: #666;
+  }
+  #campaign section.user-event .inner .user-agree table tr td input {
+    font-size: 1.25rem;
+  }
+  #campaign section.user-event .inner .user-agree table tr td input[type=text] {
+    width: 100%;
+    line-height: 2.5rem;
+    padding-left: 1.5625rem;
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6;
+    border-radius: 1.25rem;
+    background-color: #f7f7f7;
+    margin-top: 0.5rem;
+    margin-right: 0rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0rem;
+  }
+  #campaign section.user-event .inner .user-agree table tr td input[type=text].post-input {
+    width: 67%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3%;
+  }
+  #campaign section.user-event .inner .user-agree table tr td .post-btn {
+    font-size: 1.25rem;
+    width: 30%;
+    background-color: #552705;
+    line-height: 2.625rem;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 1.3125rem;
+  }
+  #campaign section.user-event .inner .user-agree table tr td .txt {
+    font-size: 1rem;
+    line-height: 1.125rem;
+    color: #000;
+    border: 1px solid #e6e6e6;
+    border-radius: 1.25rem;
+    background-color: #f7f7f7;
+    padding: 1.25rem;
+    margin-top: 1.5625rem;
+    margin-right: 0rem;
+    margin-bottom: 0.9375rem;
+    margin-left: 0rem;
+    height: 8.75rem;
+    overflow: auto;
+  }
+  #campaign section.user-event .inner .user-agree table tr td .txt b {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.9375rem;
+    display: block;
+  }
+  #campaign section.user-event .inner .user-agree table tr td label {
+    display: inline-block;
+    width: 8.125rem;
+  }
+  #campaign section.user-event .inner .user-agree table tr td label input[type=radio] + i {
+    width: 1.625rem;
+    height: 1.625rem;
+    background-repeat: no-repeat;
+    background-image: url('../img/m/chk.png');
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #campaign section.user-event .inner .user-agree table tr td label input[type=radio]:checked + i {
+    width: 1.625rem;
+    height: 1.625rem;
+    background-repeat: no-repeat;
+    background-image: url('../img/m/chked.png');
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #campaign section.user-event .inner .user-agree table tr td label s {
+    font-size: 1.25rem;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 2.4375rem;
+    margin-left: 0.5rem;
+    padding-top: 0.25rem;
+  }
+  #campaign section.user-event .inner .user-agree table tr td label + label {
+    width: 12.5rem;
+  }
+  #campaign section.user-event .inner .user-agree table tr.agree th {
+    padding-top: 1.875rem;
+  }
+  #campaign section.user-event .inner .btns {
+    font-size: 0rem;
+    margin-top: 0.625rem;
+  }
+  #campaign section.user-event .inner .btns .btn {
+    display: inline-block;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+    margin-top: 0rem;
+    margin-right: 0.875rem;
+    margin-bottom: 0rem;
+    margin-left: 0.875rem;
+  }
+  #campaign section.user-event .inner .btns .btn.save {
+    background-image: url('../img/pc/save.png');
+    width: 20.75rem;
+    height: 4.6875rem;
+  }
+  #campaign section.user-event .inner .btns .btn.edit {
+    background-image: url('../img/pc/edit.png');
+    width: 15.875rem;
+    height: 4.6875rem;
+  }
+  #campaign section.user-event .inner .btns .btn.submit {
+    background-image: url('../img/pc/submit.png');
+    width: 15.875rem;
+    height: 4.6875rem;
+  }
+  #campaign section.user-event .inner .btns .btn.save2 {
+    background-image: url('../img/pc/save2.png');
+    width: 19.0625rem;
+    height: 4.6875rem;
+  }
+  #campaign section.user-event .inner .btns .btn.share {
+    background-image: url('../img/pc/share.png');
+    width: 19rem;
+    height: 4.6875rem;
+  }
+  #campaign section.user-event.toon2 .inner .toon .img {
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/event-toon2.png');
+    background-size: contain;
+    width: 48.1875rem;
+    height: 42.125rem;
+  }
+  #campaign section.user-event.toon2 .inner .toon .result .click {
+    display: none;
+  }
+  #campaign section.user-event.toon2 .inner .toon .user-msg {
+    display: block;
+  }
+  #campaign section.user-event[data-step='1'] {
+    display: inline-block;
+  }
+  #campaign section.user-event[data-step='1'] .inner .msg-tit1 {
+    display: block;
+  }
+  #campaign section.user-event[data-step='1'] .inner .btns .save {
+    display: inline-block;
+  }
+  #campaign section.user-event[data-step='2'] {
+    display: inline-block;
+  }
+  #campaign section.user-event[data-step='2'] .inner h2 {
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/evt-tit2.png');
+    background-size: contain;
+    width: 59.125rem;
+    height: 15.1875rem;
+  }
+  #campaign section.user-event[data-step='2'] .inner .msg-tit2 {
+    display: block;
+  }
+  #campaign section.user-event[data-step='2'] .inner .toon .result .click {
+    display: none;
+  }
+  #campaign section.user-event[data-step='2'] .inner .toon .img {
+    background-image: url('../img/pc/event-toon2.png');
+  }
+  #campaign section.user-event[data-step='2'] .inner .toon .user-msg {
+    display: none;
+  }
+  #campaign section.user-event[data-step='2'] .inner .user-agree {
+    display: block;
+  }
+  #campaign section.user-event[data-step='2'] .inner .btns .edit,
+  #campaign section.user-event[data-step='2'] .inner .btns .submit {
+    display: inline-block;
+  }
+  #campaign section.user-event[data-step='3'] {
+    display: inline-block;
+  }
+  #campaign section.user-event[data-step='3'] .inner h2 {
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/evt-tit2.png');
+    background-size: contain;
+    width: 59.125rem;
+    height: 15.1875rem;
+  }
+  #campaign section.user-event[data-step='3'] .inner .msg-tit3 {
+    display: block;
+  }
+  #campaign section.user-event[data-step='3'] .inner .toon .result .click {
+    display: none;
+  }
+  #campaign section.user-event[data-step='3'] .inner .toon .img {
+    background-image: url('../img/pc/event-toon2.png');
+  }
+  #campaign section.user-event[data-step='3'] .inner .toon .user-msg {
+    display: none;
+  }
+  #campaign section.user-event[data-step='3'] .inner .toon .f-msg {
+    display: block;
+  }
+  #campaign section.user-event[data-step='3'] .inner .btns .save2,
+  #campaign section.user-event[data-step='3'] .inner .btns .share {
+    display: inline-block;
+  }
+  #campaign section.kit {
+    background-repeat: no-repeat;
+    background-image: url("../img/pc/event.png");
+    background-size: contain;
+    background-size: cover;
+    height: 52rem;
+    position: relative;
+    max-width: 59.125rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #campaign section.kit .tit {
+    font-size: 1.5625rem;
+    line-height: 2.0625rem;
+    font-weight: 300;
+    padding-top: 8.9375rem;
+    box-sizing: border-box;
+  }
+  #campaign section.kit .tit s {
+    font-weight: 700;
+    color: #e30613;
+  }
+  #campaign section.kit .stuff {
+    margin-top: 28.25rem;
+    width: 52.125rem;
+    border: 2px solid #e6e6e6;
+    padding-top: 1.125rem;
+    padding-right: 0rem;
+    padding-bottom: 1.125rem;
+    padding-left: 0rem;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+  #campaign section.kit .stuff p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 300;
+    text-align: center;
+  }
+  #campaign section.kit .stuff p s {
+    font-weight: 700;
+    display: block;
+  }
+  #campaign section.event-bonus {
+    background: url("../img/pc/bonus.png") top center no-repeat;
+    background-size: cover;
+    height: 46.3125rem;
+    position: relative;
+  }
+  #campaign section.event-bonus .inner {
+    position: absolute;
+    left: 50%;
+    top: 16.625rem;
+    right: auto;
+    bottom: auto;
+    margin-left: -29.625rem;
+  }
+  #campaign section.event-bonus .inner p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 300;
+    text-align: left;
+  }
+  #campaign section.event-bonus .inner .txt s {
+    color: #e30613;
+    font-weight: 700;
+  }
+  #campaign section.event-bonus .inner span {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin-top: 0.375rem;
+    color: #666;
+    display: block;
+    text-align: left;
+  }
+  #campaign section.event-bonus .inner .txt-box {
+    margin-top: 1.25rem;
+  }
+  #campaign section.event-bonus .inner .txt-box p {
+    position: relative;
+    margin-bottom: 0.5625rem;
+  }
+  #campaign section.event-bonus .inner .txt-box p s {
+    font-weight: 700;
+    display: inline-block;
+    width: 7.1875rem;
+    padding-left: 0.9375rem;
+    box-sizing: border-box;
+  }
+  #campaign section.event-bonus .inner .txt-box p s:after {
+    content: '';
+    display: block;
+    width: 0.1875rem;
+    height: 1.25rem;
+    background-color: #000;
+    position: absolute;
+    left: 0rem;
+    top: 0.1875rem;
+    right: auto;
+    bottom: auto;
+  }
+  #campaign section.event-bonus .inner .txt-box p:nth-child(1),
+  #campaign section.event-bonus .inner .txt-box p:nth-child(2) {
+    display: inline-block;
+  }
+  #campaign section.event-bonus .inner .txt-box p:nth-child(2) {
+    margin-left: 2.1875rem;
+  }
+  #campaign section.event-bonus .inner .gift {
+    margin-top: 7.8125rem;
+    text-align: left;
+  }
+  #campaign section.event-bonus .inner .gift p {
+    font-size: 1.125rem;
+    display: inline-block;
+    width: 8.125rem;
+    text-align: center;
+  }
+  #campaign section.event-bonus .inner .gift p:nth-child(1) {
+    margin-right: 4.6875rem;
+  }
+  #campaign section.event-bonus .inner .gift p:nth-child(2) {
+    margin-right: 3.125rem;
+  }
+  #campaign section.event-bonus .inner .gift p:nth-child(3) {
+    margin-right: 0rem;
+  }
+  #campaign section.buy {
+    background: url("../img/pc/buy.png") top center no-repeat;
+    background-size: cover;
+    height: 29.5rem;
+    position: relative;
+  }
+  #campaign section.buy .btns {
+    font-size: 0rem;
+    position: absolute;
+    left: 50%;
+    top: 9.5625rem;
+    right: auto;
+    bottom: auto;
+    margin-left: 2.9375rem;
+  }
+  #campaign section.buy .btns a {
+    display: block;
+    width: 19.3125rem;
+    height: 4.25rem;
+    line-height: 4.25rem;
+    margin-bottom: 1.3125rem;
+  }
+  #campaign section.reason {
+    background: url("../img/pc/reason.png") top center no-repeat;
+    background-size: cover;
+    height: 25.5625rem;
+    position: relative;
+  }
+  #campaign section.reason .reason-list {
+    position: absolute;
+    left: 50%;
+    top: 10.3125rem;
+    right: auto;
+    bottom: auto;
+    margin-left: -22.75rem;
+  }
+  #campaign section.reason .reason-list p {
+    font-size: 2.1875rem;
+    line-height: 3rem;
+    font-weight: 300;
+    margin-bottom: 0.6875rem;
+    text-align: left;
+  }
+  #campaign section.reason .reason-list p s {
+    font-weight: 700;
+  }
+  #campaign section.gallery {
+    padding-top: 4.6875rem;
+    padding-right: 0rem;
+    padding-bottom: 4.6875rem;
+    padding-left: 0rem;
+    box-sizing: border-box;
+    position: relative;
+  }
+  #campaign section.gallery h2 {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url("../img/pc/gallery.png");
+    background-size: contain;
+    width: 23.1875rem;
+    height: 2.4375rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #campaign section.gallery p {
+    font-size: 1.5625rem;
+    line-height: 2.125rem;
+    font-weight: 300;
+    margin-top: 1.375rem;
+    margin-right: 0rem;
+    margin-bottom: 2.5rem;
+    margin-left: 0rem;
+  }
+  #campaign section.gallery p s {
+    color: #e30613;
+    font-weight: 700;
+  }
+  #campaign section.gallery .swiper-container {
+    width: 58.9375rem;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  #campaign section.gallery .swiper-container .swiper-slide {
+    width: 18.9375rem;
+    height: 16.625rem;
+    position: relative;
+  }
+  #campaign section.gallery .swiper-container .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+  #campaign section.gallery .swiper-container .swiper-slide .msg-box {
+    position: absolute;
+    left: 50%;
+    top: 0.5rem;
+    right: auto;
+    bottom: auto;
+    width: 10rem;
+    height: 3.75rem;
+    margin-left: -3.5625rem;
+  }
+  #campaign section.gallery .swiper-container .swiper-slide .msg-box .gallery-msg {
+    font-size: 1.125rem;
+    line-height: 1.4375rem;
+    display: inline-block;
+    color: #a0a0a0;
+    font-weight: 700;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+  }
+  #campaign section.gallery .swiper-btn {
+    width: 1.6875rem;
+    height: 2.625rem;
+    position: absolute;
+    left: 50%;
+    top: 19.25rem;
+    right: auto;
+    bottom: auto;
+    margin-top: 0rem;
+  }
+  #campaign section.gallery .swiper-btn:after {
+    display: none;
+  }
+  #campaign section.gallery .swiper-btn.swiper-button-prev {
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/prev.png');
+    background-size: contain;
+    margin-left: -34.375rem;
+  }
+  #campaign section.gallery .swiper-btn.swiper-button-next {
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/next.png');
+    background-size: contain;
+    margin-left: 32.125rem;
+  }
+}
+/*# sourceMappingURL=style-pc-large.css.map */
