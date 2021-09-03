@@ -12,7 +12,7 @@
     text-align: center;
     letter-spacing: -0.05em;
     overflow: hidden;
-    margin-top: -7rem;
+    margin-top: -9.5rem;
   }
   #campaign input,
   #campaign select,
@@ -36,7 +36,7 @@
   #campaign section.top {
     background: url("../img/pc/top-visual.png") top center no-repeat;
     background-size: cover;
-    height: 51.3rem;
+    height: 45.8rem;
     box-sizing: border-box;
     position: relative;
   }
@@ -799,7 +799,7 @@
     margin-left: 1.75rem;
   }
   #campaign section.event-bonus .inner .gift {
-    margin-top: 6.25rem;
+    margin-top: 6.75rem;
     text-align: left;
   }
   #campaign section.event-bonus .inner .gift p {
@@ -809,12 +809,13 @@
     text-align: center;
   }
   #campaign section.event-bonus .inner .gift p:nth-child(1) {
-    margin-right: 3.75rem;
+    margin-right: 3.8rem;
   }
   #campaign section.event-bonus .inner .gift p:nth-child(2) {
-    margin-right: 2.5rem;
+    margin-right: 0.75rem;
   }
   #campaign section.event-bonus .inner .gift p:nth-child(3) {
+    width: 10.5rem;
     margin-right: 0rem;
   }
   #campaign section.buy {

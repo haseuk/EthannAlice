@@ -3,7 +3,7 @@
 *--------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 1600px) {
   #campaign {
-    max-width: 120rem;
+    max-width: 160rem;
     min-width: 59.375rem;
     margin-left: auto;
     margin-right: auto;
@@ -12,7 +12,7 @@
     text-align: center;
     letter-spacing: -0.05em;
     overflow: hidden;
-    margin-top: -8.75rem;
+    margin-top: -11.875rem;
   }
   #campaign input,
   #campaign select,
@@ -34,9 +34,9 @@
     display: inline-block;
   }
   #campaign section.top {
-    background: url("../img/pc/top-visual.png") top center no-repeat;
+    background: url("../img/pc/top-visual-2560.png") top center no-repeat;
     background-size: cover;
-    height: 64.125rem;
+    height: 57.25rem;
     box-sizing: border-box;
     position: relative;
   }
@@ -63,7 +63,7 @@
     text-shadow: none;
   }
   #campaign section.morning {
-    background: url("../img/pc/morning1.png") top center no-repeat;
+    background: url("../img/pc/morning1-2560.png") top center no-repeat;
     background-size: cover;
     height: 67.6875rem;
     margin-bottom: 2.5rem;
@@ -733,9 +733,9 @@
     display: block;
   }
   #campaign section.event-bonus {
-    background: url("../img/pc/bonus.png") top center no-repeat;
+    background: url("../img/pc/bonus-2560.png") top center no-repeat;
     background-size: cover;
-    height: 46.3125rem;
+    height: 46.0625rem;
     position: relative;
   }
   #campaign section.event-bonus .inner {
@@ -799,7 +799,7 @@
     margin-left: 2.1875rem;
   }
   #campaign section.event-bonus .inner .gift {
-    margin-top: 7.8125rem;
+    margin-top: 8.125rem;
     text-align: left;
   }
   #campaign section.event-bonus .inner .gift p {
@@ -809,16 +809,17 @@
     text-align: center;
   }
   #campaign section.event-bonus .inner .gift p:nth-child(1) {
-    margin-right: 4.6875rem;
+    margin-right: 4.75rem;
   }
   #campaign section.event-bonus .inner .gift p:nth-child(2) {
-    margin-right: 3.125rem;
+    margin-right: 0.9375rem;
   }
   #campaign section.event-bonus .inner .gift p:nth-child(3) {
+    width: 13.125rem;
     margin-right: 0rem;
   }
   #campaign section.buy {
-    background: url("../img/pc/buy.png") top center no-repeat;
+    background: url("../img/pc/buy-2560.png") top center no-repeat;
     background-size: cover;
     height: 29.5rem;
     position: relative;
@@ -840,9 +841,9 @@
     margin-bottom: 1.3125rem;
   }
   #campaign section.reason {
-    background: url("../img/pc/reason.png") top center no-repeat;
+    background: url("../img/pc/reason-2560.png") top center no-repeat;
     background-size: cover;
-    height: 25.5625rem;
+    height: 25.5rem;
     position: relative;
   }
   #campaign section.reason .reason-list {
