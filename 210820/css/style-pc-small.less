@@ -33,8 +33,8 @@
 
       .pic { .wh(833,430); .mt(39); .rel; .ib;
         &:after { .cnt; .abs; .lb(50%,-12); transform:translateX(-50%); .contain('../img/pc/shadow.png'); .wh(902,30); }
-        p { .fs(28); color:#fff; .tl; .bold; .lh(62); .bgc(#000); .ib; .abs; .lt; .p(0,19); .-box; z-index: 2;
-          &:after { .cnt; .abs; .rt(-62,0); .ib; border-top: 62px solid #000; border-right: 62px solid transparent;}
+        p { .fs(28); color:#fff; .tl; .bold; .h(62); .lh(62); .bgc(#000); .ib; .abs; .lt; .p(0,19); .-box; z-index: 2;
+          &:after { .cnt; .abs; .rt(-44,0); .ib; .contain('../img/pc/edge.png'); .wh(46,62); }
         }
         img { .ib; .h(430); .abs; .lt; z-index: 1; }
       }

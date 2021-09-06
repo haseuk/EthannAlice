@@ -146,6 +146,7 @@
     color: #fff;
     text-align: left;
     font-weight: 700;
+    height: 3.875rem;
     line-height: 3.875rem;
     background-color: #000;
     display: inline-block;
@@ -165,13 +166,16 @@
     content: '';
     display: block;
     position: absolute;
-    right: -3.875rem;
+    right: -2.75rem;
     top: 0rem;
     left: auto;
     bottom: auto;
     display: inline-block;
-    border-top: 62px solid #000;
-    border-right: 62px solid transparent;
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/edge.png');
+    background-size: contain;
+    width: 2.875rem;
+    height: 3.875rem;
   }
   #campaign section.morning .pic img {
     display: inline-block;
