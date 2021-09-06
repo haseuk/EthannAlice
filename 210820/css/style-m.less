@@ -55,20 +55,21 @@
         .msg-tit { .fs(28); .light; color:#666; .lh(40); .mt(-116); .hide;
           s { .bold; color:#000; }
         }
-        .toon { .-a(#eee,2px); .ib; .p(10); .-box; .m(37,0,20);
+        .toon { .-a(#eee,2px); .ib; .p(10); .-box; .m(37,0,20); .rel;
           .img { .contain('../img/m/event-toon.png'); .wh(648,566); }
-          .result { .fs(23); .abs; .lt(50%,560); .wh(200,90); .ml(-228);
+          .result { .fs(23); .abs; .lt(50%,300); .wh(200,90); .ml(-228);
             .click { .fs(0); .f; .block; .contain('../img/m/click.png'); .pointer; z-index: 1; }
-            span { .fs(23); .ib; .w(200); .abs; .lt(50%,45%); transform: translate(-50%,-50%); }
+            span { .fs(23); .ib; .w(200); .abs; .medium; .lt(50%,45%); transform: translate(-50%,-50%); }
           }
           .user-msg { .fs(0); .m(15,0); .hide;
             input { .fs(24); color:#666; .wh(500,56); .-a(#cfcfcf); .br(28); .ib; .vam; .mr(8); .pl(24); .-box; }
             .confirm { .wh(129,58); .contain('../img/m/evt-btn.png'); .ib; .vam; .pointer; }
           }
-          .f-msg { .tl; .p(20); .-box; .clear; .hide;
-            h3 { .contain('../img/m/f-msg.png'); .wh(387,36); .ib; }
-            .user-txt { .fs(26); color:#666; .fr; .mt(10); }
-          }
+          //.f-msg { .tl; .p(20); .-box; .clear; .hide;
+          //  h3 { .contain('../img/m/f-msg.png'); .wh(387,36); .ib; }
+          //  .user-txt { .fs(26); color:#666; .fr; .mt(10); }
+          //}
+          .user-name { .fs(24); color:#666; .abs; .rb(130,18); .medium; z-index: 1; .tr; .hide; }
         }
         .user-agree { .p(0,35); .-box; .mb(40); .-box; .hide;
           table { table-layout: fixed; .tl;
@@ -146,13 +147,13 @@
         .inner {
           h2 { .contain('../img/m/evt-tit2.png'); .wh(740,257); }
           .msg-tit3 { .block; }
-          .toon {
+          .toon { .pb(0);
             .result {
               .click { .hide; }
             }
-            .img { .bg('../img/m/event-toon2.png'); }
+            .img { .bg('../img/m/event-toon3.png'); .wh(648,647); }
             .user-msg { .hide; }
-            .f-msg { .block; }
+            .user-name { .block; }
           }
           .btns {
             .save2, .share { .ib; }

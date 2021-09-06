@@ -358,7 +358,7 @@
     font-size: 1.4375rem;
     position: absolute;
     left: 50%;
-    top: 38.125rem;
+    top: 22.1875rem;
     right: auto;
     bottom: auto;
     width: 14.9375rem;
@@ -385,6 +385,7 @@
     display: inline-block;
     width: 12.5rem;
     position: absolute;
+    font-weight: 500;
     left: 50%;
     top: 45%;
     right: auto;
@@ -422,37 +423,18 @@
     vertical-align: middle;
     cursor: pointer;
   }
-  #campaign section.user-event .inner .toon .f-msg {
-    text-align: left;
-    padding-top: 1.25rem;
-    padding-right: 0rem;
-    padding-bottom: 0.625rem;
-    padding-left: 0rem;
-    box-sizing: border-box;
-    zoom: 1;
-    display: none;
-  }
-  #campaign section.user-event .inner .toon .f-msg:after {
-    content: '';
-    display: block;
-    clear: both;
-    font-size: 0;
-    height: 0;
-    visibility: hidden;
-  }
-  #campaign section.user-event .inner .toon .f-msg h3 {
-    background-repeat: no-repeat;
-    background-image: url('../img/pc/f-msg.png');
-    background-size: contain;
-    width: 29.0625rem;
-    height: 2.625rem;
-    display: inline-block;
-  }
-  #campaign section.user-event .inner .toon .f-msg .user-txt {
-    font-size: 1.5rem;
+  #campaign section.user-event .inner .toon .user-name {
+    font-size: 1.625rem;
     color: #666;
-    float: right;
-    margin-top: 0.625rem;
+    position: absolute;
+    right: 8.125rem;
+    bottom: 1.5rem;
+    left: auto;
+    top: auto;
+    font-weight: 500;
+    z-index: 1;
+    text-align: right;
+    display: none;
   }
   #campaign section.user-event .inner .user-agree {
     padding-top: 0rem;
@@ -673,16 +655,21 @@
   #campaign section.user-event[data-step='3'] .inner .msg-tit3 {
     display: block;
   }
+  #campaign section.user-event[data-step='3'] .inner .toon {
+    padding-bottom: 0rem;
+  }
   #campaign section.user-event[data-step='3'] .inner .toon .result .click {
     display: none;
   }
   #campaign section.user-event[data-step='3'] .inner .toon .img {
-    background-image: url('../img/pc/event-toon2.png');
+    background-image: url('../img/pc/event-toon3.png');
+    width: 48.1875rem;
+    height: 48.3125rem;
   }
   #campaign section.user-event[data-step='3'] .inner .toon .user-msg {
     display: none;
   }
-  #campaign section.user-event[data-step='3'] .inner .toon .f-msg {
+  #campaign section.user-event[data-step='3'] .inner .toon .user-name {
     display: block;
   }
   #campaign section.user-event[data-step='3'] .inner .btns .save2,

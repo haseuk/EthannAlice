@@ -77,18 +77,19 @@
         .toon { .-a(#eee,2px); .ib; .p(12); .-box; .m(35,0);
           .img { .contain('../img/pc/event-toon.png'); .wh(771,674); }
 
-          .result { .fs(23); .abs; .lt(50%,610); .wh(239,106); .ml(-273);
+          .result { .fs(23); .abs; .lt(50%,355); .wh(239,106); .ml(-273);
             .click { .fs(0); .ib; .abs; .lt; .f; .contain('../img/pc/click.png'); .pointer; }
-            span { .fs(23); .ib; .w(200); .abs; .lt(50%,45%); transform: translate(-50%,-50%); }
+            span { .fs(23); .ib; .w(200); .abs; .medium; .lt(50%,45%); transform: translate(-50%,-50%); }
           }
           .user-msg { .fs(0); .m(20,0); .hide;
             input { .fs(23); color:#666; .wh(600,67); .-a(#cfcfcf,2px); .-box; .br(34); .ib; .vam; .mr(10); .pl(24); .-box; }
             .confirm { .wh(154,69); .contain('../img/pc/evt-btn.png'); .ib; .vam; .pointer; }
           }
-          .f-msg { .tl; .p(20,0,10); .-box; .clear; .hide;
-            h3 { .contain('../img/pc/f-msg.png'); .wh(465,42); .ib; }
-            .user-txt { .fs(24); color:#666; .fr; .mt(10); }
-          }
+          //.f-msg { .tl; .p(20,0,10); .-box; .clear; .hide;
+          //  h3 { .contain('../img/pc/f-msg.png'); .wh(465,42); .ib; }
+          //  .user-txt { .fs(24); color:#666; .fr; .mt(10); }
+          //}
+          .user-name { .fs(26); color:#666; .abs; .rb(130,24); .medium; z-index: 1; .tr; .hide; }
         }
         .user-agree { .p(0,75); .-box; .mb(40); .-box; .hide;
           table { table-layout: fixed; .tl;
@@ -167,13 +168,13 @@
         .inner {
           h2 { .contain('../img/pc/evt-tit2.png'); .wh(946,243); }
           .msg-tit3 { .block; }
-          .toon {
+          .toon { .pb(0);
             .result {
               .click { .hide; }
             }
-            .img { .bg('../img/pc/event-toon2.png'); }
+            .img { .bg('../img/pc/event-toon3.png'); .wh(771,773); }
             .user-msg { .hide; }
-            .f-msg { .block; }
+            .user-name { .block; }
           }
           .btns {
             .save2, .share { .ib; }
