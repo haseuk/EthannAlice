@@ -13,6 +13,7 @@
     letter-spacing: -0.05em;
     overflow: hidden;
     margin-top: -9.5rem;
+    position: relative;
   }
   #campaign input,
   #campaign select,
@@ -66,7 +67,7 @@
     background: url("../img/pc/morning1.png") top center no-repeat;
     background-size: cover;
     height: 54.15rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4.5rem;
     position: relative;
   }
   #campaign section.morning .date {
@@ -76,7 +77,7 @@
     top: 17.4rem;
     right: auto;
     bottom: auto;
-    margin-left: -13.75rem;
+    margin-left: -19.45rem;
   }
   #campaign section.morning .date p {
     font-size: 1.5rem;
@@ -87,7 +88,7 @@
   }
   #campaign section.morning .date p s {
     font-weight: 700;
-    width: 8.9rem;
+    width: 5.9rem;
     height: 2.1rem;
     line-height: 2.1rem;
     margin-right: 0.85rem;
@@ -101,7 +102,7 @@
   #campaign section.morning .btn {
     font-size: 0rem;
     display: inline-block;
-    margin-top: 23.4rem;
+    margin-top: 25.5rem;
     width: 12.65rem;
     height: 2.65rem;
     background-repeat: no-repeat;
@@ -348,9 +349,8 @@
     box-sizing: border-box;
     margin-top: 1.75rem;
     margin-right: 0rem;
-    margin-bottom: 1.75rem;
+    margin-bottom: 0.5rem;
     margin-left: 0rem;
-    position: relative;
   }
   #campaign section.user-event .inner .toon .img {
     background-repeat: no-repeat;
@@ -363,7 +363,7 @@
     font-size: 1.15rem;
     position: absolute;
     left: 50%;
-    top: 17.75rem;
+    top: 30.55rem;
     right: auto;
     bottom: auto;
     width: 11.95rem;
@@ -389,13 +389,27 @@
     font-size: 1.15rem;
     display: inline-block;
     width: 10rem;
-    font-weight: 500;
     position: absolute;
+    font-weight: 500;
     left: 50%;
     top: 45%;
     right: auto;
     bottom: auto;
     transform: translate(-50%, -50%);
+  }
+  #campaign section.user-event .inner .toon .result.bgc-r:after {
+    content: '';
+    display: block;
+    background: #e30613;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    border-radius: 50% 50%;
+    position: absolute;
+    left: 0rem;
+    top: -0.35rem;
+    right: auto;
+    bottom: auto;
   }
   #campaign section.user-event .inner .toon .user-msg {
     font-size: 0rem;
@@ -432,14 +446,23 @@
     font-size: 1.3rem;
     color: #666;
     position: absolute;
-    right: 6.5rem;
-    bottom: 1.2rem;
+    right: 10rem;
+    bottom: 12.6rem;
     left: auto;
     top: auto;
     font-weight: 500;
     z-index: 1;
     text-align: right;
     display: none;
+  }
+  #campaign section.user-event .inner .toon-notice {
+    font-size: 1.15rem;
+    margin-bottom: 1.75rem;
+    color: #666;
+    font-weight: 300;
+    text-align: left;
+    padding-left: 3.7rem;
+    box-sizing: border-box;
   }
   #campaign section.user-event .inner .user-agree {
     padding-top: 0rem;
@@ -592,7 +615,7 @@
     height: 3.75rem;
   }
   #campaign section.user-event .inner .btns .btn.share {
-    background-image: url('../img/pc/share.png');
+    background-image: url('../img/pc/bonus_btn.png');
     width: 15.2rem;
     height: 3.75rem;
   }
@@ -727,7 +750,7 @@
   #campaign section.event-bonus {
     background: url("../img/pc/bonus.png") top center no-repeat;
     background-size: cover;
-    height: 37.05rem;
+    height: 36.7rem;
     position: relative;
   }
   #campaign section.event-bonus .inner {
@@ -743,6 +766,9 @@
     line-height: 1.4rem;
     font-weight: 300;
     text-align: left;
+  }
+  #campaign section.event-bonus .inner .txt {
+    font-size: 1rem;
   }
   #campaign section.event-bonus .inner .txt s {
     color: #e30613;
@@ -783,15 +809,8 @@
     right: auto;
     bottom: auto;
   }
-  #campaign section.event-bonus .inner .txt-box p:nth-child(1),
-  #campaign section.event-bonus .inner .txt-box p:nth-child(2) {
-    display: inline-block;
-  }
-  #campaign section.event-bonus .inner .txt-box p:nth-child(2) {
-    margin-left: 1.75rem;
-  }
   #campaign section.event-bonus .inner .gift {
-    margin-top: 6.75rem;
+    margin-top: 5.5rem;
     text-align: left;
   }
   #campaign section.event-bonus .inner .gift p {
@@ -801,7 +820,7 @@
     text-align: center;
   }
   #campaign section.event-bonus .inner .gift p:nth-child(1) {
-    margin-right: 3.8rem;
+    margin-right: 3.75rem;
   }
   #campaign section.event-bonus .inner .gift p:nth-child(2) {
     margin-right: 0.75rem;
@@ -809,6 +828,16 @@
   #campaign section.event-bonus .inner .gift p:nth-child(3) {
     width: 10.5rem;
     margin-right: 0rem;
+  }
+  #campaign section.event-bonus .inner .gift-notice {
+    font-size: 0.8rem;
+    color: #666;
+    width: 28rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin-top: 0.75rem;
+    border: 1px solid #d0d0d0;
+    text-align: center;
   }
   #campaign section.buy {
     background: url("../img/pc/buy.png") top center no-repeat;
@@ -952,6 +981,28 @@
     background-image: url('../img/pc/next.png');
     background-size: contain;
     margin-left: 25.7rem;
+  }
+  #campaign .floating-btn {
+    width: 5.8rem;
+    height: 6.05rem;
+    background-image: url('../img/pc/floating.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: fixed;
+    left: 50%;
+    bottom: 7.5rem;
+    right: auto;
+    top: auto;
+    margin-left: 29.25rem;
+    z-index: 10;
+  }
+  #campaign #buy {
+    position: absolute;
+    left: 0rem;
+    bottom: 60rem;
+    right: auto;
+    top: auto;
   }
 }
 /*# sourceMappingURL=style-pc-small.css.map */

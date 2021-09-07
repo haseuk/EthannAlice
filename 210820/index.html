@@ -22,12 +22,8 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/style-m.css">
-
-  <!-- ******* 9.1 수정 ****** -->
   <link rel="stylesheet" href="css/style-pc-small.css">
   <link rel="stylesheet" href="css/style-pc-large.css">
-  <!-- ******* 끝 ****** -->
-
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 </head>
@@ -50,50 +46,42 @@
     </p>
   </section>
   <section class="morning">
-
-  <!-- *******9.1 수정 cheer 삭제 ****** -->
-
     <div class="date">
-      <p><s>참여 기간</s> 2021. 10. 1(금) ~ 10. 21(목)</p><!-- *******9.1 텍스트 수정 ****** -->
-      <p><s>당첨자 발표</s> 1차 2021. 10. 11(월) / 2차 10.25(월)</p>
+      <p><s>1차</s> 2021. 10. 1(금) ~ 10. 1(목) / 10.11(월) 발표</p>
+      <p><s>2차</s> 2021. 10. 8(금) ~ 10. 21(목) / 10.25(월) 발표</p>
+      <p><s>발표</s> 200명, 누텔라 인스타그램(@Nutella_korea)<br class="mo"> 프로필 링크</p>
     </div>
-
-  <!-- *******9.1 수정 ****** -->
     <a href="https://www.instagram.com/nutella_korea/" target="_blank" class="btn">당첨자 확인하기</a>
     <div class="notice">
+      <!--***** 9.7 수정 *****-->
       <p>
-        *당첨자는 총 2회에 나누어 선발하며, 당첨된 분들께는<br class="mo"> 모닝 KIT를 보내드립니다.<br>
-        **당첨자는 누텔라 공식 인스타그램(@Nutella_korea)에서<br class="mo"> 확인하실 수 있습니다.
+        - 해당 이벤트는 중복 참여가 가능합니다만 중복 당첨되지 않습니다.<br>
+        - 당첨자는 2회에 걸쳐 총 200명을 선발하며 선발 인원은 유동적입니다.
       </p>
-  <!--  ****** 끝 ****** -->
+      <!--***** 끝 *****-->
     </div>
-
     <div class="pic">
-      <p>누텔라와 함께하는 행복한 아침편</p> <!-- ******* 9.1 텍스트 수정 ****** -->
+      <p>누텔라와 함께하는 행복한 아침편</p>
       <img src="img/m/pic.png" alt="">
     </div>
   </section>
 
   <section class="rule">
     <div class="rule-box">
-      <p><s>꼬모소이 컷툰</s><br> 확인</p> <!-- ******* 9.1 텍스트 수정 ****** -->
-      <p><s>엄마의 응원</s><br>입력</p> <!-- ******* 9.1 텍스트 수정 ****** -->
+      <p><s>꼬모소이 컷툰</s><br> 확인</p>
+      <p><s>엄마의 응원</s><br>입력</p>
       <p>이벤트<br><s>참여 정보 제출</s></p>
       <p><s>컷툰 다운로드</s> 및<br><s>보너스 이벤트</s><br class="mo"> 참여</p>
     </div>
     <a href="#user-event" class="attend btn" onclick="eventGo(1);">참여하기</a>
   </section>
-
-
-  <div id="user-event"></div><!-- *******9.1 수정 ****** -->
-  <section class="user-event" data-step><!-- *******9.1 수정 ****** -->
-
-
+  <div id="user-event"></div>
+  <section class="user-event" data-step>
     <div class="inner">
       <h2></h2>
       <p class="msg-tit msg-tit1">
         아래의 <s>빈칸을 클릭</s>하여 우리 아이가 아침을 행복하게<br class="mo">
-        시작할 수 있도록<br class="pc"> 가족의 <s>응원 문구</s>를 적어 주세요!
+        시작할 수 있도록<br class="pc"> 엄마의 <s>응원 문구</s>를 적어 주세요!
       </p>
       <p class="msg-tit msg-tit2">
         완성된 그림을 확인해 주세요.<br>
@@ -107,19 +95,19 @@
         <div class="img"></div>
         <div class="result">
           <a class="click">click</a>
-          <span></span><!-- ******* 여기에 대사가 입력됩니다.****** -->
+          <span></span>
         </div>
-
-        <!--대사를 입력해 주세요-->
         <div class="user-msg">
           <input type="text" class="input-msg" placeholder="대사를 입력해 주세요" onkeyup="enterMsg();">
           <a class="confirm">확인</a>
         </div>
-        <div class="user-name">홍길동</div><!-- ******* 9.6 수정 (.f-msg 삭제) ****** -->
+        <div class="user-name">홍길동</div>
       </div>
 
+      <!--***** 9.7 추가 *****-->
+      <p class="toon-notice">※ 참여자가 작성한 응원 문구는 본 페이지 및 누텔라 인스타그램에<br class="mo"> 노출될 수 있습니다. </p>
+      <!--***** 끝 ****-->
 
-      <!--정보입력-->
       <div class="user-agree">
         <form name="formValue">
           <table width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -144,9 +132,13 @@
               <td>
                 <input type="text" name="zip" placeholder="우편 번호를 검색하세요." class="post-input">
                 <a class="post-btn" onclick="openZipSearch()">우편번호 검색</a>
-                <input type="text" name="addr1" placeholder="주소를 정확하게 입력하세요." readonly>
-                <input type="text" name="addr2" placeholder="상세주소를 입력하세요.">
+
+                <!--***** 9.7 수정 *****-->
+                <input type="text" name="addr1" readonly>
+                <input type="text" name="addr2" placeholder="주소 제출 후에는 수정이 어려우니 정확하게 기입해 주세요.">
+                <!--***** 끝 *****-->
               </td>
+
             </tr>
             <tr class="agree">
               <th>개인정보수집<br class="mo">동의</th>
@@ -155,7 +147,7 @@
                   <b>* 개인정보 수집 및 이용 동의</b>
                   개인정보를 수집하는 자 : ㈜페레로 아시아 리미티드 한국지점<br>
                   개인 정보 수집 및 이용 목적 : 이벤트 참여 확인 및 경품 제공<br>
-                  수집하는 개인정보의 항목 : 이름, 연락처<br>
+                  수집항목 : 성함 휴대폰 번호, 주소<br><!--***** 9.7 수정 *****-->
                   개인 정보 보유 및 이용 기간 :<br>
                   이용자의 개인정보는 3개월 동안 보유 및 이용하며,<br>
                   개인정보의 수집 및 이용목적이 달성되면 지체 없이 파기함<br>
@@ -204,26 +196,22 @@
           </table>
         </form>
       </div>
-
       <div class="btns">
         <a class="save btn" onclick="eventGo(2)">저장하기</a>
         <a class="edit btn" onclick="eventGo(1)">수정하기</a>
         <a class="submit btn" onclick="eventGo(3)">제출하기</a>
         <a class="save2 btn">저장하기</a>
-        <a class="share btn">공유하기</a>
+        <a href="#event-bonus" class="share btn">공유하기</a><!--***** 9.7 수정 *****-->
       </div>
     </div>
   </section>
-
   <section class="kit">
-
-    <!-- ******* 9.1 텍스트 수정 ****** -->
+    <!--***** 9.7 수정 *****-->
     <p class="tit">
-      이벤트 참여 후 컷툰 이미지를 SNS에 올리면<br>
+      나만의 컷툰을 완성해 주신 분들 중<br>
       추첨을 통해 <s>한정판 모닝 KIT</s>를 드립니다!
     </p>
-    <!-- ******* 끝 ****** -->
-
+    <!--***** 끝 *****-->
     <div class="stuff">
       <p>
         <s>구성품</s>
@@ -233,37 +221,34 @@
     </div>
   </section>
 
-  <!-- *******9.1 수정 ****** -->
+  <!--***** 9.7 수정 *****-->
+  <div id="event-bonus"></div>
+
   <section class="event-bonus">
     <div class="inner">
       <p class="txt">
-        필수 해시태그와 함께 선물 받으신<br class="mo"> 특별 모닝 KIT 또는<br class="pc">
-        컷툰을<br class="mo"> <s>SNS(인스타그램, 네이버 블로그)</s>에<br class="mo"> 자랑해 주세요!
+        직접 만든 컷툰 또는<br class="mo"> 누텔라 모닝 KIT를<br> <s>SNS에 자랑하면 추가 선물</s>을<br class="mo"> 드립니다!
       </p>
       <span>* 당첨자는 누텔라 공식 인스타그램<br class="mo">(@Nutella_korea)에서 확인하실 수 있습니다</span>
       <div class="txt-box">
         <p><s>참여 기간</s>2021.10.1(금) ~ 11.8(월)</p>
-        <p><s>당첨자 발표</s>2021.11.15(월)</p>
+        <p><s>당첨자 발표</s>2021.11.15(월) / 누텔라 인스타그램(@Nutella_korea)</p>
         <p><s>필수 태그</s>#누텔라 &nbsp; #행복한아침을열어줘 &nbsp; #누텔라굿모닝</p>
-        <p><s>경품</s>가족이 함께 즐길 수 있는 5성급 호텔상품권을 포함한<br> <s></s>푸짐한 선물을 드립니다.<br>
-          <s></s>* 5만원을 초과하는 상품의 제세공과금은 고객 부담입니다.
-        </p>
+        <p><s>경품</s></p>
       </div>
       <div class="gift">
         <p>호텔 상품권</p>
         <p>SMEG 토스터기</p>
         <p>누텔라앤고 멀티팩(6개입)</p>
       </div>
+      <p class="gift-notice">※ 5만원을 초과하는 경품의 제세공과금은 고객 부담입니다.</p>
     </div>
   </section>
-  <!-- ******* 끝 ****** -->
+  <!--***** 끝 *****-->
 
   <section class="gallery">
     <h2></h2>
     <p>여러분이 직접 만든 <s>다양한 컷툰 이야기</s>를 확인해 보세요.</p>
-
-
-    <!-- *******9.1 수정 말풍선 추가 ****** -->
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -310,13 +295,10 @@
         </div>
       </div>
     </div>
-    <!-- ******* 끝 ****** -->
-
     <div class="swiper-btn swiper-button-prev"></div>
     <div class="swiper-btn swiper-button-next"></div>
   </section>
-
-  <!-- *******9.1 수정 위치 이동 및 마켓 순서 변경****** -->
+  <div id="buy"></div>
   <section class="buy">
     <div class="btns">
       <a href="https://pages.coupang.com/f/s5882" target="_blank">coupang</a>
@@ -331,12 +313,11 @@
       <p>다양한 빵과 함께 먹을 때<br class="mo"> <s>최고의 조합</s>을 자랑해요!</p>
     </div>
   </section>
-  <!-- ******* 끝 ****** -->
+
+
+  <a href="#buy" class="floating-btn"></a><!--***** 9.7 추가 *****-->
 
 </div>
-
-
-
 
 <div class="region-footer-pre" id="nutella-embed-footer-pre"></div>
 <footer id="nutella-footer" class="nutella-embed-container">
@@ -387,7 +368,7 @@
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<!-- *******9.1 수정 ****** -->
+
 <script>
   const swiper = new Swiper('.swiper-container', {
     slidesPerView: "auto",
@@ -398,11 +379,15 @@
     },
   });
 </script>
+
+
+<!--***** 9.7 수정 *****-->
 <script>
   let userEvent = document.querySelector('.user-event');
   let ck = document.querySelector('.click');
   let confirm = document.querySelector('.confirm');
   let result = document.querySelector('.result span');
+  let resultBox = document.querySelector('.result');
   let inputMsg = document.querySelector('.input-msg');
   let inpMsg;
   let stepNum;
@@ -411,6 +396,11 @@
     userEvent.classList.add('toon2');
     inputMsg.focus();
   });
+
+  inputMsg.addEventListener('keyup', function() {
+    result.innerHTML = document.querySelector('.input-msg').value;
+  });
+
   function enterMsg() {
     if (event.keyCode === 13) {
       saveMsg();
@@ -423,6 +413,10 @@
   });
   function saveMsg() {
     inpMsg = document.querySelector('.input-msg').value;
+    if(inpMsg.length > 30) {
+      alert('최대 30자까지 입력이 가능해요.');
+      return;
+    }
     printMsg();
   }
   function printMsg() {
@@ -434,6 +428,7 @@
     setTimeout(function() {
       document.querySelector('.input-msg').value = '';
     },100)
+    resultBox.classList.add('bgc-r');
   }
   function editMsg() {
     result.innerHTML = null;
@@ -455,7 +450,7 @@
     userEvent.setAttribute('data-step', e);
   }
 </script>
-<!-- ******* 끝 ****** -->
+<!--***** 끝 *****-->
 
 </body>
 </html>

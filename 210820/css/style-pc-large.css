@@ -13,6 +13,7 @@
     letter-spacing: -0.05em;
     overflow: hidden;
     margin-top: -11.875rem;
+    position: relative;
   }
   #campaign input,
   #campaign select,
@@ -66,17 +67,17 @@
     background: url("../img/pc/morning1-2560.png") top center no-repeat;
     background-size: cover;
     height: 67.6875rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 5.625rem;
     position: relative;
   }
   #campaign section.morning .date {
     text-align: left;
     position: absolute;
     left: 50%;
-    top: 21.75rem;
+    top: 20.9375rem;
     right: auto;
     bottom: auto;
-    margin-left: -17.1875rem;
+    margin-left: -24.3125rem;
   }
   #campaign section.morning .date p {
     font-size: 1.875rem;
@@ -87,7 +88,7 @@
   }
   #campaign section.morning .date p s {
     font-weight: 700;
-    width: 11.125rem;
+    width: 7.375rem;
     height: 2.625rem;
     line-height: 2.625rem;
     margin-right: 1.0625rem;
@@ -101,7 +102,7 @@
   #campaign section.morning .btn {
     font-size: 0rem;
     display: inline-block;
-    margin-top: 29.25rem;
+    margin-top: 31.875rem;
     width: 15.8125rem;
     height: 3.3125rem;
     background-repeat: no-repeat;
@@ -348,7 +349,7 @@
     box-sizing: border-box;
     margin-top: 2.1875rem;
     margin-right: 0rem;
-    margin-bottom: 2.1875rem;
+    margin-bottom: 0.625rem;
     margin-left: 0rem;
   }
   #campaign section.user-event .inner .toon .img {
@@ -362,7 +363,7 @@
     font-size: 1.4375rem;
     position: absolute;
     left: 50%;
-    top: 22.1875rem;
+    top: 38.125rem;
     right: auto;
     bottom: auto;
     width: 14.9375rem;
@@ -395,6 +396,20 @@
     right: auto;
     bottom: auto;
     transform: translate(-50%, -50%);
+  }
+  #campaign section.user-event .inner .toon .result.bgc-r:after {
+    content: '';
+    display: block;
+    background: #e30613;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    border-radius: 50% 50%;
+    position: absolute;
+    left: 0rem;
+    top: -0.4375rem;
+    right: auto;
+    bottom: auto;
   }
   #campaign section.user-event .inner .toon .user-msg {
     font-size: 0rem;
@@ -431,14 +446,23 @@
     font-size: 1.625rem;
     color: #666;
     position: absolute;
-    right: 8.125rem;
-    bottom: 1.5rem;
+    right: 12.5rem;
+    bottom: 15.625rem;
     left: auto;
     top: auto;
     font-weight: 500;
     z-index: 1;
     text-align: right;
     display: none;
+  }
+  #campaign section.user-event .inner .toon-notice {
+    font-size: 1.4375rem;
+    margin-bottom: 2.1875rem;
+    color: #666;
+    font-weight: 300;
+    text-align: left;
+    padding-left: 4.625rem;
+    box-sizing: border-box;
   }
   #campaign section.user-event .inner .user-agree {
     padding-top: 0rem;
@@ -591,7 +615,7 @@
     height: 4.6875rem;
   }
   #campaign section.user-event .inner .btns .btn.share {
-    background-image: url('../img/pc/share.png');
+    background-image: url('../img/pc/bonus_btn.png');
     width: 19rem;
     height: 4.6875rem;
   }
@@ -743,6 +767,9 @@
     font-weight: 300;
     text-align: left;
   }
+  #campaign section.event-bonus .inner .txt {
+    font-size: 1.25rem;
+  }
   #campaign section.event-bonus .inner .txt s {
     color: #e30613;
     font-weight: 700;
@@ -782,25 +809,20 @@
     right: auto;
     bottom: auto;
   }
-  #campaign section.event-bonus .inner .txt-box p:nth-child(1),
-  #campaign section.event-bonus .inner .txt-box p:nth-child(2) {
-    display: inline-block;
-  }
-  #campaign section.event-bonus .inner .txt-box p:nth-child(2) {
-    margin-left: 2.1875rem;
-  }
   #campaign section.event-bonus .inner .gift {
-    margin-top: 8.125rem;
+    margin-top: 5.9375rem;
     text-align: left;
+    padding-left: 7.5rem;
+    box-sizing: border-box;
   }
   #campaign section.event-bonus .inner .gift p {
     font-size: 1.125rem;
     display: inline-block;
-    width: 8.125rem;
+    width: 6.875rem;
     text-align: center;
   }
   #campaign section.event-bonus .inner .gift p:nth-child(1) {
-    margin-right: 4.75rem;
+    margin-right: 3.75rem;
   }
   #campaign section.event-bonus .inner .gift p:nth-child(2) {
     margin-right: 0.9375rem;
@@ -808,6 +830,16 @@
   #campaign section.event-bonus .inner .gift p:nth-child(3) {
     width: 13.125rem;
     margin-right: 0rem;
+  }
+  #campaign section.event-bonus .inner .gift-notice {
+    font-size: 1.25rem;
+    color: #666;
+    width: 38.4375rem;
+    height: 2.1875rem;
+    line-height: 2.1875rem;
+    margin-top: 0.9375rem;
+    border: 1px solid #d0d0d0;
+    text-align: center;
   }
   #campaign section.buy {
     background: url("../img/pc/buy-2560.png") top center no-repeat;
@@ -951,6 +983,28 @@
     background-image: url('../img/pc/next.png');
     background-size: contain;
     margin-left: 32.125rem;
+  }
+  #campaign .floating-btn {
+    width: 7.25rem;
+    height: 7.5625rem;
+    background-image: url('../img/pc/floating.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: fixed;
+    left: 50%;
+    bottom: 9.375rem;
+    right: auto;
+    top: auto;
+    margin-left: 36.5625rem;
+    z-index: 10;
+  }
+  #campaign #buy {
+    position: absolute;
+    left: 0rem;
+    bottom: 68.75rem;
+    right: auto;
+    top: auto;
   }
 }
 /*# sourceMappingURL=style-pc-large.css.map */

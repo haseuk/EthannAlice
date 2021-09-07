@@ -3,7 +3,7 @@
 @vw: 740;
 
 @media screen and (max-width: 740px) {
-  #campaign {.mh-c; font-size: 26px; font-family: notokr, sans-serif; .tc; .ls(-0.05em); overflow: hidden; .pt(50); .-box;
+  #campaign {.mh-c; font-size: 26px; font-family: notokr, sans-serif; .tc; .ls(-0.05em); overflow: hidden; .pt(50); .-box; .rel;
     input, select, textarea { outline: none; }
     table { table-layout: fixed; border-collapse: collapse; }
     img { .block; backface-visibility: hidden; }
@@ -19,14 +19,14 @@
     // 당첨자 확인버튼 생성시 section.morning { .mb(60); }
     section.morning { .cover("../img/m/morning1.png"); .h(986); .pt(284); .-box; overflow: hidden; .rel;
       .date { .tl; .wf; .pl(104); .-box;
-        p { .fs(27); color:#fff; .light; .lh(36); .mb(12);
-          s { .bold; .wh(154,36); .lh(36); .mr(28); .bgc(#000); .br(18); .ib; .tc; .pt(2); .-box; }
+        p { .fs(27); color:#fff; .light; .lh(36); .mb(12); .ti(-102); .ml(102);
+          s { .bold; .wh(82,36); .lh(36); .ti(0); .mr(20); .bgc(#000); .br(18); .ib; .tc; .pt(2); .-box; }
           &:last-child { .mb(0); }
         }
       }
 
       // .btn { height:0; margin-top:0; }삭제 하면 버튼 보임
-      .btn { .fs(0); .block; .mh-c; .mt(19); .wh(267,55); .contain('../img/m/winner-btn.png'); .pointer; z-index: 1; .h(0); .mt(0); pointer-events: none; }
+      .btn { .fs(0); .block; .mh-c; .mt(25); .wh(267,55); .contain('../img/m/winner-btn.png'); .pointer; z-index: 1; .h(0); .mt(0); pointer-events: none; }
       .notice { .mt(30);
         p { .fs(26); .lh(33); }
       }
@@ -55,11 +55,12 @@
         .msg-tit { .fs(28); .light; color:#666; .lh(40); .mt(-116); .hide;
           s { .bold; color:#000; }
         }
-        .toon { .-a(#eee,2px); .ib; .p(10); .-box; .m(37,0,20); .rel;
+        .toon { .-a(#eee,2px); .ib; .p(10); .-box; .m(37,0,10); .rel;
           .img { .contain('../img/m/event-toon.png'); .wh(648,566); }
           .result { .fs(23); .abs; .lt(50%,300); .wh(200,90); .ml(-228);
             .click { .fs(0); .f; .block; .contain('../img/m/click.png'); .pointer; z-index: 1; }
             span { .fs(23); .ib; .w(200); .abs; .medium; .lt(50%,45%); transform: translate(-50%,-50%); }
+            &.bgc-r:after { .cnt; background:#e30613; .f; opacity: 0.2; border-radius: 50% 50%; .abs; .lt(0,-7); }
           }
           .user-msg { .fs(0); .m(15,0); .hide;
             input { .fs(24); color:#666; .wh(500,56); .-a(#cfcfcf); .br(28); .ib; .vam; .mr(8); .pl(24); .-box; }
@@ -71,6 +72,7 @@
           //}
           .user-name { .fs(24); color:#666; .abs; .rb(130,18); .medium; z-index: 1; .tr; .hide; }
         }
+        .toon-notice { .fs(24); .lh(32); .mb(30); color:#666; .light; .tl; .pl(35); .-box; .ti(-25); .ml(25); }
         .user-agree { .p(0,35); .-box; .mb(40); .-box; .hide;
           table { table-layout: fixed; .tl;
             tr {
@@ -102,7 +104,7 @@
             &.edit { .bg('../img/m/edit.png'); .wh(278,83); }
             &.submit { .bg('../img/m/submit.png'); .wh(278,83); }
             &.save2 { .bg('../img/m/save2.png'); .wh(321,83); }
-            &.share { .bg('../img/m/share.png'); .wh(320,83); }
+            &.share { .bg('../img/m/bonus_btn.png'); .wh(320,83); }
           }
         }
 
@@ -170,23 +172,24 @@
       }
     }
 
-    section.event-bonus { .contain("../img/m/bonus.png"); .h(1021); .p(269,0,0,30); .-box; .tl; .rel;
-      .txt { .fs(28); .lh(40); .light;  s { color:#e30613; .bold; }}
+    section.event-bonus { .contain("../img/m/bonus.png"); .h(982); .p(269,0,0,30); .-box; .tl; .rel;
+      .txt { .fs(35); .lh(45); .light;  s { color:#e30613; .bold; }}
       span { .fs(22); .light; .lh(30); .mt(41); color:#666; .ib; .ti(-10); .ml(10); }
-      .txt-box { .mt(63);
-        p { .fs(24); .lh(32); .pl(15); .rel; .mb(13); .-box;
-          s { .bold; .ib; .w(110);
+      .txt-box { .mt(50);
+        p { .fs(24); .lh(32); .pl(15); .rel; .mb(10); .-box;
+          s { .bold; .ib; .w(140);
             &:after { .cnt; .wh(2,20); .bgc(#000); .abs; .lt(0,3); }
           }
-          &:nth-child(1), &:nth-child(2) { .ib; }
-          &:nth-child(2) { .ml(15); }
+          //&:nth-child(1), &:nth-child(2) { .ib; }
+          //&:nth-child(2) { .ml(15); }
         }
       }
-      .gift { .fs(0); .abs; .lt(143,920);
+      .gift { .fs(0); .abs; .lt(143,835);
         p { .fs(18); .ib; .w(178); .tc;
           &:nth-child(3) { .w(214); }
         }
       }
+      .gift-notice { .fs(24); .mt(125); .pl(142); .-box; }
     }
     section.buy { .contain("../img/m/buy.png"); .h(488); .pt(163); .-box;
       .btns { .fs(0); .pl(412); .-box;
@@ -215,5 +218,8 @@
         &.swiper-button-next { .contain('../img/m/next.png'); .ml(310); }
       }
     }
+    .floating-btn { .wh(109,106); .contain('../img/m/floating.png'); .no-repeat; .ib; .fix; .rb(0,150); z-index: 10; }
+    #event-bonus { .abs; .lb(0,2800); }
+    #buy { .abs; .lb(0,1400); }
   }
 }

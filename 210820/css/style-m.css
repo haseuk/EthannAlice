@@ -12,6 +12,7 @@
     overflow: hidden;
     padding-top: 6.75675676vw;
     box-sizing: border-box;
+    position: relative;
   }
   #campaign input,
   #campaign select,
@@ -85,13 +86,16 @@
     font-weight: 300;
     line-height: 4.86486486vw;
     margin-bottom: 1.62162162vw;
+    text-indent: -13.78378378vw;
+    margin-left: 13.78378378vw;
   }
   #campaign section.morning .date p s {
     font-weight: 700;
-    width: 20.81081081vw;
+    width: 11.08108108vw;
     height: 4.86486486vw;
     line-height: 4.86486486vw;
-    margin-right: 3.78378378vw;
+    text-indent: 0vw;
+    margin-right: 2.7027027vw;
     background-color: #000;
     border-radius: 2.43243243vw;
     display: inline-block;
@@ -107,7 +111,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2.56756757vw;
+    margin-top: 3.37837838vw;
     width: 36.08108108vw;
     height: 7.43243243vw;
     background-repeat: no-repeat;
@@ -266,7 +270,7 @@
     box-sizing: border-box;
     margin-top: 5vw;
     margin-right: 0vw;
-    margin-bottom: 2.7027027vw;
+    margin-bottom: 1.35135135vw;
     margin-left: 0vw;
     position: relative;
   }
@@ -311,6 +315,20 @@
     bottom: auto;
     transform: translate(-50%, -50%);
   }
+  #campaign section.user-event .inner .toon .result.bgc-r:after {
+    content: '';
+    display: block;
+    background: #e30613;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    border-radius: 50% 50%;
+    position: absolute;
+    left: 0vw;
+    top: -0.94594595vw;
+    right: auto;
+    bottom: auto;
+  }
   #campaign section.user-event .inner .toon .user-msg {
     font-size: 0vw;
     margin-top: 2.02702703vw;
@@ -354,6 +372,18 @@
     z-index: 1;
     text-align: right;
     display: none;
+  }
+  #campaign section.user-event .inner .toon-notice {
+    font-size: 3.24324324vw;
+    line-height: 4.32432432vw;
+    margin-bottom: 4.05405405vw;
+    color: #666;
+    font-weight: 300;
+    text-align: left;
+    padding-left: 4.72972973vw;
+    box-sizing: border-box;
+    text-indent: -3.37837838vw;
+    margin-left: 3.37837838vw;
   }
   #campaign section.user-event .inner .user-agree {
     padding-top: 0vw;
@@ -510,7 +540,7 @@
     height: 11.21621622vw;
   }
   #campaign section.user-event .inner .btns .btn.share {
-    background-image: url('../img/m/share.png');
+    background-image: url('../img/m/bonus_btn.png');
     width: 43.24324324vw;
     height: 11.21621622vw;
   }
@@ -640,7 +670,7 @@
     background-repeat: no-repeat;
     background-image: url("../img/m/bonus.png");
     background-size: contain;
-    height: 137.97297297vw;
+    height: 132.7027027vw;
     padding-top: 36.35135135vw;
     padding-right: 0vw;
     padding-bottom: 0vw;
@@ -650,8 +680,8 @@
     position: relative;
   }
   #campaign section.event-bonus .txt {
-    font-size: 3.78378378vw;
-    line-height: 5.40540541vw;
+    font-size: 4.72972973vw;
+    line-height: 6.08108108vw;
     font-weight: 300;
   }
   #campaign section.event-bonus .txt s {
@@ -669,20 +699,20 @@
     margin-left: 1.35135135vw;
   }
   #campaign section.event-bonus .txt-box {
-    margin-top: 8.51351351vw;
+    margin-top: 6.75675676vw;
   }
   #campaign section.event-bonus .txt-box p {
     font-size: 3.24324324vw;
     line-height: 4.32432432vw;
     padding-left: 2.02702703vw;
     position: relative;
-    margin-bottom: 1.75675676vw;
+    margin-bottom: 1.35135135vw;
     box-sizing: border-box;
   }
   #campaign section.event-bonus .txt-box p s {
     font-weight: 700;
     display: inline-block;
-    width: 14.86486486vw;
+    width: 18.91891892vw;
   }
   #campaign section.event-bonus .txt-box p s:after {
     content: '';
@@ -696,18 +726,11 @@
     right: auto;
     bottom: auto;
   }
-  #campaign section.event-bonus .txt-box p:nth-child(1),
-  #campaign section.event-bonus .txt-box p:nth-child(2) {
-    display: inline-block;
-  }
-  #campaign section.event-bonus .txt-box p:nth-child(2) {
-    margin-left: 2.02702703vw;
-  }
   #campaign section.event-bonus .gift {
     font-size: 0vw;
     position: absolute;
     left: 19.32432432vw;
-    top: 124.32432432vw;
+    top: 112.83783784vw;
     right: auto;
     bottom: auto;
   }
@@ -719,6 +742,12 @@
   }
   #campaign section.event-bonus .gift p:nth-child(3) {
     width: 28.91891892vw;
+  }
+  #campaign section.event-bonus .gift-notice {
+    font-size: 3.24324324vw;
+    margin-top: 16.89189189vw;
+    padding-left: 19.18918919vw;
+    box-sizing: border-box;
   }
   #campaign section.buy {
     background-repeat: no-repeat;
@@ -851,6 +880,34 @@
     background-image: url('../img/m/next.png');
     background-size: contain;
     margin-left: 41.89189189vw;
+  }
+  #campaign .floating-btn {
+    width: 14.72972973vw;
+    height: 14.32432432vw;
+    background-image: url('../img/m/floating.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: fixed;
+    right: 0vw;
+    bottom: 20.27027027vw;
+    left: auto;
+    top: auto;
+    z-index: 10;
+  }
+  #campaign #event-bonus {
+    position: absolute;
+    left: 0vw;
+    bottom: 378.37837838vw;
+    right: auto;
+    top: auto;
+  }
+  #campaign #buy {
+    position: absolute;
+    left: 0vw;
+    bottom: 189.18918919vw;
+    right: auto;
+    top: auto;
   }
 }
 /*# sourceMappingURL=style-m.css.map */

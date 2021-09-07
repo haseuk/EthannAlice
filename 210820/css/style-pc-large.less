@@ -4,7 +4,7 @@
 
 
 @media screen and (min-width: 1600px) {
-  #campaign { .max-w(2560); .min-w(950); .mh-c; font-size: 18px; font-family: notokr, sans-serif; .tc; .ls(-0.05em); overflow: hidden; .mt(-190);
+  #campaign { .max-w(2560); .min-w(950); .mh-c; font-size: 18px; font-family: notokr, sans-serif; .tc; .ls(-0.05em); overflow: hidden; .mt(-190); .rel;
     input, select, textarea { outline: none; }
     table { table-layout: fixed; border-collapse: collapse; }
     img { .block; backface-visibility: hidden; }
@@ -18,15 +18,15 @@
       }
     }
 
-    // 당첨자 확인버튼 생성시 section.morning { .mb(93); }
-    section.morning { background: url("../img/pc/morning1-2560.png") top center no-repeat; .cover; .h(1083); .mb(40); .rel;
-      .date { .tl; .abs; .lt(50%,348); .ml(-275);
+    // 당첨자 확인버튼 생성시 section.morning { .mb(140); }
+    section.morning { background: url("../img/pc/morning1-2560.png") top center no-repeat; .cover; .h(1083); .mb(90); .rel;
+      .date { .tl; .abs; .lt(50%,335); .ml(-389);
         p { .fs(30); color:#fff; .light; .lh(42); .mb(18);
-          s { .bold; .wh(178,42); .lh(42); .mr(17); .bgc(#000); .br(21); .ib; .tc; .pt(2); .-box; }
+          s { .bold; .wh(118,42); .lh(42); .mr(17); .bgc(#000); .br(21); .ib; .tc; .pt(2); .-box; }
         }
       }
-      // .btn { height:0; pointer-events: none; }삭제 하면 버튼 보임
-      .btn { .fs(0); .ib; .mt(468); .wh(253,53); .contain('../img/pc/winner-btn.png'); .pointer; z-index: 1; .h(0); pointer-events: none; }
+      // .btn { .mt(528); height:0; pointer-events: none; }삭제 하면 버튼 보임
+      .btn { .fs(0); .ib; .mt(510); .wh(253,53); .contain('../img/pc/winner-btn.png'); .pointer; z-index: 1; .h(0); pointer-events: none; }
       .notice { .mt(27);
         p { .fs(25); .lh(33); }
       }
@@ -74,12 +74,13 @@
         .msg-tit { .fs(25); .light; color:#666; .lh(33); .mt(-93); .hide;
           s { .bold; color:#000; }
         }
-        .toon { .-a(#eee,2px); .ib; .p(12); .-box; .m(35,0);
+        .toon { .-a(#eee,2px); .ib; .p(12); .-box; .m(35,0,10);
           .img { .contain('../img/pc/event-toon.png'); .wh(771,674); }
 
-          .result { .fs(23); .abs; .lt(50%,355); .wh(239,106); .ml(-273);
+          .result { .fs(23); .abs; .lt(50%,610); .wh(239,106); .ml(-273);
             .click { .fs(0); .ib; .abs; .lt; .f; .contain('../img/pc/click.png'); .pointer; }
             span { .fs(23); .ib; .w(200); .abs; .medium; .lt(50%,45%); transform: translate(-50%,-50%); }
+            &.bgc-r:after { .cnt; background:#e30613; .f; opacity: 0.2; border-radius: 50% 50%; .abs; .lt(0,-7); }
           }
           .user-msg { .fs(0); .m(20,0); .hide;
             input { .fs(23); color:#666; .wh(600,67); .-a(#cfcfcf,2px); .-box; .br(34); .ib; .vam; .mr(10); .pl(24); .-box; }
@@ -89,8 +90,9 @@
           //  h3 { .contain('../img/pc/f-msg.png'); .wh(465,42); .ib; }
           //  .user-txt { .fs(24); color:#666; .fr; .mt(10); }
           //}
-          .user-name { .fs(26); color:#666; .abs; .rb(130,24); .medium; z-index: 1; .tr; .hide; }
+          .user-name { .fs(26); color:#666; .abs; .rb(200,250); .medium; z-index: 1; .tr; .hide; }
         }
+        .toon-notice { .fs(23); .mb(35); color:#666; .light; .tl; .pl(74); .-box; }
         .user-agree { .p(0,75); .-box; .mb(40); .-box; .hide;
           table { table-layout: fixed; .tl;
             tr {
@@ -123,7 +125,7 @@
             &.edit { .bg('../img/pc/edit.png'); .wh(254,75); }
             &.submit { .bg('../img/pc/submit.png'); .wh(254,75); }
             &.save2 { .bg('../img/pc/save2.png'); .wh(305,75); }
-            &.share { .bg('../img/pc/share.png'); .wh(304,75); }
+            &.share { .bg('../img/pc/bonus_btn.png'); .wh(304,75); }
           }
         }
 
@@ -195,24 +197,25 @@
     section.event-bonus { background: url("../img/pc/bonus-2560.png") top center no-repeat; .cover; .h(737); .rel;
       .inner { .abs; .lt(50%,266); .ml(-474);
         p { .fs(20); .lh(28); .light; .tl; }
-        .txt { s { color:#e30613; .bold; }}
+        .txt { .fs(20);  s { color:#e30613; .bold; }}
         span { .fs(18); .light; .lh(24); .mt(6); color:#666; .block; .tl; }
         .txt-box { .mt(20);
           p { .rel; .mb(9);
             s { .bold; .ib; .w(115); .pl(15); .-box;
               &:after { .cnt; .wh(3,20); .bgc(#000); .abs; .lt(0,3); }
             }
-            &:nth-child(1), &:nth-child(2) { .ib; }
-            &:nth-child(2) { .ml(35); }
+            //&:nth-child(1), &:nth-child(2) { .ib; }
+            //&:nth-child(2) { .ml(35); }
           }
         }
-        .gift { .mt(130); .tl;
-          p { .fs(18); .ib; .w(130); .tc;
-            &:nth-child(1) { .mr(76); }
+        .gift { .mt(95); .tl; .pl(120); .-box;
+          p { .fs(18); .ib; .w(110); .tc;
+            &:nth-child(1) { .mr(60); }
             &:nth-child(2) { .mr(15); }
             &:nth-child(3) { .w(210); .mr(0); }
           }
         }
+        .gift-notice { .fs(20); color:#666; .wh(615,35); .lh(35); .mt(15); .-a(#d0d0d0); .tc; }
       }
     }
 
@@ -243,5 +246,7 @@
         &.swiper-button-next { .contain('../img/pc/next.png'); .ml(514); }
       }
     }
+    .floating-btn { .wh(116,121); .contain('../img/pc/floating.png'); .no-repeat; .ib; .fix; .lb(50%,150); .ml(585); z-index: 10; }
+    #buy { .abs; .lb(0,1100); }
   }
 }
