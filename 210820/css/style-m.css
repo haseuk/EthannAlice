@@ -340,25 +340,14 @@
   #campaign section.user-event .inner .toon .user-msg input {
     font-size: 3.24324324vw;
     color: #666;
-    width: 67.56756757vw;
+    width: 100%;
     height: 7.56756757vw;
     border: 1px solid #cfcfcf;
     border-radius: 3.78378378vw;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 1.08108108vw;
     padding-left: 3.24324324vw;
     box-sizing: border-box;
-  }
-  #campaign section.user-event .inner .toon .user-msg .confirm {
-    width: 17.43243243vw;
-    height: 7.83783784vw;
-    background-repeat: no-repeat;
-    background-image: url('../img/m/evt-btn.png');
-    background-size: contain;
-    display: inline-block;
-    vertical-align: middle;
-    cursor: pointer;
   }
   #campaign section.user-event .inner .toon .user-name {
     font-size: 3.24324324vw;

@@ -99,7 +99,11 @@
         </div>
         <div class="user-msg">
           <input type="text" class="input-msg" placeholder="대사를 입력해 주세요" onkeyup="enterMsg();">
-          <a class="confirm">확인</a>
+
+
+          <!-- 9.8 삭제 <a class="confirm">확인</a>-->
+
+
         </div>
         <div class="user-name">홍길동</div>
       </div>
@@ -197,7 +201,7 @@
         </form>
       </div>
       <div class="btns">
-        <a class="save btn" onclick="eventGo(2)">저장하기</a>
+        <a class="save btn" onclick="saveMsg()">저장하기</a>
         <a class="edit btn" onclick="eventGo(1)">수정하기</a>
         <a class="submit btn" onclick="eventGo(3)">제출하기</a>
         <a class="save2 btn">저장하기</a>
@@ -381,7 +385,7 @@
 </script>
 
 
-<!--***** 9.7 수정 *****-->
+<!--***** 9.8 수정 *****-->
 <script>
   let userEvent = document.querySelector('.user-event');
   let ck = document.querySelector('.click');
@@ -411,6 +415,7 @@
       saveMsg();
     }
   });
+
   function saveMsg() {
     inpMsg = document.querySelector('.input-msg').value;
     if(inpMsg.length > 30) {
@@ -418,6 +423,7 @@
       return;
     }
     printMsg();
+    eventGo(2);
   }
   function printMsg() {
     if(!inpMsg) {
@@ -431,8 +437,9 @@
     resultBox.classList.add('bgc-r');
   }
   function editMsg() {
+    resultBox.classList.remove('bgc-r');
     result.innerHTML = null;
-    inpMsg = '';
+    document.querySelector('.input-msg').value = '';
   }
 
   function eventGo(e) {
