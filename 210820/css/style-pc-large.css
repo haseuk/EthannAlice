@@ -757,7 +757,8 @@
     text-align: left;
   }
   #campaign section.event-bonus .inner .txt {
-    font-size: 1.25rem;
+    font-size: 1.5625rem;
+    font-weight: 500;
   }
   #campaign section.event-bonus .inner .txt s {
     color: #e30613;
@@ -801,24 +802,25 @@
   #campaign section.event-bonus .inner .gift {
     margin-top: 5.9375rem;
     text-align: left;
-    padding-left: 7.5rem;
+    padding-left: 5.3125rem;
     box-sizing: border-box;
+    margin-left: 0rem;
   }
   #campaign section.event-bonus .inner .gift p {
     font-size: 1.125rem;
     display: inline-block;
-    width: 6.875rem;
+    width: 12.5rem;
     text-align: center;
+    vertical-align: top;
   }
   #campaign section.event-bonus .inner .gift p:nth-child(1) {
-    margin-right: 3.75rem;
+    margin-right: 0rem;
   }
   #campaign section.event-bonus .inner .gift p:nth-child(2) {
-    margin-right: 0.9375rem;
+    width: 8.125rem;
   }
   #campaign section.event-bonus .inner .gift p:nth-child(3) {
     width: 13.125rem;
-    margin-right: 0rem;
   }
   #campaign section.event-bonus .inner .gift-notice {
     font-size: 1.25rem;

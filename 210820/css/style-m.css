@@ -681,7 +681,7 @@
     font-size: 2.97297297vw;
     font-weight: 300;
     line-height: 4.05405405vw;
-    margin-top: 5.54054054vw;
+    margin-top: 2.7027027vw;
     color: #666;
     display: inline-block;
     text-indent: -1.35135135vw;
@@ -718,7 +718,7 @@
   #campaign section.event-bonus .gift {
     font-size: 0vw;
     position: absolute;
-    left: 19.32432432vw;
+    left: 20.67567568vw;
     top: 112.83783784vw;
     right: auto;
     bottom: auto;
@@ -726,16 +726,19 @@
   #campaign section.event-bonus .gift p {
     font-size: 2.43243243vw;
     display: inline-block;
-    width: 24.05405405vw;
+    width: 25vw;
     text-align: center;
+  }
+  #campaign section.event-bonus .gift p:nth-child(2) {
+    width: 22.02702703vw;
   }
   #campaign section.event-bonus .gift p:nth-child(3) {
     width: 28.91891892vw;
   }
   #campaign section.event-bonus .gift-notice {
     font-size: 3.24324324vw;
-    margin-top: 16.89189189vw;
-    padding-left: 19.18918919vw;
+    margin-top: 17.56756757vw;
+    padding-left: 17.2972973vw;
     box-sizing: border-box;
   }
   #campaign section.buy {
