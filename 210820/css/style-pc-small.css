@@ -368,7 +368,7 @@
     bottom: auto;
     width: 11.95rem;
     height: 5.3rem;
-    margin-left: -13.65rem;
+    margin-left: -13rem;
   }
   #campaign section.user-event .inner .toon .result .click {
     font-size: 0rem;
@@ -388,7 +388,7 @@
   #campaign section.user-event .inner .toon .result span {
     font-size: 1.15rem;
     display: inline-block;
-    width: 10rem;
+    width: 11.5rem;
     position: absolute;
     font-weight: 500;
     left: 50%;
@@ -396,20 +396,6 @@
     right: auto;
     bottom: auto;
     transform: translate(-50%, -50%);
-  }
-  #campaign section.user-event .inner .toon .result.bgc-r:after {
-    content: '';
-    display: block;
-    background: #e30613;
-    width: 100%;
-    height: 100%;
-    opacity: 0.2;
-    border-radius: 50% 50%;
-    position: absolute;
-    left: 0rem;
-    top: -0.35rem;
-    right: auto;
-    bottom: auto;
   }
   #campaign section.user-event .inner .toon .user-msg {
     font-size: 0rem;
