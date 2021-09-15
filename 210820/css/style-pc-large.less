@@ -77,9 +77,9 @@
         .toon { .-a(#eee,2px); .ib; .p(12); .-box; .m(35,0,10);
           .img { .contain('../img/pc/event-toon.png'); .wh(771,674); }
 
-          .result { .fs(23); .abs; .lt(50%,610); .wh(239,106); .ml(-260);
+          .result { .fs(23); .abs; .lt(50%,610); .wh(230,106); .ml(-250);
             .click { .fs(0); .ib; .abs; .lt; .f; .contain('../img/pc/click.png'); .pointer; }
-            span { .fs(23); .ib; .w(250); .abs; .medium; .lt(50%,45%); transform: translate(-50%,-50%); }
+            span { .fs(23); .lh(28); .ib; .w(250); .abs; .medium; .lt(50%,45%); transform: translate(-50%,-50%); }
           }
           .user-msg { .fs(0); .m(20,0); .hide;
             input { .fs(23); color:#666; .wh(100%,67); .-a(#cfcfcf,2px); .-box; .br(34); .ib; .vam; .pl(24); .-box; }
@@ -89,7 +89,7 @@
           //  h3 { .contain('../img/pc/f-msg.png'); .wh(465,42); .ib; }
           //  .user-txt { .fs(24); color:#666; .fr; .mt(10); }
           //}
-          .user-name { .fs(26); color:#666; .abs; .rb(200,250); .medium; z-index: 1; .tr; .hide; }
+          .user-name { .fs(26); color:#666; .abs; .rb(205,258); .medium; z-index: 1; .tr; .hide; .lh1; }
         }
         .toon-notice { .fs(23); .mb(35); color:#666; .light; .tl; .pl(74); .-box; }
         .user-agree { .p(0,75); .-box; .mb(40); .-box; .hide;
@@ -234,8 +234,8 @@
       .swiper-container { .w(943); .mh-c; overflow: hidden;
         .swiper-slide { .wh(303,266); .rel;
           img { .f; .ib; }
-          .msg-box { .abs; .lt(50%,8); .wh(160,60); .ml(-57);
-            .gallery-msg { .fs(18); .lh(23); .ib; color:#a0a0a0; .bold; .wf; .abs; .lt(50%,50%); transform: translate(-50%,-50%); }
+          .msg-box { .abs; .lt(50%,0); .wh(180,84); .ml(-38);
+            .gallery-msg { .fs(20); .lh(24); .ib; color:#000; .medium; .wf; .abs; .lt(50%,50%); transform: translate(-50%,-50%); }
           }
         }
       }
@@ -243,6 +243,7 @@
         &:after { .hide; }
         &.swiper-button-prev { .contain('../img/pc/prev.png'); .ml(-550); }
         &.swiper-button-next { .contain('../img/pc/next.png'); .ml(514); }
+        &.swiper-button-disabled { opacity: 1; }
       }
     }
     .floating-btn { .wh(116,121); .contain('../img/pc/floating.png'); .no-repeat; .ib; .fix; .lb(50%,150); .ml(585); z-index: 10; }

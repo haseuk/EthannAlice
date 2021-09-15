@@ -366,9 +366,9 @@
     top: 38.125rem;
     right: auto;
     bottom: auto;
-    width: 14.9375rem;
+    width: 14.375rem;
     height: 6.625rem;
-    margin-left: -16.25rem;
+    margin-left: -15.625rem;
   }
   #campaign section.user-event .inner .toon .result .click {
     font-size: 0rem;
@@ -387,6 +387,7 @@
   }
   #campaign section.user-event .inner .toon .result span {
     font-size: 1.4375rem;
+    line-height: 1.75rem;
     display: inline-block;
     width: 15.625rem;
     position: absolute;
@@ -421,14 +422,15 @@
     font-size: 1.625rem;
     color: #666;
     position: absolute;
-    right: 12.5rem;
-    bottom: 15.625rem;
+    right: 12.8125rem;
+    bottom: 16.125rem;
     left: auto;
     top: auto;
     font-weight: 500;
     z-index: 1;
     text-align: right;
     display: none;
+    line-height: 1;
   }
   #campaign section.user-event .inner .toon-notice {
     font-size: 1.4375rem;
@@ -915,19 +917,19 @@
   #campaign section.gallery .swiper-container .swiper-slide .msg-box {
     position: absolute;
     left: 50%;
-    top: 0.5rem;
+    top: 0rem;
     right: auto;
     bottom: auto;
-    width: 10rem;
-    height: 3.75rem;
-    margin-left: -3.5625rem;
+    width: 11.25rem;
+    height: 5.25rem;
+    margin-left: -2.375rem;
   }
   #campaign section.gallery .swiper-container .swiper-slide .msg-box .gallery-msg {
-    font-size: 1.125rem;
-    line-height: 1.4375rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
     display: inline-block;
-    color: #a0a0a0;
-    font-weight: 700;
+    color: #000;
+    font-weight: 500;
     width: 100%;
     position: absolute;
     left: 50%;
@@ -960,6 +962,9 @@
     background-image: url('../img/pc/next.png');
     background-size: contain;
     margin-left: 32.125rem;
+  }
+  #campaign section.gallery .swiper-btn.swiper-button-disabled {
+    opacity: 1;
   }
   #campaign .floating-btn {
     width: 7.25rem;

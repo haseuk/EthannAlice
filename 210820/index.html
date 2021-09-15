@@ -53,12 +53,10 @@
     </div>
     <a href="https://www.instagram.com/nutella_korea/" target="_blank" class="btn">당첨자 확인하기</a>
     <div class="notice">
-      <!--***** 9.7 수정 *****-->
       <p>
         - 해당 이벤트는 중복 참여가 가능합니다만 중복 당첨되지 않습니다.<br>
         - 당첨자는 2회에 걸쳐 총 200명을 선발하며 선발 인원은 유동적입니다.
       </p>
-      <!--***** 끝 *****-->
     </div>
     <div class="pic">
       <p>누텔라와 함께하는 행복한 아침편</p>
@@ -95,23 +93,22 @@
         <div class="img"></div>
         <div class="result">
           <a class="click">click</a>
-          <span></span>
+
+
+
+          <!---******09.16 수정******-->
+          <span style="font-family: notokr, sans-serif;"></span>
+          <!---******끝******-->
+
+
+
         </div>
         <div class="user-msg">
           <input type="text" class="input-msg" placeholder="대사를 입력해 주세요" onkeyup="enterMsg();">
-
-
-          <!-- 9.8 삭제 <a class="confirm">확인</a>-->
-
-
         </div>
         <div class="user-name">홍길동</div>
       </div>
-
-      <!--***** 9.7 추가 *****-->
-      <p class="toon-notice">※ 참여자가 작성한 응원 문구는 본 페이지 및 누텔라 인스타그램에<br class="mo"> 노출될 수 있습니다. </p>
-      <!--***** 끝 ****-->
-
+      <p class="toon-notice">※ 참여작은 본 페이지 및 누텔라 인스타그램에 노출될 수 있습니다.</p>
       <div class="user-agree">
         <form name="formValue">
           <table width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -136,13 +133,9 @@
               <td>
                 <input type="text" name="zip" placeholder="우편 번호를 검색하세요." class="post-input">
                 <a class="post-btn" onclick="openZipSearch()">우편번호 검색</a>
-
-                <!--***** 9.7 수정 *****-->
                 <input type="text" name="addr1" readonly>
                 <input type="text" name="addr2" placeholder="주소 제출 후에는 수정이 어려우니 정확하게 기입해 주세요.">
-                <!--***** 끝 *****-->
               </td>
-
             </tr>
             <tr class="agree">
               <th>개인정보수집<br class="mo">동의</th>
@@ -151,7 +144,7 @@
                   <b>* 개인정보 수집 및 이용 동의</b>
                   개인정보를 수집하는 자 : ㈜페레로 아시아 리미티드 한국지점<br>
                   개인 정보 수집 및 이용 목적 : 이벤트 참여 확인 및 경품 제공<br>
-                  수집항목 : 성함 휴대폰 번호, 주소<br><!--***** 9.7 수정 *****-->
+                  수집항목 : 성함 휴대폰 번호, 주소<br>
                   개인 정보 보유 및 이용 기간 :<br>
                   이용자의 개인정보는 3개월 동안 보유 및 이용하며,<br>
                   개인정보의 수집 및 이용목적이 달성되면 지체 없이 파기함<br>
@@ -205,17 +198,15 @@
         <a class="edit btn" onclick="eventGo(1)">수정하기</a>
         <a class="submit btn" onclick="eventGo(3)">제출하기</a>
         <a class="save2 btn">저장하기</a>
-        <a href="#event-bonus" class="share btn">공유하기</a><!--***** 9.7 수정 *****-->
+        <a href="#event-bonus" class="share btn">공유하기</a>
       </div>
     </div>
   </section>
   <section class="kit">
-    <!--***** 9.7 수정 *****-->
     <p class="tit">
       나만의 컷툰을 완성해 주신 분들 중<br>
       추첨을 통해 <s>한정판 모닝 KIT</s>를 드립니다!
     </p>
-    <!--***** 끝 *****-->
     <div class="stuff">
       <p>
         <s>구성품</s>
@@ -224,10 +215,7 @@
       </p>
     </div>
   </section>
-
-  <!--***** 9.7 수정 *****-->
   <div id="event-bonus"></div>
-
   <section class="event-bonus">
     <div class="inner">
       <p class="txt">
@@ -248,8 +236,6 @@
       <p class="gift-notice">※ 5만원을 초과하는 경품의 제세공과금은 고객 부담입니다.</p>
     </div>
   </section>
-  <!--***** 끝 *****-->
-
   <section class="gallery">
     <h2></h2>
     <p>여러분이 직접 만든 <s>다양한 컷툰 이야기</s>를 확인해 보세요.</p>
@@ -317,10 +303,7 @@
       <p>다양한 빵과 함께 먹을 때<br class="mo"> <s>최고의 조합</s>을 자랑해요!</p>
     </div>
   </section>
-
-
-  <a href="#buy" class="floating-btn"></a><!--***** 9.7 추가 *****-->
-
+  <a href="#buy" class="floating-btn"></a>
 </div>
 
 <div class="region-footer-pre" id="nutella-embed-footer-pre"></div>
@@ -384,8 +367,6 @@
   });
 </script>
 
-
-<!--***** 9.8 수정 *****-->
 <script>
   let userEvent = document.querySelector('.user-event');
   let ck = document.querySelector('.click');
@@ -427,7 +408,7 @@
   }
   function printMsg() {
     if(!inpMsg) {
-      alert('대사를 입력해 주세요.');
+      alert('click! 버튼을 눌러 대사를 입력해 주세요.')
       return;
     }
     result.innerHTML = inpMsg;
@@ -449,7 +430,6 @@
     }
     if (e === 2) {
       if(!inpMsg) {
-        alert('click! 버튼을 눌러 대사를 입력해 주세요.')
         return;
       }
     }
@@ -457,7 +437,5 @@
     userEvent.setAttribute('data-step', e);
   }
 </script>
-<!--***** 끝 *****-->
-
 </body>
 </html>

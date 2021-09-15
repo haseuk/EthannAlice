@@ -306,6 +306,7 @@
   }
   #campaign section.user-event .inner .toon .result span {
     font-size: 3.10810811vw;
+    line-height: 3.78378378vw;
     display: inline-block;
     width: 27.02702703vw;
     position: absolute;
@@ -337,17 +338,18 @@
     box-sizing: border-box;
   }
   #campaign section.user-event .inner .toon .user-name {
-    font-size: 3.24324324vw;
+    font-size: 3.51351351vw;
     color: #666;
     position: absolute;
-    right: 17.56756757vw;
-    bottom: 2.43243243vw;
+    right: 17.83783784vw;
+    bottom: 3.24324324vw;
     left: auto;
     top: auto;
     font-weight: 500;
     z-index: 1;
     text-align: right;
     display: none;
+    line-height: 1;
   }
   #campaign section.user-event .inner .toon-notice {
     font-size: 3.24324324vw;
@@ -358,8 +360,8 @@
     text-align: left;
     padding-left: 4.72972973vw;
     box-sizing: border-box;
-    text-indent: -3.37837838vw;
-    margin-left: 3.37837838vw;
+    text-indent: -3.10810811vw;
+    margin-left: 3.10810811vw;
   }
   #campaign section.user-event .inner .user-agree {
     padding-top: 0vw;
@@ -815,17 +817,18 @@
   }
   #campaign section.gallery .swiper-container .swiper-slide .msg-box {
     position: absolute;
-    left: 11.08108108vw;
-    top: 1.08108108vw;
+    left: 12.83783784vw;
+    top: 0vw;
     right: auto;
     bottom: auto;
-    width: 20.27027027vw;
-    height: 6.75675676vw;
+    width: 23.64864865vw;
+    height: 10.54054054vw;
   }
   #campaign section.gallery .swiper-container .swiper-slide .msg-box .gallery-msg {
-    font-size: 2.16216216vw;
-    color: #a0a0a0;
-    font-weight: 700;
+    font-size: 2.43243243vw;
+    line-height: 2.97297297vw;
+    color: #000;
+    font-weight: 500;
     display: inline-block;
     width: 100%;
     position: absolute;
@@ -859,6 +862,9 @@
     background-image: url('../img/m/next.png');
     background-size: contain;
     margin-left: 41.89189189vw;
+  }
+  #campaign section.gallery .swiper-btn.swiper-button-disabled {
+    opacity: 1;
   }
   #campaign .floating-btn {
     width: 14.72972973vw;

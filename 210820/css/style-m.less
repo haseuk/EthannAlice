@@ -59,7 +59,7 @@
           .img { .contain('../img/m/event-toon.png'); .wh(648,566); }
           .result { .fs(23); .abs; .lt(50%,300); .wh(200,90); .ml(-210);
             .click { .fs(0); .f; .block; .contain('../img/m/click.png'); .pointer; z-index: 1; .ml(-20);}
-            span { .fs(23); .ib; .w(200); .abs; .medium; .lt(50%,45%); transform: translate(-50%,-50%); }
+            span { .fs(23); .lh(28); .ib; .w(200); .abs; .medium; .lt(50%,45%); transform: translate(-50%,-50%); }
           }
           .user-msg { .fs(0); .m(15,0); .hide;
             input { .fs(24); color:#666; .wh(100%,56); .-a(#cfcfcf); .br(28); .ib; .vam; .pl(24); .-box; }
@@ -69,9 +69,9 @@
           //  h3 { .contain('../img/m/f-msg.png'); .wh(387,36); .ib; }
           //  .user-txt { .fs(26); color:#666; .fr; .mt(10); }
           //}
-          .user-name { .fs(24); color:#666; .abs; .rb(130,18); .medium; z-index: 1; .tr; .hide; }
+          .user-name { .fs(26); color:#666; .abs; .rb(132,24); .medium; z-index: 1; .tr; .hide; .lh1; }
         }
-        .toon-notice { .fs(24); .lh(32); .mb(30); color:#666; .light; .tl; .pl(35); .-box; .ti(-25); .ml(25); }
+        .toon-notice { .fs(24); .lh(32); .mb(30); color:#666; .light; .tl; .pl(35); .-box; .ti(-23); .ml(23); }
         .user-agree { .p(0,35); .-box; .mb(40); .-box; .hide;
           table { table-layout: fixed; .tl;
             tr {
@@ -207,8 +207,8 @@
       .swiper-container { .m(35,80,0); overflow: hidden;
         .swiper-slide { .wh(277,243); .rel;
           img { .f; .ib; }
-          .msg-box { .abs; .lt(82,8); .wh(150,50);
-            .gallery-msg { .fs(16); color:#a0a0a0; .bold; .ib; .wf; .abs; .lt(50%,50%); transform: translate(-50%,-50%); }
+          .msg-box { .abs; .lt(95,0); .wh(175,78);
+            .gallery-msg { .fs(18); .lh(22); color:#000; .medium; .ib; .wf; .abs; .lt(50%,50%); transform: translate(-50%,-50%); }
           }
         }
       }
@@ -216,6 +216,7 @@
         &:after { .hide; }
         &.swiper-button-prev { .contain('../img/m/prev.png'); .ml(-336); }
         &.swiper-button-next { .contain('../img/m/next.png'); .ml(310); }
+        &.swiper-button-disabled { opacity: 1; }
       }
     }
     .floating-btn { .wh(109,106); .contain('../img/m/floating.png'); .no-repeat; .ib; .fix; .rb(0,150); z-index: 10; }
