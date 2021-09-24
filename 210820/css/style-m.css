@@ -895,4 +895,21 @@
     top: auto;
   }
 }
+@media only screen and (prefers-color-scheme: dark) {
+  #campaign section.morning .pic p:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -6.62162162vw;
+    top: 0vw;
+    left: auto;
+    bottom: auto;
+    display: inline-block;
+    border-top: 6.76vw solid #000;
+    border-right: 6.76vw solid transparent;
+    background: none;
+    width: unset;
+    height: unset;
+  }
+}
 /*# sourceMappingURL=style-m.css.map */
