@@ -69,7 +69,9 @@
           //  h3 { .contain('../img/m/f-msg.png'); .wh(387,36); .ib; }
           //  .user-txt { .fs(26); color:#666; .fr; .mt(10); }
           //}
-          .user-name { .fs(26); color:#666; .abs; .rb(132,24); .medium; z-index: 1; .tr; .hide; .lh1; }
+          .user-name { .fs(26); color:#666; .abs; .rb(132,21); .medium; z-index: 1; .tr; .hide; .lh1;
+            &:after { content:'님의 이야기'; .fs(26); color:#666666; .medium; .wh(130,32); .abs; .rt(-130,-3); .bgc(#fff); .ib; .tl; .p(3,0,0,5); .-box; }
+          }
         }
         .toon-notice { .fs(24); .lh(32); .mb(30); color:#666; .light; .tl; .pl(35); .-box; .ti(-23); .ml(23); }
         .user-agree { .p(0,35); .-box; .mb(40); .-box; .hide;
@@ -173,8 +175,8 @@
 
     section.event-bonus { .contain("../img/m/bonus.png"); .h(982); .p(269,0,0,30); .-box; .tl; .rel;
       .txt { .fs(35); .lh(45); .light;  s { color:#e30613; .bold; }}
-      span { .fs(22); .light; .lh(30); .mt(20); color:#666; .ib; .ti(-10); .ml(10); }
-      .txt-box { .mt(50);
+      span { .fs(22); .light; .lh(30); .mt(10); color:#666; .ib; .ti(-10); .ml(10); }
+      .txt-box { .mt(20);
         p { .fs(24); .lh(32); .pl(15); .rel; .mb(10); .-box;
           s { .bold; .ib; .w(140);
             &:after { .cnt; .wh(2,20); .bgc(#000); .abs; .lt(0,3); }

@@ -342,7 +342,7 @@
     color: #666;
     position: absolute;
     right: 17.83783784vw;
-    bottom: 3.24324324vw;
+    bottom: 2.83783784vw;
     left: auto;
     top: auto;
     font-weight: 500;
@@ -350,6 +350,27 @@
     text-align: right;
     display: none;
     line-height: 1;
+  }
+  #campaign section.user-event .inner .toon .user-name:after {
+    content: '님의 이야기';
+    font-size: 3.51351351vw;
+    color: #666666;
+    font-weight: 500;
+    width: 17.56756757vw;
+    height: 4.32432432vw;
+    position: absolute;
+    right: -17.56756757vw;
+    top: -0.40540541vw;
+    left: auto;
+    bottom: auto;
+    background-color: #fff;
+    display: inline-block;
+    text-align: left;
+    padding-top: 0.40540541vw;
+    padding-right: 0vw;
+    padding-bottom: 0vw;
+    padding-left: 0.67567568vw;
+    box-sizing: border-box;
   }
   #campaign section.user-event .inner .toon-notice {
     font-size: 3.24324324vw;
@@ -670,14 +691,14 @@
     font-size: 2.97297297vw;
     font-weight: 300;
     line-height: 4.05405405vw;
-    margin-top: 2.7027027vw;
+    margin-top: 1.35135135vw;
     color: #666;
     display: inline-block;
     text-indent: -1.35135135vw;
     margin-left: 1.35135135vw;
   }
   #campaign section.event-bonus .txt-box {
-    margin-top: 6.75675676vw;
+    margin-top: 2.7027027vw;
   }
   #campaign section.event-bonus .txt-box p {
     font-size: 3.24324324vw;

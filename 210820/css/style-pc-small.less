@@ -89,7 +89,9 @@
           //  h3 { .contain('../img/pc/f-msg.png'); .wh(465,42); .ib; }
           //  .user-txt { .fs(24); color:#666; .fr; .mt(10); }
           //}
-          .user-name { .fs(26); color:#666; .abs; .rb(205,259); .medium; z-index: 1; .tr; .hide; .lh1; }
+          .user-name { .fs(26); color:#666; .abs; .rb(212,259); .medium; z-index: 1; .tr; .hide; .lh1;
+            &:after { content:'님의 이야기'; .fs(26); color:#666666; .medium; .wh(130,32); .abs; .rt(-130,-3); .bgc(#fff); .ib; .tl; .p(3,0,0,5); .-box; }
+          }
         }
         .toon-notice { .fs(23); .mb(35); color:#666; .light; .tl; .pl(74); .-box; }
         .user-agree { .p(0,75); .-box; .mb(40); .-box; .hide;
