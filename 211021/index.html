@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="http://wanibani.com/style.css" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <style>
+    /* common */
+    img {display: block;max-width: 100%;margin: 0 auto;}
+    .screen_out {position: absolute;top: -9999em;left: -9999em;width: 1px;height: 1px;overflow: hidden;text-indent: -9999em;}
+
+    /*pc*/
+    .img_m { display: none; }
+
+    [class^="sec_"] {position: relative;}
+
+    .jh_landing { overflow: hidden; max-width: 1920px; margin:0 auto; }
+    .jh_landing .video_wrap { position: relative; width: 100%; }
+    .jh_landing .video_wrap::after { content: ''; display: block; padding-top: 56.25%; }
+    .jh_landing iframe { position: absolute; top: 0; left: 50%; transform: translateX(-50%); display: block; width: 100%; height: 100%; }
+
+    .sec_2 .img_btn {  width:17.97%; height:11.2%; cursor: pointer; display: inline-block; position: absolute; left:50%; top: 73.78%; transform: translateX(-50%); }
+    .sec_3-1, .sec_4-1, .sec_5-1 { background: #e6dbcf; }
+    .sec_3-1 .illust, .sec_4-1 .illust, .sec_5-1 .illust { position: relative; z-index: 2; pointer-events: none; }
+    .sec_3-1 .swiper, .sec_5-1 .swiper3 { position: absolute; left: 50%; top: 0; width: 50%;}
+    .sec_4-1 .swiper2 { position: absolute; right: 50%; top: 0; width: 50%;}
+
+    .sec_3-1 .swiper .swiper-slide, .sec_4-1 .swiper2 .swiper-slide, .sec_5-1 .swiper3 .swiper-slide { position: relative; }
+    .sec_3-1 .swiper .swiper-slide .btn { position: absolute; left: 50%; top: 73.6%; width:16.3%; height:3.48%; transform: translateX(-50%);  }
+    .sec_4-1 .swiper2 .swiper-slide .btn { position: absolute; left: 50%; top: 74.8%; width:16.3%; height:3.48%; transform: translateX(-50%);  }
+    .sec_5-1 .swiper3 .swiper-slide .btn { position: absolute; left: 50%; top: 78.3%; width:16.3%; height:3.8%; transform: translateX(-50%);  }
+
+    .sec_3-1 .swiper .swiper-button, .sec_4-1 .swiper2 .swiper-button { position: absolute; left: 0; top: 44.3%; margin-top: 0; width:4.6%; height:6.7%; outline: none; }
+    .sec_5-1 .swiper-button { position: absolute; left: 0; top: 48.6%; margin-top: 0; width:4.6%; height:7.3%; outline: none; }
+
+    .sec_3-1 .swiper .swiper-button:after, .sec_4-1 .swiper2 .swiper-button:after, .sec_5-1 .swiper3 .swiper-button:after { display: none; }
+    .sec_3-1 .swiper .swiper-button.swiper-button-prev, .sec_4-1 .swiper2 .swiper-button.swiper-button-prev, .sec_5-1 .swiper3 .swiper-button.swiper-button-prev { left: 9.3%; right: auto; }
+    .sec_3-1 .swiper .swiper-button.swiper-button-next, .sec_4-1 .swiper2 .swiper-button.swiper-button-next, .sec_5-1 .swiper3 .swiper-button.swiper-button-next { left: auto; right: 10%; }
+
+
+    @media screen and (max-width:1024px) {
+      .img_pc { display: none !important; }
+      .img_m { display: block; }
+      img {width: 100%;}
+      .sec_2 .img_btn { width:47.2vw; height:10.1vw; cursor: pointer; display: inline-block; position: absolute; left:50%; top: 82.6vw; transform: translateX(-50%); }
+
+      .sec_3-1 .illust, .sec_4-1 .illust, .sec_5-1 .illust { position: relative; z-index: 2; pointer-events: none; }
+      .sec_3-1 .swiper, .sec_4-1 .swiper2, .sec_5-1 .swiper3 { position: absolute; left: 0; top: 0; width: 100%;}
+      .sec_3-1 .swiper .swiper-slide, .sec_4-1 .swiper2 .swiper-slide, .sec_5-1 .swiper3 .swiper-slide { position: relative; }
+      .sec_3-1 .swiper .swiper-slide .btn, .sec_4-1 .swiper2 .swiper-slide .btn, .sec_5-1 .swiper3 .swiper-slide .btn { position: absolute; left: 50%; top: 125.3vw; width:21.2vw; height:6.3vw; transform: translateX(-50%);  }
+      .sec_3-1 .swiper .swiper-button, .sec_4-1 .swiper2 .swiper-button, .sec_5-1 .swiper3 .swiper-button { position: absolute; left: 0; top: 50%; margin-top: 0; width:6.8vw; height:20vw; transform: translateY(-50%); outline: none; }
+      .sec_3-1 .swiper .swiper-button:after, .sec_4-1 .swiper2 .swiper-button:after, .sec_5-1 .swiper3 .swiper-button:after { display: none; }
+      .sec_3-1 .swiper .swiper-button.swiper-button-prev, .sec_4-1 .swiper2 .swiper-button.swiper-button-prev, .sec_5-1 .swiper3 .swiper-button.swiper-button-prev { left: 5.5vw; right: auto; }
+      .sec_3-1 .swiper .swiper-button.swiper-button-next, .sec_4-1 .swiper2 .swiper-button.swiper-button-next, .sec_5-1 .swiper3 .swiper-button.swiper-button-next { left: auto; right: 5.5vw; }
+    }
+  </style>
+</head>
+<body>
+
+
+<div class="jh_landing">
+  <div class="sec_1">
+    <div class="video_wrap">
+      <div id="player">
+        <iframe src="https://www.youtube.com/embed/tnMrwimO2vo?rel=0&controls=0&showinfo=0&autoplay=1&mute=1&playsinline&version=3&loop=1&playlist=tnMrwimO2vo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="sec_2">
+    <div class="img_pc"><img src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_870b28d5254f44a68d817a3b9c93e2ab.png" alt="록시땅 × 준호, 로맨틱한 크리스마스를 만드는 첫번째 방법 록시땅의 홀리데이 요정 준호가 준비하는 로맨틱 크리스마스 기프트를 만나보세요"></div>
+    <div class="img_m"><img src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_32ae6206cc804ad29598386d4c602ebb.png" alt="록시땅 × 준호, 로맨틱한 크리스마스를 만드는 첫번째 방법 록시땅의 홀리데이 요정 준호가 준비하는 로맨틱 크리스마스 기프트를 만나보세요"></div>
+    <a class="img_btn" href="http://kr.loccitane.com/default.aspx?a=1702132" target="_blank"><span class="screen_out">기프트 만나보기</span></a>
+  </div>
+
+  <div class="sec_3">
+    <div class="img_m"><img src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_c03d3484c1cb4c68895bd6dbe71296a5.png" alt="록시땅의 홀리데이 요정, 준호가 제안하는 로맨틱 크리스마스 기프트. 2021 홀리데이 클래식 시어 바디 듀오 71,000원"></div>
+  </div>
+
+  <div class="sec_3-1">
+    <img class="img_pc illust" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_b04f9102ae8447ca82340e97aca56222.png" alt="">
+    <img class="img_m illust" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_7e9f713bf0f0477c89b7e8c6d0cd5f7a.png" alt="">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="img_pc" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_b36de1fd0bb04a7db0200b9b9f195a75.png" alt="">
+          <img class="img_m" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_c3a0632f259449fb8c96c4bc7e451322.png" alt="">
+          <a class="btn" href="http://kr.loccitane.com/default.aspx?a=1702369" target="_blank"></a>
+        </div>
+        <div class="swiper-slide">
+          <img class="img_pc" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_bc720338616e4ebf93b540f3dcb81855.png" alt="">
+          <img class="img_m" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_b9477b5a459a49fb9c3c7cbefdae33fe.png" alt="">
+          <a class="btn" href="http://kr.loccitane.com/default.aspx?a=1702431" target="_blank"></a>
+        </div>
+        <div class="swiper-slide">
+          <img class="img_pc" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_8e55f1bad1ed4017a99fbbc829fcbaff.png" alt="">
+          <img class="img_m" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_5653f406e02c49e08c3f27c14d777183.png" alt="">
+          <a class="btn" href="http://kr.loccitane.com/default.aspx?a=1702440" target="_blank"></a>
+        </div>
+        <div class="swiper-slide">
+          <img class="img_pc" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_9e4ef0dd815045f1bcaa7f7e3a02613a.png" alt="">
+          <img class="img_m" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_5ce1860713e44404a734f9e5b6a4a9dc.png" alt="">
+          <a class="btn" href="http://kr.loccitane.com/default.aspx?a=1702436" target="_blank"></a>
+        </div>
+      </div>
+      <div class="swiper-button swiper-button-prev"></div>
+      <div class="swiper-button swiper-button-next"></div>
+    </div>
+  </div>
+
+  <div class="sec_4">
+    <div class="img_m"><img src="//img.loccitane.com/ocms/img/lib/PROMO/OCC_06b4df40a50041af943260f7fb8e3cc3.png" alt="프로방스 요정들의 여정을 따라 만들어진 마법같은 홀리데이 컬렉션. 2021 홀리데이 윈터 위크 핸드 크림 150ml/38,000원"></div>
+  </div>
+
+  <div class="sec_4-1">
+    <img class="img_pc illust" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_263bd7a8d0fd42948ec45b2c7016329a.png" alt="">
+    <img class="img_m illust" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_501d0f4ecc7d4f3994bad225f4218687.png" alt="">
+    <div class="swiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="img_pc" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_1e911b7fa1eb45b0aeff22976f32c153.png" alt="">
+          <img class="img_m" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_316645f5630c47468ed5d91bdc80a186.png" alt="">
+          <a class="btn" href="http://kr.loccitane.com/default.aspx?a=1702374" target="_blank"></a>
+        </div>
+        <div class="swiper-slide">
+          <img class="img_pc" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_89e07d21bb1f463192c338b6b4ad96c3.png" alt="">
+          <img class="img_m" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_f2473ab106b34886b6666ad8046d4dae.png" alt="">
+          <a class="btn" href="http://kr.loccitane.com/default.aspx?a=1702411" target="_blank"></a>
+        </div>
+        <div class="swiper-slide">
+          <img class="img_pc" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_c25630be767f4d13ae3ee5fd6a968ee8.png" alt="">
+          <img class="img_m" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_76233832becf4bff978ee6ae681bbca9.png" alt="">
+          <a class="btn" href="http://kr.loccitane.com/default.aspx?a=1702458" target="_blank"></a>
+        </div>
+      </div>
+      <div class="swiper-button swiper-button-prev"></div>
+      <div class="swiper-button swiper-button-next"></div>
+    </div>
+  </div>
+
+  <div class="sec_5">
+    <div class="img_m"><img src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_1279825fdee44837ad16be1f6a141664.png" alt="프로방스 요정들의 여정을 따라 만들어진 마법같은 홀리데이 컬렉션. 2021 홀리데이 윈터 위크 핸드 크림 150ml/38,000원"></div>
+  </div>
+
+  <div class="sec_5-1">
+    <img class="img_pc illust" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_192cd86071144d899fd344655fa675e8.png" alt="">
+    <img class="img_m illust" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_d8e5d94f19ba455b803fe6f0ce437737.png" alt="">
+    <div class="swiper3">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="img_pc" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_a004c0f6bda34631a4fe6f12bcb78b12.png" alt="">
+          <img class="img_m" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_c91ef6cb93414ab2bc2f34f698ef8d76.png" alt="">
+          <a class="btn" href="http://kr.loccitane.com/default.aspx?a=641876" target="_blank"></a>
+        </div>
+        <div class="swiper-slide">
+          <img class="img_pc" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_f2e6724afbf047aebc99af399712e7f4.png" alt="">
+          <img class="img_m" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_d9fe4b052f864b8a9040ceb9b181fd89.png" alt="">
+          <a class="btn" href="http://kr.loccitane.com/default.aspx?a=22817" target="_blank"></a>
+        </div>
+        <div class="swiper-slide">
+          <img class="img_pc" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_aa40aec92a94435a97b981766c2c8fe3.png" alt="">
+          <img class="img_m" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_ad94f61df92a41318b27d93896ace403.png" alt="">
+          <a class="btn" href="http://kr.loccitane.com/default.aspx?a=1612264" target="_blank"></a>
+        </div>
+      </div>
+      <div class="swiper-button swiper-button-prev"></div>
+      <div class="swiper-button swiper-button-next"></div>
+    </div>
+  </div>
+</div>
+</body>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+  var player;
+  function onYouTubeIframeAPIReady(){
+    player = new YT.Player('player',{
+      width:'100%',
+      videoId:'tnMrwimO2vo',
+      playerVars:{'autoplay':1,'playsinline':1},
+      events:{ 'onReady':onPlayerReady, 'onStateChange': onPlayerStateChange },
+    });
+  }
+  function onPlayerReady(e) {
+    e.target.mute();
+    e.target.playVideo();
+  }
+  function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.ENDED) {
+      player.seekTo(0);
+      player.playVideo();
+    }
+  }
+</script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".swiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  var swiper = new Swiper(".swiper2", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  var swiper = new Swiper(".swiper3", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+</body>
+</html>
+
+
+
