@@ -1,0 +1,420 @@
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- swiper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" integrity="sha512-ZHauUc/vByS6JUz/Hl1o8s2kd4QJVLAbkz8clgjtbKUJT+AG1c735aMtVLJftKQYo+LD62QryvoNa+uqy+rCHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" integrity="sha512-nSomje7hTV0g6A5X/lEZq8koYb5XZtrWD7GU2+aIJD35CePx89oxSM+S7k3hqNSpHajFbtmrjavZFxSEfl6pQA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- css -->
+<link rel="stylesheet" href="https://sjh81684730.cafe24.com/css/style.css" type="text/css">
+<style>
+  /* common */
+  img {display: block;max-width: 100%;width: 100%;margin: 0 auto;}
+
+  /*pc*/
+  .t-page__content { max-width: 1920px; width: 100%; margin: 0 auto; overflow: hidden; }
+  .screen_out {position: absolute;top: -9999em;left: -9999em;width: 1px;height: 1px;overflow: hidden;text-indent: -9999em;}
+  .inner { position: relative; max-width: 1190px; width: 100%; margin: 0 auto; }
+  .img_m { display: none; }
+
+  [class^="sec_"] {position: relative;}
+
+  .holiday_landing {position: relative;width: 100%;overflow: hidden;}
+  .nav {position: absolute;bottom: 0;left:50%;transform: translateX(-50%);width: 52.8646%;height: 5.3125vw;}
+  .nav ul {display: flex;height:100%}
+  .nav ul li {width: 100%;}
+  .nav ul li a {display: block; height: 100%; /*background-color: #00773f; opacity: .5;*/}
+
+  .gif_wrap img {position: absolute; bottom: 0; left: 0;}
+  .gif_wrap .gif1 {width: 8.4375vw;left: 16%;bottom: 1%;}
+  .gif_wrap .gif2 {width: 8.4375vw;right: 24.7%;bottom: 11%;left: auto;}
+  .gif_wrap .gif3 {width: 8.4375vw;left: 32.3%;bottom: 60.4%;}
+
+  .holiday_landing .video_wrap { position: relative; width: 100%; }
+  .holiday_landing .video_wrap::after { content: ''; display: block; padding-top: 56.25%; }
+  .holiday_landing iframe { position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; }
+
+  .sec_4 {padding: 5.2083% 0 0 0;background: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_282b361c565449b2b2e5f3e34c5d8ec9.jpg) no-repeat 50% 50%;background-size: cover;}
+  .sec_4 .card_area ul {width: 70%;margin: 2.3958vw auto 0;}
+  .sec_4 .card_area ul::after {content: '';display: block;clear: both;}
+  .sec_4 .card_area ul li {float: left; width: 24%; margin-left: 1%;background: url() no-repeat 50% 50%;background-size: cover;transition: .5s all ease-in-out;}
+  .sec_4 .card_area ul li:first-child {margin-left: 0;}
+  .sec_4 .card_area ul li::after {content: '';display: block;padding-top: 170.7692%;}
+  .sec_4 .card_area ul li.card1 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_9293da40cee4431d9953610a90754fc6.jpg);}
+  .sec_4 .card_area ul li.card2 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_5e0600085bec4f45931104e4fd988640.jpg);}
+  .sec_4 .card_area ul li.card3 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_46038781bcc6477d982916b81bc41e81.jpg);}
+  .sec_4 .card_area ul li.card4 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_bad141be1c5e451fae56efbe6679df3b.jpg);}
+  .sec_4 .card_area ul li.card1:hover {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_613a7f2b918448a5997599d0bcc5e0e6.jpg);}
+  .sec_4 .card_area ul li.card2:hover {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_9d64cef4df014147b734fe1bd883e492.jpg);}
+  .sec_4 .card_area ul li.card3:hover {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_b46da819790348e497359715b0966ff9.jpg);}
+  .sec_4 .card_area ul li.card4:hover {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_54c98f67d7254e279a9d5aeac8a68df0.jpg);}
+  .sec_4 .classic_shea {height: 52.0833vw;background: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_21840d1950ca436c8be39f23678aadc8.png) no-repeat 50% 50%;background-size: cover;transition: .5s;}
+  .sec_4 .classic_shea.green1 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_0909e3c829254ee093fa39ad3be4ff80.png);}
+  .sec_4 .classic_shea.green2 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_6bb6f91e6f8d4d16888271476c479899.png);}
+  .sec_4 .classic_shea.orange {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_45b5aa46145a4a54999f2b5c30b2f8c9.png);}
+  .sec_4 .classic_shea.gold1 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_298f560648d248369d008155c853d7db.png);}
+  .sec_4 .classic_shea.gold2 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_6823ff53a75249a8a455eeb6333f0304.png);}
+  .sec_4 .slide_wrap {height: 100%;padding-top: 19.1667vw;}
+  .sec_4 .swiper {position: relative;width: 54.3750vw;height: 100%; padding:0 1.3021vw; margin: 0 auto;overflow: hidden;}
+  .sec_4 .classic_shea .swiper-slide {position:relative;height: 22.5000vw;background: url() no-repeat 50% 50%;background-size: contain;}
+  .sec_4 .classic_shea .swiper-slide.blue {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_aaf37053f49640a4a4b57dcf3409a8e0.png);}
+  .sec_4 .classic_shea .swiper-slide.green1 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_805423b3f7324c52b60b844ec6187b69.png);}
+  .sec_4 .classic_shea .swiper-slide.green2 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_02fa07731d6443679588fa57ee7eb7c3.png);}
+  .sec_4 .classic_shea .swiper-slide.orange {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_e1a0460cc57e4c0195e0e5eec021205d.png);}
+  .sec_4 .classic_shea .swiper-slide.gold1 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_ea8968ce0e354dda83a7ab41ce2626ce.png);}
+  .sec_4 .classic_shea .swiper-slide.gold2 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_9984f90c7de84fe9ba64e1fc28cecca6.png);}
+  .sec_4 .swiper-pagination {bottom: 6.2500vw;}
+  .sec_4 .swiper-pagination .swiper-pagination-bullet {width: 1.0417vw;height: 1.0417vw;margin: 0 1.0417vw;background-color: #999;opacity: 1;}
+  .sec_4 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {background-color: #073793;}
+  .sec_4 .swiper-pagination .swiper-pagination-bullet:nth-child(2).swiper-pagination-bullet-active,
+  .sec_4 .swiper-pagination .swiper-pagination-bullet:nth-child(3).swiper-pagination-bullet-active {background-color: #00773f;}
+  .sec_4 .swiper-pagination .swiper-pagination-bullet:nth-child(4).swiper-pagination-bullet-active {background-color: #eb5a02;}
+  .sec_4 .swiper-pagination .swiper-pagination-bullet:nth-child(5).swiper-pagination-bullet-active,
+  .sec_4 .swiper-pagination .swiper-pagination-bullet:nth-child(6).swiper-pagination-bullet-active {background-color: #b38726;}
+  .sec_4 .swiper-button-next, .sec_4 .swiper-button-prev {top:20%;transform: translateY(-50%); width: 24px;height: 46px;margin: 0;background:none;}
+  .sec_4 .swiper-button-prev::after, .sec_4 .swiper-button-prev::before,
+  .sec_4 .swiper-button-next::after, .sec_4 .swiper-button-next::before {content: '';display: block;position: absolute;top: 50%;left: 0;transform: -50%;width: 100%;height: 2px;background-color: #073793;transition: background-color .5s ease-in-out;}
+  .sec_4 .swiper-button-prev::after {transform: rotate(45deg);transform-origin: 0 0;}
+  .sec_4 .swiper-button-prev::before {transform: rotate(-45deg);transform-origin: 0 100%;}
+  .sec_4 .swiper-button-next::after {transform: rotate(-45deg);transform-origin: 100% 0;}
+  .sec_4 .swiper-button-next::before {transform: rotate(45deg);transform-origin: 100% 100%;}
+  .sec_4 .classic_shea.green1 .swiper-button-prev::after, .sec_4 .classic_shea.green1 .swiper-button-prev::before,
+  .sec_4 .classic_shea.green1 .swiper-button-next::after, .sec_4 .classic_shea.green1 .swiper-button-next::before,
+  .sec_4 .classic_shea.green2 .swiper-button-prev::after, .sec_4 .classic_shea.green2 .swiper-button-prev::before,
+  .sec_4 .classic_shea.green2 .swiper-button-next::after, .sec_4 .classic_shea.green2 .swiper-button-next::before {background-color: #00773f;}
+  .sec_4 .classic_shea.orange .swiper-button-prev::after, .sec_4 .classic_shea.orange .swiper-button-prev::before,
+  .sec_4 .classic_shea.orange .swiper-button-next::after, .sec_4 .classic_shea.orange .swiper-button-next::before {background-color: #eb5a02;}
+  .sec_4 .classic_shea.gold1 .swiper-button-prev::after, .sec_4 .classic_shea.gold1 .swiper-button-prev::before,
+  .sec_4 .classic_shea.gold1 .swiper-button-next::after, .sec_4 .classic_shea.gold1 .swiper-button-next::before,
+  .sec_4 .classic_shea.gold2 .swiper-button-prev::after, .sec_4 .classic_shea.gold2 .swiper-button-prev::before,
+  .sec_4 .classic_shea.gold2 .swiper-button-next::after, .sec_4 .classic_shea.gold2 .swiper-button-next::before {background-color: #b38726;}
+
+  .sec_4 .swiper-slide .buy_btn {position: absolute;bottom: 0;width: 8.0729vw;height: 2.3438vw;background-color: transparent;opacity: 0;  /*background-color: #f0f;opacity: .5;*/}
+  .sec_4 .swiper-slide .buy_btn.btn1 {left: 5.8vw;}
+  .sec_4 .swiper-slide .buy_btn.btn2 {left: 21.65vw;}
+  .sec_4 .swiper-slide .buy_btn.btn3 {left: 37.55vw;}
+  .sec_4 .swiper-slide.gold2 .buy_btn.btn1 {left: 13.65vw;}
+  .sec_4 .swiper-slide.gold2 .buy_btn.btn2 {left: 29.6vw;}
+
+  .sec_5 {padding: 4.6875vw 0 3.9583vw;
+    background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_0ba874d65af640fb94d6174868107811.png), url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_a1193bfdd3c54a608fb150595d251b6d.jpg) ;
+    background-repeat: no-repeat;
+    background-position: 50% 100%, 50% 50%;
+    background-size: 100% auto, cover;
+  }
+  .sec_5 .pd_list {width: 51.8229vw;margin: 4.6875vw auto 0;}
+  .sec_5 .pd_line {display: none;position: relative;margin-top: 3.3854vw;}
+  .sec_5 .pd_line:first-child {margin-top: 0;}
+  .sec_5 .pd_line .imgarea {position: relative;width: 100%;height: 21.7708vw;background: url() no-repeat 50% 50%;background-size: contain;}
+  .sec_5 .pd_line.line1 {display: block;}
+  .sec_5 .pd_line.line1 .imgarea {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_c25e9f182aec412f8b9f50bc10ab70d0.png);}
+  .sec_5 .pd_line.line2 .imgarea {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_53a22edd49864858b41eca994d182f84.png);}
+  .sec_5 .pd_line.line3 { padding-bottom:3.9583vw}
+  .sec_5 .pd_line.line3 .imgarea {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_eb40a20b711342d1bd3962e4039dfa62.png);}
+  .sec_5 .pd_line .buy_btn {position: absolute;bottom: 0;width: 8.0729vw;height: 2.3438vw;background-color: transparent;opacity: 0;  /* background-color: #f0f;opacity: .5; */}
+  .sec_5 .pd_line .buy_btn.btn1 {left: 11.8%;}
+  .sec_5 .pd_line .buy_btn.btn2 {left: 42.7%;}
+  .sec_5 .pd_line .buy_btn.btn3 {left: 73.3%;}
+  .sec_5 .more_btn {display: block; width: 5vw;margin: 3.3333vw auto 0;}
+
+  @media screen and (max-width:1024px) {
+    .img_pc { display: none !important; }
+    .img_m { display: block; }
+
+    .nav {width: 100%;height: 16.1644vw;}
+
+    .gif_wrap .gif1 {display: none;}
+    .gif_wrap .gif2 {width: 17.8082vw;right: -0.3%;bottom: 13.9%;}
+    .gif_wrap .gif3 {width: 17.8082vw;left: 23.3%;bottom: 56.6%;}
+
+    .sec_4 {padding: 10.9589vw 0 0 0;background: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_d8f4ddc0652c4976afd1741900646efc.jpg) no-repeat 50% 50%;background-size: cover;}
+    .sec_4 .card_area ul {width: 90.4110vw;margin: 4.1096vw auto 0;}
+    .sec_4 .card_area ul li {width: calc((100% - 1.3699vw)/2); margin-left: 0;margin-top: 1.3699vw;}
+    .sec_4 .card_area ul li::after {padding-top: 126.1538%;}
+    .sec_4 .card_area ul li:nth-child(2n) {margin-left: 1.3699vw;}
+    .sec_4 .card_area ul li.card1 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_8ed1caec059f42329c93f245e148850d.jpg);}
+    .sec_4 .card_area ul li.card2 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_f8abb2ef939843b3a8aa2bef9e228e03.jpg);}
+    .sec_4 .card_area ul li.card3 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_179c83f825e6402cb7bc0b2f4e332538.jpg);}
+    .sec_4 .card_area ul li.card4 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_75f17a33b9424391b6b51ba1d5dad8fc.jpg);}
+    .sec_4 .card_area ul li.card1:hover {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_90920e477362495bbe19052b8251d91e.jpg);}
+    .sec_4 .card_area ul li.card2:hover {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_231eb19038774615b03e863ac5486a61.jpg);}
+    .sec_4 .card_area ul li.card3:hover {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_58ec962a2532401493ba2eb0609d2d0e.jpg);}
+    .sec_4 .card_area ul li.card4:hover {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_e8f157d7715a446184c9782733151b1e.jpg);}
+
+    .sec_4 .classic_shea {height: 209.4521vw;background: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_65a9b047bc4c4b388390c12958ce6953.png) no-repeat 50% 50%;background-size: cover;transition: .5s;}
+    .sec_4 .classic_shea.green1 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_a9f0e16641cb4659bd718600c1134d5e.png);}
+    .sec_4 .classic_shea.green2 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_a9f0e16641cb4659bd718600c1134d5e.png);}
+    .sec_4 .classic_shea.orange {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_1f103903f48d45c49c0fe0c65b08123e.png);}
+    .sec_4 .classic_shea.gold1 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_9aa4b6535783432c9899a83cadaf6598.png);}
+    .sec_4 .classic_shea.gold2 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_9aa4b6535783432c9899a83cadaf6598.png);}
+    .sec_4 .slide_wrap {padding-top: 49.3151vw;}
+    .sec_4 .swiper {width: 100%;padding:0;}
+    .sec_4 .classic_shea .swiper-slide {height: 123.6986vw;background-size: 100% auto;}
+    .sec_4 .classic_shea .swiper-slide.blue {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_1dab293b5de54d3d8285ea2217a2f683.png);}
+    .sec_4 .classic_shea .swiper-slide.green1 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_4289873378104771b0e345350fc140cf.png);}
+    .sec_4 .classic_shea .swiper-slide.green2 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_a9f7f1b9835849e4b5014bbb503e067c.png);}
+    .sec_4 .classic_shea .swiper-slide.orange {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_c2d009bbf2de4ed0939900bba6c2e9bd.png);}
+    .sec_4 .classic_shea .swiper-slide.gold1 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_ed17182051f046cd823594bad8b01fb8.png);}
+    .sec_4 .classic_shea .swiper-slide.gold2 {background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_93d73f23bda3430aa4320430930ae21e.png);}
+    .sec_4 .swiper-button-next, .sec_4 .swiper-button-prev {top: 38%;}
+    .sec_4 .swiper-button-next {right: 2.0548vw;}
+    .sec_4 .swiper-button-prev {left: 2.0548vw;}
+    .sec_4 .swiper-pagination {bottom: 19.1781vw;}
+    .sec_4 .swiper-pagination .swiper-pagination-bullet {width: 3.5616vw;height: 3.5616vw;margin: 0 4.3836vw;}
+
+    .sec_4 .swiper-slide .buy_btn {width: 21.2329vw;height: 6.1644vw;}
+    .sec_4 .swiper-slide .buy_btn.btn1 {left: 16.3973vw;bottom: 64vw;}
+    .sec_4 .swiper-slide .buy_btn.btn2 {left: 57.65vw;bottom: 64vw;}
+    .sec_4 .swiper-slide .buy_btn.btn3 {left: 37.55vw;bottom: 2.3vw;}
+    .sec_4 .swiper-slide.gold2 .buy_btn.btn1 {left: 50%;bottom: 64vw;transform: translateX(-50%);}
+    .sec_4 .swiper-slide.gold2 .buy_btn.btn2 {left: 50%;bottom: 2.3vw;transform: translateX(-50%);}
+
+
+    .sec_5 {padding: 4.6875vw 0 10.1370vw;
+      background: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_c0ae209544714b9d925b76d1e1c11d11.jpg) no-repeat 50% 50%;
+      background-size: cover;}
+    .sec_5.bg2 {
+      background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_736d7592ee24433e88087dd071f17043.png), url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_c0ae209544714b9d925b76d1e1c11d11.jpg);
+      background-repeat: no-repeat;
+      background-position: 50% 100%, 50% 50%;
+      background-size: 100% auto, cover;
+    }
+    .sec_5 .pd_list {width: 100%;margin: 4.6875vw auto 0;}
+    .sec_5 .pd_line {display: none;position: relative;margin-top: 0;}
+    .sec_5 .pd_line:first-child {margin-top: 0;}
+    .sec_5 .pd_line .imgarea {height: auto;background-position: 50% 100%;background-size: 100% auto;}
+    .sec_5 .pd_line.line1 {display: block;}
+    .sec_5 .pd_line.line1 .imgarea {height: 121.3699vw;background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_2b02ca9e394f4312afb978890cedb46a.png);}
+    .sec_5 .pd_line.line2 .imgarea {height: 189.7260vw;background-image: url(https://img.loccitane.com/ocms/img/lib/PROMO/OCC_36e9f816df4e413f83b9a3a68ab4581d.png);}
+    .sec_5 .pd_line .buy_btn {width: 21.2329vw;height: 6.1644vw;}
+    .sec_5 .pd_line.line1 .buy_btn.btn1 {left: 17vw; bottom: 63.2vw;}
+    .sec_5 .pd_line.line1 .buy_btn.btn2 {left: auto;right: 18%;bottom:  63.2vw;}
+    .sec_5 .pd_line.line1 .buy_btn.btn3 {left: 17vw;}
+    .sec_5 .pd_line.line1 .buy_btn.btn4 {left: auto;right: 18%;}
+    .sec_5 .pd_line.line2 .buy_btn.btn1 {left: 17vw; bottom: 121.5vw;}
+    .sec_5 .pd_line.line2 .buy_btn.btn2 {left: auto;right: 18%;bottom:  121.5vw;}
+    .sec_5 .pd_line.line2 .buy_btn.btn3 {left: 17vw;bottom: 59.6vw;}
+    .sec_5 .pd_line.line2 .buy_btn.btn4 {left: auto;right: 18%;bottom: 59.6vw;}
+    .sec_5 .pd_line.line2 .buy_btn.btn5 {left: 17vw;}
+    .sec_5 .more_btn {width: 100%;margin: 8.2192vw auto 0;}
+  }
+</style>
+</head>
+<body>
+<div class="holiday_landing">
+  <!-- <img src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_14cb39e2bb57449bbe2dd148eee1806a.jpg" alt="">
+  <img src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_7028cb206c6245a5a1b68237aef439dc.jpg" alt="">
+  <img src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_fa9578fd276b45e9b94f8702192ff986.jpg" alt=""> -->
+
+  <div class="sec_1">
+    <div class="img_pc"><img src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_5ac12b1ec1af4394beb82a495d691703.jpg" alt=""></div>
+    <div class="img_m"><img src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_25488829168a4e568b7268ef06ccc022.jpg" alt=""></div>
+    <div class="nav">
+      <ul>
+        <li><a href="#holiday"><span class="screen_out">홀리데이 매직</span></a></li>
+        <li><a href="#magic"><span class="screen_out">매직 컬렉션</span></a></li>
+        <li><a href="#gift"><span class="screen_out">기프트 세트</span></a></li>
+      </ul>
+    </div>
+    <div class="gif_wrap">
+      <img class="gif1" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_e3645778e74d4244b4c5fc3ab4aefd7c.gif" alt="">
+      <img class="gif2" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_77f07960fbbe4b58ba2f89a4dce6afee.gif" alt="">
+      <img class="gif3" src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_d9ef34ff00dc481593da9e42198a60ad.gif" alt="">
+    </div>
+  </div>
+  <div class="sec_2" id="holiday">
+    <div class="video_wrap">
+      <iframe src="https://www.youtube.com/embed/XpktPX31tPg?rel=0&controls=0&showinfo=0&version-2&autoplay=1&loop=1&playlist=XpktPX31tPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="sec_3">
+    <div class="img_pc"><img src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_7a29fe21d8c0419995e9943621d3875e.jpg" alt=""></div>
+    <div class="img_m"><img src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_b36db7970d3849fabf8626f343d53f49.jpg" alt=""></div>
+  </div>
+  <div class="sec_4" id="magic">
+    <div class="card_area">
+      <div class="area_tit">
+        <div class="img_pc"><img src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_b024828fc2f84a358e2684059517bb5a.png" alt=""></div>
+        <div class="img_m"><img src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_e765f16770db4113a6510fb9685420dc.png" alt=""></div>
+      </div>
+      <ul>
+        <li class="card1"><span class="screen_out">클래식 시어</span></li>
+        <li class="card2"><span class="screen_out">윈터시어, 만다린시어</span></li>
+        <li class="card3"><span class="screen_out">델리케이트시어</span></li>
+        <li class="card4"><span class="screen_out">로즈자스민</span></li>
+      </ul>
+    </div>
+    <div class="classic_shea">
+      <div class="slide_wrap">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide blue">
+              <a class="buy_btn btn1" href="http://kr.loccitane.com/default.aspx?a=1702369" target="_blank"><span class="screen_out">울트라 리치 바디 크림 100ml/39,000원</span></a>
+              <a class="buy_btn btn2" href="http://kr.loccitane.com/default.aspx?a=1702411" target="_blank"><span class="screen_out">시어 드라이 스킨 핸드크림 150ml/38,000원</span></a>
+              <a class="buy_btn btn3" href="http://kr.loccitane.com/default.aspx?a=1702412" target="_blank"><span class="screen_out">시어 바디 리치 로션 250ml/42,000원</span></a>
+            </div>
+            <div class="swiper-slide green1">
+              <a class="buy_btn btn1" href="http://kr.loccitane.com/default.aspx?a=1702447" target="_blank"><span class="screen_out">윈터 워크 리치 바디 로션 250ml/42,000원</span></a>
+              <a class="buy_btn btn2" href="http://kr.loccitane.com/default.aspx?a=1702374" target="_blank"><span class="screen_out">윈터 워크 핸드 크림 150ml/38,000원</span></a>
+              <a class="buy_btn btn3" href="http://kr.loccitane.com/default.aspx?a=1702450" target="_blank"><span class="screen_out">윈터 워크 울트라 라이트 바디 크림 125ml/39,000원</span></a>
+            </div>
+            <div class="swiper-slide green2">
+              <a class="buy_btn btn1" href="http://kr.loccitane.com/default.aspx?a=1702451" target="_blank"><span class="screen_out">윈터 워크 샤워 크림 250ml/29,000원</span></a>
+              <a class="buy_btn btn2" href="http://kr.loccitane.com/default.aspx?a=1702453" target="_blank"><span class="screen_out">윈터 워크 엑스트라 젠틀 솝 50g/6,000원</span></a>
+              <a class="buy_btn btn3" href="http://kr.loccitane.com/default.aspx?a=1702455" target="_blank"><span class="screen_out">윈터 워크 울트라 라이트 바디 크림 200ml/55,000원</span></a>
+            </div>
+            <div class="swiper-slide orange">
+              <a class="buy_btn btn1" href="http://kr.loccitane.com/default.aspx?a=1702457" target="_blank"><span class="screen_out">델리케이트 시어 울트라 라이트 바디 크림 125ml/39,000원</span></a>
+              <a class="buy_btn btn2" href="http://kr.loccitane.com/default.aspx?a=1702458" target="_blank"><span class="screen_out">델리케이트 시어 라이트 핸드 크림 150ml/38,000원</span></a>
+              <a class="buy_btn btn3" href="http://kr.loccitane.com/default.aspx?a=1702459" target="_blank"><span class="screen_out">델리케이트 시어 너리싱 세일,큐티클 오일 7.5ml/24,000원</span></a>
+            </div>
+            <div class="swiper-slide gold1">
+              <a class="buy_btn btn1" href="http://kr.loccitane.com/default.aspx?a=1702460" target="_blank"><span class="screen_out">2021 로즈 자스민 바디 로션 250ml/42,000원</span></a>
+              <a class="buy_btn btn2" href="http://kr.loccitane.com/default.aspx?a=1702461" target="_blank"><span class="screen_out">2021 로즈 자스민 샤워 젤 250ml/29,000원</span></a>
+              <a class="buy_btn btn3" href="http://kr.loccitane.com/default.aspx?a=1702464" target="_blank"><span class="screen_out">2021 로즈 자스민 오 드 뚜왈렛 50ml/75,000원</span></a>
+            </div>
+            <div class="swiper-slide gold2">
+              <a class="buy_btn btn1" href="http://kr.loccitane.com/default.aspx?a=1702465" target="_blank"><span class="screen_out">2021 로즈 자스민 핸드 크림 30ml/14,000원</span></a>
+              <a class="buy_btn btn2" href="http://kr.loccitane.com/default.aspx?a=1702466" target="_blank"><span class="screen_out">2021 로즈 자스민 퍼퓸드 솝 50g/6,000원</span></a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sec_5" id="gift">
+    <div class="sec_tit">
+      <div class="img_pc"><img src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_3abfed33c8f64c6b83399e08f102746f.png" alt=""></div>
+      <div class="img_m"><img src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_8b4b969d15e143fbbbc0e7c81d5ca839.png" alt=""></div>
+    </div>
+    <div class="pd_list">
+      <div class="img_pc">
+        <div class="pd_line line1">
+          <div class="imgarea">
+            <a class="buy_btn btn1" href="http://kr.loccitane.com/default.aspx?a=1702423" target="_blank"><span class="screen_out">리미티드 틴케이스 Hand Trio 39,000원</span></a>
+            <a class="buy_btn btn2" href="http://kr.loccitane.com/default.aspx?a=1702369" target="_blank"><span class="screen_out">클래식 시어 바디 듀오 71,000원</span></a>
+            <a class="buy_btn btn3" href="http://kr.loccitane.com/default.aspx?a=1702431" target="_blank"><span class="screen_out">Premium Hand Trio 114,000원</span></a>
+          </div>
+          <button class="more_btn btn1" type="button">
+            <img src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_6498c135e9854f96933d42cc40051dc4.png" alt="더보기">
+          </button>
+        </div>
+        <div class="pd_line line2">
+          <div class="imgarea">
+            <a class="buy_btn btn1" href="http://kr.loccitane.com/default.aspx?a=1702432" target="_blank"><span class="screen_out">클래식 시어, 윈터 워크 Hand Duo 28,000원</span></a>
+            <a class="buy_btn btn2" href="http://kr.loccitane.com/default.aspx?a=1702435" target="_blank"><span class="screen_out">클래식 시어 네일, Hand Duo 38,000원</span></a>
+            <a class="buy_btn btn3" href="http://kr.loccitane.com/default.aspx?a=1702436" target="_blank"><span class="screen_out">델리케이트 체리 블라썸 컬렉션 60,000원</span></a>
+          </div>
+          <button class="more_btn btn1" type="button">
+            <img src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_6498c135e9854f96933d42cc40051dc4.png" alt="더보기">
+          </button>
+        </div>
+        <div class="pd_line line3">
+          <div class="imgarea">
+            <a class="buy_btn btn1" href="http://kr.loccitane.com/default.aspx?a=1702438" target="_blank"><span class="screen_out">클래식 시어, 델리케이트 Hand Duo 28,000원</span></a>
+            <a class="buy_btn btn2" href="http://kr.loccitane.com/default.aspx?a=1702440" target="_blank"><span class="screen_out">이모르뗄 리셋 50ml 세트 123,000원</span></a>
+            <a class="buy_btn btn3" href="http://kr.loccitane.com/default.aspx?a=1702441" target="_blank"><span class="screen_out">시어 버베나 리퀴드 솝 듀오 47,000원</span></a>
+          </div>
+
+        </div>
+      </div>
+      <div class="img_m">
+        <div class="pd_line line1">
+          <div class="imgarea">
+            <a class="buy_btn btn1" href="http://kr.loccitane.com/default.aspx?a=1702423" target="_blank"><span class="screen_out">리미티드 틴케이스 Hand Trio 39,000원</span></a>
+            <a class="buy_btn btn2" href="http://kr.loccitane.com/default.aspx?a=1702369" target="_blank"><span class="screen_out">클래식 시어 바디 듀오 71,000원</span></a>
+            <a class="buy_btn btn3" href="http://kr.loccitane.com/default.aspx?a=1702431" target="_blank"><span class="screen_out">Premium Hand Trio 114,000원</span></a>
+            <a class="buy_btn btn4" href="http://kr.loccitane.com/default.aspx?a=1702432" target="_blank"><span class="screen_out">클래식 시어, 윈터 워크 Hand Duo 28,000원</span></a>
+          </div>
+          <button class="more_btn btn1" type="button" onclick="$('.sec_5').addClass('bg2')">
+            <img src="https://img.loccitane.com/ocms/img/lib/PROMO/OCC_4c2a530ea4364448961af81ae0e79fd8.png" alt="더보기">
+          </button>
+        </div>
+        <div class="pd_line line2">
+          <div class="imgarea">
+            <a class="buy_btn btn1" href="http://kr.loccitane.com/default.aspx?a=1702435" target="_blank"><span class="screen_out">클래식 시어 네일, Hand Duo 38,000원</span></a>
+            <a class="buy_btn btn2" href="http://kr.loccitane.com/default.aspx?a=1702436" target="_blank"><span class="screen_out">델리케이트 체리 블라썸 컬렉션 60,000원</span></a>
+            <a class="buy_btn btn3" href="http://kr.loccitane.com/default.aspx?a=1702438" target="_blank"><span class="screen_out">클래식 시어, 델리케이트 Hand Duo 28,000원</span></a>
+            <a class="buy_btn btn4" href="http://kr.loccitane.com/default.aspx?a=1702440" target="_blank"><span class="screen_out">이모르뗄 리셋 50ml 세트 123,000원</span></a>
+            <a class="buy_btn btn5" href="http://kr.loccitane.com/default.aspx?a=1702441" target="_blank"><span class="screen_out">시어 버베나 리퀴드 솝 듀오 47,000원</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- mobile -->
+  <div class="img_m"></div>
+</div>
+
+<script>
+  // 내비게이션
+  $('.nav ul li a').on('click', function(e) {
+    e.preventDefault();
+
+    var ID = $(this).attr('href');
+    var targetPos = $(ID).offset().top;
+    $("body, html").stop().animate({ scrollTop: targetPos - 120}, 300);
+  });
+
+  var swiper = new Swiper(".classic_shea .swiper", {
+    slidesPerView: 1,
+    pagination: {
+      el: ".classic_shea .swiper-pagination",
+      clickable:true
+    },
+    navigation: {
+      nextEl: ".classic_shea .swiper-button-next",
+      prevEl: ".classic_shea .swiper-button-prev",
+    },
+    speed: 1000,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    on: {
+      slideChange: function () {
+        setTimeout(function() {
+          if($('.swiper-slide.blue').hasClass('swiper-slide-active')) {
+            $('.classic_shea').addClass('blue');
+          } else {
+            $('.classic_shea').removeClass('blue');
+          };
+          if($('.swiper-slide.green1').hasClass('swiper-slide-active')) {
+            $('.classic_shea').addClass('green1');
+          } else {
+            $('.classic_shea').removeClass('green1');
+          };
+          if($('.swiper-slide.green2').hasClass('swiper-slide-active')) {
+            $('.classic_shea').addClass('green2');
+          } else {
+            $('.classic_shea').removeClass('green2');
+          };
+          if($('.swiper-slide.orange').hasClass('swiper-slide-active')) {
+            $('.classic_shea').addClass('orange');
+          } else {
+            $('.classic_shea').removeClass('orange');
+          };
+          if($('.swiper-slide.gold1').hasClass('swiper-slide-active')) {
+            $('.classic_shea').addClass('gold1');
+          } else {
+            $('.classic_shea').removeClass('gold1');
+          };
+          if($('.swiper-slide.gold2').hasClass('swiper-slide-active')) {
+            $('.classic_shea').addClass('gold2');
+          } else {
+            $('.classic_shea').removeClass('gold2');
+          };
+        });
+      }
+    }
+  });
+
+  // sec5 상품 더보기
+  $('.sec_5 .more_btn').on('click', function() {
+    $(this).closest('.pd_line').next('.pd_line').show();
+    $(this).hide();
+  });
+</script>
+</body>
