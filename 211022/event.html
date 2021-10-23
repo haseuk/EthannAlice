@@ -92,12 +92,12 @@
         <div class="speech">
           <div class="swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><a ><img src="img/speech1.png" alt=""></a></div>
-              <div class="swiper-slide"><a ><img src="img/speech2.png" alt=""></a></div>
-              <div class="swiper-slide"><a ><img src="img/speech3.png" alt=""></a></div>
-              <div class="swiper-slide"><a ><img src="img/speech1.png" alt=""></a></div>
-              <div class="swiper-slide"><a ><img src="img/speech2.png" alt=""></a></div>
-              <div class="swiper-slide"><a ><img src="img/speech3.png" alt=""></a></div>
+              <div class="swiper-slide"><a class="speech-a"><img src="img/speech1.png" alt=""></a></div>
+              <div class="swiper-slide"><a class="speech-a"><img src="img/speech2.png" alt=""></a></div>
+              <div class="swiper-slide"><a class="speech-a"><img src="img/speech3.png" alt=""></a></div>
+              <div class="swiper-slide"><a class="speech-a"><img src="img/speech1.png" alt=""></a></div>
+              <div class="swiper-slide"><a class="speech-a"><img src="img/speech2.png" alt=""></a></div>
+              <div class="swiper-slide"><a class="speech-a"><img src="img/speech3.png" alt=""></a></div>
             </div>
             <div class="swiper-button swiper-button-next"></div>
             <div class="swiper-button swiper-button-prev"></div>
@@ -107,6 +107,25 @@
         <img src="img/doodle7.png" alt="" class="doodle2">
         <a href="https://brand.naver.com/maeil/category/a396baf9834f41b9bc8b9a85d0151351?cp=1" target="_blank" class="purchase">구매하기</a>
       </section>
+
+      <div class="popup">
+        <div class="dim"></div>
+        <div class="inner">
+          <div class="popup-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/popup-postit.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/popup-postit.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/popup-postit.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/popup-postit.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/popup-postit.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/popup-postit.png" alt=""></div>
+            </div>
+            <div class="swiper-button swiper-button-next"></div>
+            <div class="swiper-button swiper-button-prev"></div>
+          </div>
+          <a class="close">닫기</a>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -138,8 +157,6 @@
         return;
       }
     });
-
-
 
 
     function random(min, max) {
@@ -179,6 +196,34 @@
         prevEl: ".swiper-button-prev",
       },
     });
+    var popupSwiper = new Swiper(".popup-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 12,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    let speechs = document.querySelectorAll('.speech-a');
+    let popup = document.querySelector('.popup');
+    let popupX = document.querySelector('.popup .close');
+
+    Array.prototype.forEach.call(speechs, function(e) {
+      e.addEventListener('click', function() {
+        popupOpen();
+      });
+    });
+
+    function popupOpen() {
+      popup.classList.add('on');
+    }
+
+    function popupClose() {
+      popup.classList.remove('on');
+    }
+
+    popupX.addEventListener('click', popupClose);
   </script>
 </body>
 </html>

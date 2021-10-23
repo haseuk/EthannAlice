@@ -126,7 +126,24 @@ a { .ib; .pointer; }
   }
 }
 
-
+.popup { .abs; .lt; .f; z-index: 10; .hide;
+  .dim { .fix; .lt; .f; .bgc(#000); opacity: 0.8; }
+  .inner { .abs; .w(800); .lt(50%,50%); transform: translate(-50%,-50%); z-index: 5; overflow: hidden; .p(40,0); .-box;
+    .popup-swiper { .rel;
+      &:after { .cnt; .abs; .lt(50%,50%); .contain('../img/arrow.png'); .wh(610,26); transform: translate(-50%,-50%); z-index: 1; }
+      .swiper-slide { .tc;
+        img { .wh(686,683); .ib; }
+      }
+      .swiper-button { .abs; .lt(50%,50%); transform:translateY(-50%); .mt(0); opacity: 1; .r(0);
+        &:after { .hide; }
+        &.swiper-button-prev { .ml(-303); }
+        &.swiper-button-next { .ml(290); }
+      }
+    }
+    .close { .abs; .lt(50%,0); .ml(268); .contain('../img/close.png'); .wh(48,48); }
+  }
+  &.on { .block; }
+}
 
 
 
