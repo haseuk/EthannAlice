@@ -57,9 +57,10 @@ a { .ib; .pointer; }
   &.event {
     .wrap {
       section {
-        &.evt1 { .contain('../img/evt-bg1.png'); .h(1778); .rel; .hide;
-          .postit { .wh(639,644); .contain('../img/postit.png'); .abs; .lt(58,721);
-            .post-txt { .wh(638,644); pointer-events: none;
+        &.evt1 { .contain('../img/evt-bg1.png'); .h(1778); .rel;
+          .postit { .abs; .lt(58,721);
+            .postit-img { .wh(639,644); .abs; .lt; }
+            .post-txt { .wh(638,644); pointer-events: none; .abs; .lt;
               &.on { .contain('../img/post-txt.png'); .block; }
             }
             textarea { .fs(30); font-family: "Noto Sans KR", sans-serif; .wh(450,250); .tc; background: transparent; .abs; .lt(115,130); overflow-y:scroll; }
@@ -77,7 +78,7 @@ a { .ib; .pointer; }
             }
           }
         }
-        &.evt2{ .contain('../img/evt-bg2.png'); .h(1778); .rel; .hide;
+        &.evt2{ .contain('../img/evt-bg2.png'); .h(1778); .rel;
           .agree { .abs; .lt(244,693); .tl;
             table {
               tr {
@@ -124,6 +125,11 @@ a { .ib; .pointer; }
       }
     }
   }
+
+  .wrap section.evt1, .wrap section.evt2, .wrap section.evt3 { .hide; }
+  &[data-view='1'] .wrap section.evt1 { .block; }
+  &[data-view='2'] .wrap section.evt2 { .block; }
+  &[data-view='3'] .wrap section.evt3 { .block; }
 }
 
 .popup { .abs; .lt; .f; z-index: 10; .hide;
@@ -145,10 +151,17 @@ a { .ib; .pointer; }
   &.on { .block; }
 }
 
+@keyframes post-it-wobble {
+  16.65% { transform: skew(-0.2deg); }
+  33.3% { transform: skew(0.3deg); }
+  49.95% { transform: skew(-0.4deg); }
+  66.6% { transform: skew(0.3deg); }
+  83.25% { transform: skew(-0.2deg); }
+  100% { transform: skew(0); }
+}
 
-
-
-
+.post-it-wobble { .ib; .vam; transform-origin: 100% 0; transform: perspective(1px) translateZ(0); }
+.post-it-wobble.active { animation-name: post-it-wobble; animation-duration: 6s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; }
 
 
 

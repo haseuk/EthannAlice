@@ -23,7 +23,7 @@ a {
 }
 .container .wrap header {
   background-repeat: no-repeat;
-  background-image: url('../img/header.png');
+  background-image: url('../img/mo/header.png');
   background-size: contain;
   height: 11.625vw;
   position: relative;
@@ -38,25 +38,25 @@ a {
 }
 .container .wrap section.cont2 {
   background-repeat: no-repeat;
-  background-image: url('../img/img2.png');
+  background-image: url('../img/mo/img2.png');
   background-size: contain;
   height: 140vw;
 }
 .container .wrap section.cont3 {
   background-repeat: no-repeat;
-  background-image: url('../img/img3.png');
+  background-image: url('../img/mo/img3.png');
   background-size: contain;
   height: 222.25vw;
 }
 .container .wrap section.cont4 {
   background-repeat: no-repeat;
-  background-image: url('../img/img4.png');
+  background-image: url('../img/mo/img4.png');
   background-size: contain;
   height: 42vw;
 }
 .container .wrap section.cont5 {
   background-repeat: no-repeat;
-  background-image: url('../img/img5.png');
+  background-image: url('../img/mo/img5.png');
   background-size: contain;
   height: 77.375vw;
 }
@@ -131,7 +131,7 @@ a {
 }
 .container .wrap footer {
   background-repeat: no-repeat;
-  background-image: url('../img/footer.png');
+  background-image: url('../img/mo/footer.png');
   background-size: contain;
   height: 107.25vw;
   padding-top: 7.125vw;
@@ -179,21 +179,24 @@ a {
 }
 .container.event .wrap section.evt1 {
   background-repeat: no-repeat;
-  background-image: url('../img/evt-bg1.png');
+  background-image: url('../img/mo/evt-bg1.png');
   background-size: contain;
   height: 222.25vw;
   position: relative;
-  display: none;
 }
 .container.event .wrap section.evt1 .postit {
-  width: 79.875vw;
-  height: 80.5vw;
-  background-repeat: no-repeat;
-  background-image: url('../img/postit.png');
-  background-size: contain;
   position: absolute;
   left: 7.25vw;
   top: 90.125vw;
+  right: auto;
+  bottom: auto;
+}
+.container.event .wrap section.evt1 .postit .postit-img {
+  width: 79.875vw;
+  height: 80.5vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
   right: auto;
   bottom: auto;
 }
@@ -201,10 +204,15 @@ a {
   width: 79.75vw;
   height: 80.5vw;
   pointer-events: none;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
 }
 .container.event .wrap section.evt1 .postit .post-txt.on {
   background-repeat: no-repeat;
-  background-image: url('../img/post-txt.png');
+  background-image: url('../img/mo/post-txt.png');
   background-size: contain;
   display: block;
 }
@@ -280,11 +288,10 @@ a {
 }
 .container.event .wrap section.evt2 {
   background-repeat: no-repeat;
-  background-image: url('../img/evt-bg2.png');
+  background-image: url('../img/mo/evt-bg2.png');
   background-size: contain;
   height: 222.25vw;
   position: relative;
-  display: none;
 }
 .container.event .wrap section.evt2 .agree {
   position: absolute;
@@ -412,7 +419,7 @@ a {
 }
 .container.event .wrap section.evt3 {
   background-repeat: no-repeat;
-  background-image: url('../img/evt-bg3.png');
+  background-image: url('../img/mo/evt-bg3.png');
   background-size: contain;
   height: 222.25vw;
   position: relative;
@@ -464,14 +471,14 @@ a {
 .container.event .wrap section.evt3 .speech .swiper .swiper-button.swiper-button-prev {
   top: -0.125vw;
   background-repeat: no-repeat;
-  background-image: url('../img/up.png');
+  background-image: url('../img/mo/up.png');
   background-size: contain;
 }
 .container.event .wrap section.evt3 .speech .swiper .swiper-button.swiper-button-next {
   top: auto;
   bottom: -0.125vw;
   background-repeat: no-repeat;
-  background-image: url('../img/down.png');
+  background-image: url('../img/mo/down.png');
   background-size: contain;
 }
 .container.event .wrap section.evt3 .doodle1 {
@@ -501,6 +508,20 @@ a {
   right: auto;
   top: auto;
   display: inline-block;
+}
+.container .wrap section.evt1,
+.container .wrap section.evt2,
+.container .wrap section.evt3 {
+  display: none;
+}
+.container[data-view='1'] .wrap section.evt1 {
+  display: block;
+}
+.container[data-view='2'] .wrap section.evt2 {
+  display: block;
+}
+.container[data-view='3'] .wrap section.evt3 {
+  display: block;
 }
 .popup {
   position: absolute;
@@ -552,7 +573,7 @@ a {
   right: auto;
   bottom: auto;
   background-repeat: no-repeat;
-  background-image: url('../img/arrow.png');
+  background-image: url('../img/mo/arrow.png');
   background-size: contain;
   width: 76.25vw;
   height: 3.25vw;
@@ -595,12 +616,44 @@ a {
   bottom: auto;
   margin-left: 33.5vw;
   background-repeat: no-repeat;
-  background-image: url('../img/close.png');
+  background-image: url('../img/mo/close.png');
   background-size: contain;
   width: 6vw;
   height: 6vw;
 }
 .popup.on {
   display: block;
+}
+@keyframes post-it-wobble {
+  16.65% {
+    transform: skew(-0.2deg);
+  }
+  33.3% {
+    transform: skew(0.3deg);
+  }
+  49.95% {
+    transform: skew(-0.4deg);
+  }
+  66.6% {
+    transform: skew(0.3deg);
+  }
+  83.25% {
+    transform: skew(-0.2deg);
+  }
+  100% {
+    transform: skew(0);
+  }
+}
+.post-it-wobble {
+  display: inline-block;
+  vertical-align: middle;
+  transform-origin: 100% 0;
+  transform: perspective(1px) translateZ(0);
+}
+.post-it-wobble.active {
+  animation-name: post-it-wobble;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 /*# sourceMappingURL=style.css.map */
