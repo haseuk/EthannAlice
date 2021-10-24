@@ -16,10 +16,32 @@ textarea {
 a {
   display: inline-block;
   cursor: pointer;
+  z-index: 2;
+}
+.mo {
+  display: inline-block;
+}
+.web {
+  display: none;
 }
 .container .wrap {
   font-size: 0vw;
   text-align: center;
+  position: relative;
+  height: 100vh;
+}
+.container .wrap h1 {
+  width: 22.25vw;
+  height: 14.375vw;
+  position: absolute;
+  left: 4.5vw;
+  top: 6.375vw;
+  right: auto;
+  bottom: auto;
+}
+.container .wrap h1 img {
+  width: 100%;
+  height: 100%;
 }
 .container .wrap header {
   background-repeat: no-repeat;
@@ -31,6 +53,7 @@ a {
 }
 .container .wrap section {
   position: relative;
+  overflow: hidden;
 }
 .container .wrap section.main img {
   height: 167.375vw;
@@ -59,6 +82,14 @@ a {
   background-image: url('../img/mo/img5.png');
   background-size: contain;
   height: 77.375vw;
+}
+.container .wrap .bottom {
+  width: 100%;
+  height: 24.25vw;
+  margin-top: 11.25vw;
+  background-repeat: no-repeat;
+  background-image: url('../img/mo/bottom.png');
+  background-size: contain;
 }
 .container .wrap section.cont2 {
   overflow: hidden;
@@ -177,23 +208,28 @@ a {
   text-align: left;
   padding-left: 0.75vw;
 }
-.container.event .wrap section.evt1 {
+.container.event .wrap section.evt1 .tit {
+  margin-top: 34.75vw;
   background-repeat: no-repeat;
-  background-image: url('../img/mo/evt-bg1.png');
+  background-image: url('../img/mo/evt1-tit.png');
   background-size: contain;
-  height: 222.25vw;
-  position: relative;
+  width: 85.75vw;
+  height: 47.75vw;
+  display: inline-block;
 }
 .container.event .wrap section.evt1 .postit {
-  position: absolute;
-  left: 7.25vw;
-  top: 90.125vw;
-  right: auto;
-  bottom: auto;
-}
-.container.event .wrap section.evt1 .postit .postit-img {
   width: 79.875vw;
   height: 80.5vw;
+  margin-top: 9vw;
+  margin-right: 0vw;
+  margin-bottom: 0vw;
+  margin-left: -5.625vw;
+  display: inline-block;
+  position: relative;
+}
+.container.event .wrap section.evt1 .postit .postit-img {
+  width: 100%;
+  height: 100%;
   position: absolute;
   left: 0vw;
   top: 0vw;
@@ -201,8 +237,8 @@ a {
   bottom: auto;
 }
 .container.event .wrap section.evt1 .postit .post-txt {
-  width: 79.75vw;
-  height: 80.5vw;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
   position: absolute;
   left: 0vw;
@@ -236,12 +272,11 @@ a {
 .container.event .wrap section.evt1 .share-go {
   width: 47.125vw;
   height: 12vw;
-  position: absolute;
-  left: 50%;
-  bottom: 35.375vw;
-  right: auto;
-  top: auto;
-  transform: translateX(-50%);
+  background-repeat: no-repeat;
+  background-image: url('../img/mo/share-btn.png');
+  background-size: contain;
+  margin-top: 4.25vw;
+  display: inline-block;
 }
 .container.event .wrap section.evt1 .doodles img {
   position: absolute;
@@ -257,7 +292,7 @@ a {
 .container.event .wrap section.evt1 .doodles img.doodle2 {
   width: 11.5vw;
   height: 13.625vw;
-  right: 0vw;
+  right: -2.5vw;
   top: 102.125vw;
   left: auto;
   bottom: auto;
@@ -266,7 +301,7 @@ a {
   width: 9.125vw;
   height: 8.75vw;
   left: 0vw;
-  top: 77.5vw;
+  top: 135vw;
   right: auto;
   bottom: auto;
 }
@@ -274,32 +309,38 @@ a {
   width: 9.625vw;
   height: 9.375vw;
   right: 1.25vw;
-  bottom: 38.75vw;
+  top: 171.5vw;
   left: auto;
-  top: auto;
+  bottom: auto;
 }
 .container.event .wrap section.evt1 .doodles img.doodle5 {
   width: 62.75vw;
   height: 20vw;
   left: -16.25vw;
-  bottom: 25vw;
-  right: auto;
-  top: auto;
-}
-.container.event .wrap section.evt2 {
-  background-repeat: no-repeat;
-  background-image: url('../img/mo/evt-bg2.png');
-  background-size: contain;
-  height: 222.25vw;
-  position: relative;
-}
-.container.event .wrap section.evt2 .agree {
-  position: absolute;
-  left: 30.5vw;
-  top: 86.625vw;
+  top: 177vw;
   right: auto;
   bottom: auto;
+}
+.container.event .wrap section.evt2 > .tit {
+  margin-top: 34.75vw;
+  background-repeat: no-repeat;
+  background-image: url('../img/mo/evt2-tit.png');
+  background-size: contain;
+  width: 85.25vw;
+  height: 41.125vw;
+  display: inline-block;
+}
+.container.event .wrap section.evt2 .agree {
+  margin-top: 11.875vw;
   text-align: left;
+  background-repeat: no-repeat;
+  background-image: url('../img/mo/agree.png');
+  background-size: contain;
+  width: 81.375vw;
+  height: 44.75vw;
+  display: inline-block;
+  padding-left: 21vw;
+  box-sizing: border-box;
 }
 .container.event .wrap section.evt2 .agree table tr th input {
   font-size: 2.5vw;
@@ -317,14 +358,11 @@ a {
   margin-left: 0.625vw;
 }
 .container.event .wrap section.evt2 .agree-box {
-  text-align: left;
-  position: absolute;
-  left: 9.625vw;
-  top: 134.625vw;
-  right: auto;
-  bottom: auto;
+  margin-top: 3.75vw;
   width: 81.25vw;
+  display: inline-block;
   zoom: 1;
+  text-align: left;
 }
 .container.event .wrap section.evt2 .agree-box:after {
   content: '';
@@ -379,6 +417,9 @@ a {
   font-size: 1.75vw;
   line-height: 2.5vw;
   color: #888;
+  border: 3px solid #b0b0b0;
+  background-color: #fafafa;
+  border-radius: 1.125vw;
   text-align: left;
   margin-top: 1.875vw;
   padding-top: 3.75vw;
@@ -398,6 +439,15 @@ a {
 .container.event .wrap section.evt2 ::placeholder {
   color: #b8b8b8;
 }
+.container.event .wrap section.evt2 .evt3-go {
+  width: 47.125vw;
+  height: 12vw;
+  margin-top: 11.875vw;
+  background-repeat: no-repeat;
+  background-image: url('../img/mo/evt3-go.png');
+  background-size: contain;
+  display: inline-block;
+}
 .container.event .wrap section.evt2 .doodle1 {
   width: 25.625vw;
   height: 9.125vw;
@@ -407,36 +457,40 @@ a {
   left: auto;
   bottom: auto;
 }
-.container.event .wrap section.evt2 .evt3-go {
-  width: 47.125vw;
-  height: 12vw;
-  position: absolute;
-  left: 26.5vw;
-  bottom: 35.5vw;
-  right: auto;
-  top: auto;
+.container.event .wrap section.evt3 .tit {
+  background-repeat: no-repeat;
+  background-image: url('../img/mo/evt3-tit.png');
+  background-size: contain;
+  width: 79.375vw;
+  height: 48.875vw;
+  margin-top: 27.5vw;
   display: inline-block;
 }
-.container.event .wrap section.evt3 {
-  background-repeat: no-repeat;
-  background-image: url('../img/mo/evt-bg3.png');
-  background-size: contain;
-  height: 222.25vw;
+.container.event .wrap section.evt3 .speech {
+  margin-top: 6.25vw;
+  margin-left: -50%;
   position: relative;
 }
-.container.event .wrap section.evt3 .speech {
+.container.event .wrap section.evt3 .speech:after {
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url('../img/mo/mom-sun.png');
+  background-size: contain;
+  width: 55.875vw;
+  height: 71.625vw;
   position: absolute;
-  left: 6.25vw;
-  top: 82.25vw;
-  right: auto;
+  right: 0vw;
+  top: 0vw;
+  left: auto;
   bottom: auto;
 }
 .container.event .wrap section.evt3 .speech .swiper {
-  width: 37.875vw;
+  width: 35.375vw;
   height: 74.125vw;
-  padding-top: 5.25vw;
+  padding-top: 5vw;
   padding-right: 0vw;
-  padding-bottom: 5.25vw;
+  padding-bottom: 5vw;
   padding-left: 0vw;
   box-sizing: border-box;
   position: relative;
@@ -463,23 +517,39 @@ a {
   height: 4vw;
   margin-top: 0vw;
   opacity: 1;
-  right: 0vw;
 }
 .container.event .wrap section.evt3 .speech .swiper .swiper-button:after {
   display: none;
 }
 .container.event .wrap section.evt3 .speech .swiper .swiper-button.swiper-button-prev {
-  top: -0.125vw;
+  top: -0.25vw;
   background-repeat: no-repeat;
   background-image: url('../img/mo/up.png');
   background-size: contain;
 }
 .container.event .wrap section.evt3 .speech .swiper .swiper-button.swiper-button-next {
   top: auto;
-  bottom: -0.125vw;
+  bottom: -0.25vw;
   background-repeat: no-repeat;
   background-image: url('../img/mo/down.png');
   background-size: contain;
+}
+.container.event .wrap section.evt3 .buy {
+  background-repeat: no-repeat;
+  background-image: url('../img/mo/buy.png');
+  background-size: contain;
+  height: 37.875vw;
+  position: relative;
+}
+.container.event .wrap section.evt3 .buy .purchase {
+  width: 26.625vw;
+  height: 8vw;
+  position: absolute;
+  left: 57.75vw;
+  top: 28.75vw;
+  right: auto;
+  bottom: auto;
+  display: inline-block;
 }
 .container.event .wrap section.evt3 .doodle1 {
   width: 27.375vw;
@@ -498,16 +568,6 @@ a {
   top: 103.125vw;
   left: auto;
   bottom: auto;
-}
-.container.event .wrap section.evt3 .purchase {
-  width: 26.625vw;
-  height: 8vw;
-  position: absolute;
-  left: 57.75vw;
-  bottom: 31.625vw;
-  right: auto;
-  top: auto;
-  display: inline-block;
 }
 .container .wrap section.evt1,
 .container .wrap section.evt2,
@@ -644,10 +704,10 @@ a {
     transform: skew(0);
   }
 }
-.post-it-wobble {
+.post-it-wobble.mo {
   display: inline-block;
   vertical-align: middle;
-  transform-origin: 100% 0;
+  transform-origin: 100% 0%;
   transform: perspective(1px) translateZ(0);
 }
 .post-it-wobble.active {
