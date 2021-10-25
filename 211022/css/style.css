@@ -28,7 +28,6 @@ a {
   font-size: 0vw;
   text-align: center;
   position: relative;
-  height: 100vh;
 }
 .container .wrap h1 {
   width: 22.25vw;
@@ -77,12 +76,6 @@ a {
   background-size: contain;
   height: 42vw;
 }
-.container .wrap section.cont5 {
-  background-repeat: no-repeat;
-  background-image: url('../img/mo/img5.png');
-  background-size: contain;
-  height: 77.375vw;
-}
 .container .wrap .bottom {
   width: 100%;
   height: 24.25vw;
@@ -121,6 +114,9 @@ a {
 .container .wrap section.cont2 .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #f4410e;
 }
+.container .wrap section.cont2 .swiper .swiper-button {
+  display: none;
+}
 .container .wrap section.cont2 .evt-go {
   width: 70.375vw;
   height: 13.75vw;
@@ -144,9 +140,24 @@ a {
 .container .wrap section.cont5 {
   padding-top: 16.25vw;
   padding-right: 4.25vw;
-  padding-bottom: 0vw;
+  padding-bottom: 9.375vw;
   padding-left: 4.25vw;
   box-sizing: border-box;
+  position: relative;
+}
+.container .wrap section.cont5:after {
+  content: '';
+  display: block;
+  width: 17.5vw;
+  height: 5.25vw;
+  background-repeat: no-repeat;
+  background-image: url('../img/mo/noti.png');
+  background-size: contain;
+  position: absolute;
+  left: 5.75vw;
+  top: 9.25vw;
+  right: auto;
+  bottom: auto;
 }
 .container .wrap section.cont5 .notice {
   text-align: left;
@@ -485,7 +496,7 @@ a {
   left: auto;
   bottom: auto;
 }
-.container.event .wrap section.evt3 .speech .swiper {
+.container.event .wrap section.evt3 .speech .mo-swiper {
   width: 35.375vw;
   height: 74.125vw;
   padding-top: 5vw;
@@ -494,40 +505,42 @@ a {
   padding-left: 0vw;
   box-sizing: border-box;
   position: relative;
+  overflow: hidden;
 }
-.container.event .wrap section.evt3 .speech .swiper .swiper-slide {
+.container.event .wrap section.evt3 .speech .mo-swiper .swiper-slide {
   width: 35.375vw;
   height: 20.25vw;
   margin-left: auto;
   margin-right: auto;
 }
-.container.event .wrap section.evt3 .speech .swiper .swiper-slide a {
+.container.event .wrap section.evt3 .speech .mo-swiper .swiper-slide a {
   display: inline-block;
   width: 100%;
   height: 100%;
 }
-.container.event .wrap section.evt3 .speech .swiper .swiper-slide a img {
+.container.event .wrap section.evt3 .speech .mo-swiper .swiper-slide a img {
   width: 100%;
   height: 100%;
 }
-.container.event .wrap section.evt3 .speech .swiper .swiper-button {
+.container.event .wrap section.evt3 .speech .mo-swiper .swiper-button {
   position: absolute;
   left: 0vw;
   width: 37.875vw;
   height: 4vw;
   margin-top: 0vw;
+  margin-left: -1.25vw;
   opacity: 1;
 }
-.container.event .wrap section.evt3 .speech .swiper .swiper-button:after {
+.container.event .wrap section.evt3 .speech .mo-swiper .swiper-button:after {
   display: none;
 }
-.container.event .wrap section.evt3 .speech .swiper .swiper-button.swiper-button-prev {
+.container.event .wrap section.evt3 .speech .mo-swiper .swiper-button.swiper-button-prev {
   top: -0.25vw;
   background-repeat: no-repeat;
   background-image: url('../img/mo/up.png');
   background-size: contain;
 }
-.container.event .wrap section.evt3 .speech .swiper .swiper-button.swiper-button-next {
+.container.event .wrap section.evt3 .speech .mo-swiper .swiper-button.swiper-button-next {
   top: auto;
   bottom: -0.25vw;
   background-repeat: no-repeat;

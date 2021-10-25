@@ -13,7 +13,7 @@ a { .ib; .pointer; z-index: 2; }
 
 
 .container {
-  .wrap { .fs(0); .tc; .rel; .h(100vh);
+  .wrap { .fs(0); .tc; .rel;
     h1 { .wh(178,115); .abs; .lt(36,51);
       img { .f; }
     }
@@ -23,7 +23,6 @@ a { .ib; .pointer; z-index: 2; }
       &.cont2 { .contain('../img/mo/img2.png'); .h(1120); }
       &.cont3 { .contain('../img/mo/img3.png'); .h(1778); }
       &.cont4 { .contain('../img/mo/img4.png'); .h(336); }
-      &.cont5 { .contain('../img/mo/img5.png'); .h(619); }
     }
     .bottom { .wh(100%,194); .mt(90); .contain('../img/mo/bottom.png'); }
 
@@ -37,13 +36,15 @@ a { .ib; .pointer; z-index: 2; }
             &.swiper-pagination-bullet-active { .bgc(#f4410e); }
           }
         }
+        .swiper-button { .hide; }
       }
       .evt-go { .wh(563,110); .abs; .lb(50%,112); .ml(-281); }
     }
     section.cont4 {
       .purchase { .wh(213,64); .abs; .lt(50%,220); .ml(59); }
     }
-    section.cont5 { .p(130,34,0,34); .-box;
+    section.cont5 { .p(130,34,75,34); .-box; .rel;
+      &:after { .cnt; .wh(140,42); .contain('../img/mo/noti.png'); .abs; .lt(46,74); }
       .notice { .tl;
         p { .fs(19); color:#888; .lh(34); .ti(-10); .ml(10); .ls(-0.04em); .keep-all; }
       }
@@ -115,13 +116,13 @@ a { .ib; .pointer; z-index: 2; }
           .tit { .contain('../img/mo/evt3-tit.png'); .wh(635,391); .mt(220); .ib; }
           .speech { .mt(50); .ml(-50%); .rel;
             &:after { .cnt; .contain('../img/mo/mom-sun.png'); .wh(447,573); .abs; .rt; }
-            .swiper { .wh(283,593); .p(40,0,40); .-box; .rel;
+            .mo-swiper { .wh(283,593); .p(40,0,40); .-box; .rel; overflow: hidden;
               .swiper-slide { .wh(283,162); .mh-c;
                 a { .ib; .f;
                   img { .f; }
                 }
               }
-              .swiper-button { .abs; .l(0); .wh(303,32); .mt(0); opacity: 1;
+              .swiper-button { .abs; .l(0); .wh(303,32); .mt(0); .ml(-10); opacity: 1;
                 &:after { .hide; }
                 &.swiper-button-prev { .t(-2); .contain('../img/mo/up.png'); }
                 &.swiper-button-next { top:auto; .b(-2); .contain('../img/mo/down.png'); }

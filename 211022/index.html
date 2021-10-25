@@ -20,7 +20,7 @@
 
       <section class="main">
         <img src="img/mo/img1.png" alt="" class="mo">
-        <img src="img/mo/img1.png" alt="" class="web">
+        <img src="img/pc/img1.png" alt="" class="web">
       </section>
 
       <section class="cont2">
@@ -33,8 +33,11 @@
             <div class="swiper-slide"><img src="img/mo/post2.png" alt=""></div>
             <div class="swiper-slide"><img src="img/mo/post3.png" alt=""></div>
           </div>
+
           <div class="swiper-pagination"></div>
         </div>
+        <div class="swiper-button swiper-button-next"></div>
+        <div class="swiper-button swiper-button-prev"></div>
         <a href="event.html" class="evt-go">지금 참여하기</a>
       </section>
 
@@ -54,36 +57,41 @@
           <p>&#183; 개인정보 수집 동의하신 분에 한하여 경품이 제공되며, 경품 발송 후 개인정보는 파기됩니다.</p>
           <p>&#183; 이벤트 진행 및 개인정보 처리, 경품 발송 업무는 ㈜이든앤앨리스마케팅에서 위탁하여 진행합니다.</p>
           <p>&#183; 당첨 결과 및 제세공과금 안내는 이벤트 기간 종료 후 개별적으로 안내 예정입니다.</p>
-          <p>&#183; 1등 상품 (시그니엘 서울 디럭스 스위트룸)의 경우 성인 2인+만 12세 이하 아동 1인이 기준입니다.</p>
-          <p>&#183; 기준 인원 이상 투숙을 원할 경우 현장에서 추가 금액이 발생할 수 있으며,<br> 일부 기간 투숙 불가할 수 있습니다.</p>
+          <p>&#183; 1등 상품 (시그니엘 서울 디럭스 스위트룸)의 경우 성인 2인+만 12세 이하 아동 1인이 기준입니다.<br> 기준 인원 이상 투숙을 원할 경우 현장에서 추가 금액이 발생할 수 있으며,<br class="mo"> 일부 기간 투숙 불가할 수 있습니다.</p>
         </div>
       </section>
       <footer>
-        <p>운영 사무국</p>
-        <div class="tit">
-          운영 시간<br>
-          유선 문의<br>
-          카카오톡
-        </div>
-        <div class="txt">
-          평일 10시 ~ 18시(주말,공휴일 휴무)<br>
-          02-512-1415<br>
-          플러스 친구 ‘킨더’ 검색<br>
-          URL 바로가기
+        <div class="inner">
+          <p>운영 사무국</p>
+          <div class="tit">
+            운영 시간<br>
+            유선 문의<br>
+            카카오톡
+          </div>
+          <div class="txt">
+            평일 10시 ~ 18시(주말,공휴일 휴무)<br>
+            02-512-1415<br>
+            플러스 친구 ‘킨더’ 검색<br>
+            URL 바로가기
+          </div>
         </div>
       </footer>
+      <div class="bottom web"></div>
     </div>
   </div>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".swiper", {
-      slidesPerView: 2.2,
+      slidesPerView:3,
       spaceBetween: -5,
-      centeredSlides: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
   </script>
