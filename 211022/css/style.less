@@ -1,25 +1,26 @@
 @import "asset";
 @use-vw: true;
 @vw: 800;
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
 
 body {
   font-family: "Noto Sans KR", sans-serif !important;
 }
-img { .block; backface-visibility: hidden; }
+img { .block; image-rendering: auto; backface-visibility: hidden; -webkit-perspective: 1;}
 button, input, textarea { outline: none; }
 a { .ib; .pointer; z-index: 2; }
 .mo { .ib; }
 .web { .hide; }
+.melody { font-family: 'Hi Melody', cursive; }
+.nanum { font-family: 'Nanum Pen Script', cursive; }
 
 
 .container {
   .wrap { .fs(0); .tc; .rel;
     header { .contain('../img/mo/header.png'); .h(93); .rel; z-index: 3; }
-    h1 { .wh(178,115); .abs; .lt(36,113);
-      img { .f; }
-    }
+    .logo-kin { .wh(178,115); .abs; .lt(36,113); }
     section { .rel; overflow: hidden;
-      &.main img { .h(1339); .mt(-93); }
+      &.main img { .h(1339); }
       &.cont2 { .contain('../img/mo/img2.png'); .h(1120); }
       &.cont3 { .contain('../img/mo/img3.png'); .h(1778); }
       &.cont4 { .contain('../img/mo/img4.png'); .h(336); }
@@ -31,7 +32,7 @@ a { .ib; .pointer; z-index: 2; }
       .swiper { .mt(438); .pl(40); .-box;
         .swiper-slide { .wh(365,369); .rel;
           &:after { .cnt; .wh(365,369); .abs; .lt; .contain('../img/mo/post1.png'); }
-          p { .fs(31); .lh(40); .abs; .lt(50%,45%); transform:translate(-50%,-50%); .w(260); z-index: 1; .pl(10); .-box; }
+          p { .fs(34); .melody; .regular; .lh(36); .abs; .lt(50%,45%); transform:translate(-50%,-50%); .w(260); z-index: 1; .pl(10); .-box; }
         }
         .swiper-pagination { .b(0);
           .swiper-pagination-bullet { .wh(13,13); .bgc(#e3e3e3); .m(0,5); opacity: 1;
@@ -66,15 +67,16 @@ a { .ib; .pointer; z-index: 2; }
   //이벤트페이지1
   &.event {
     .wrap {
-      section {
-        &.evt1 { .mt(-48);
+      section { .mt(50);
+        &.evt1 {
           .tit { .mt(278); .contain('../img/mo/evt1-tit.png'); .wh(686,382); .ib; }
           .postit { .wh(639,644); .m(72,0,0,-45); .ib; .rel;
             .postit-img { .f; .abs; .lt; }
-            .post-txt { .f; pointer-events: none; .abs; .lt;
-              &.on { .contain('../img/mo/post-txt.png'); .block; }
+            .post-txt { .fs(78); .lh(80); .nanum; .wf; pointer-events: none; .abs; .lt(20,150);
+              s { .fs(38); .lh1; .block; }
+              &.on { .block; }
             }
-            textarea { .fs(38); font-family: "Noto Sans KR", sans-serif; .wh(450,200); .tc; background: transparent; .abs; .lt(115,180); overflow-y:scroll; }
+            textarea { .fs(62); .lh1; .nanum; .wh(450,200); .tc; background: transparent; .abs; .lt(115,180); overflow-y:scroll; }
             textarea::-webkit-scrollbar { .hide; }
           }
           .share-go { .wh(377,96); .contain('../img/mo/share-btn.png'); .mt(34); .ib; }
@@ -88,14 +90,23 @@ a { .ib; .pointer; z-index: 2; }
             }
           }
         }
-        &.evt2 {.mt(-48);
+        &.evt2 {
           > .tit { .mt(278); .contain('../img/mo/evt2-tit.png'); .wh(682,329); .ib; }
-          .agree { .mt(96); .tl; .contain('../img/mo/agree.png'); .wh(652,354); .ib; .pl(168); .-box;
-            table {
+          .agree { .mt(96); .tl; .w(652); .ib;
+            table { table-layout: fixed; border-collapse: collapse;
               tr {
-                th input { .fs(20); .wh(316,54); .mb(6); .-a; background: transparent; .pl(15); .-box; }
-                td a { .wh(162,55); .ml(5); }
+                th img, td img { .w(161); .mt(-2); }
+                th input { .fs(20); .m(0,0,5,7); .wh(316,54); .-a(#484848,2px); .br(8); background: transparent; .pl(15); .-box; }
+                td a { .wh(162,54); .ml(5); }
+                &.cert-input { .hide;
+                  &.on { display: table-row; }
+                }
+                &.cert-comp { .hide;
+                  p {.fs(20); .lh(40); .mb(5); .pl(5); }
+                  &.on { display: table-row; }
+                }
               }
+              .name, .add1, .add2 { .w(483);  }
             }
           }
           .agree-box { .mt(30); .w(650); .ib; .clear; .tl;
@@ -114,7 +125,7 @@ a { .ib; .pointer; z-index: 2; }
           .evt3-go { .wh(377,96); .mt(95); .contain('../img/mo/evt3-go.png'); .ib; }
           .doodle1 { .wh(205,73); .abs; .rt(0,130); }
         }
-        &.evt3 {.mt(-48);
+        &.evt3 {
           .tit { .contain('../img/mo/evt3-tit.png'); .wh(635,391); .mt(220); .ib; }
           .speech { .mt(50); .ml(-50%); .rel;
             &:after { .cnt; .contain('../img/mo/mom-sun.png'); .wh(447,573); .abs; .rt; }
@@ -123,7 +134,7 @@ a { .ib; .pointer; z-index: 2; }
                 &:after { .cnt; .wh(283,162); .contain('../img/pc/speech1.png'); .abs; .lt; pointer-events: none; }
                 a { .ib; .f;
                   img { .f; }
-                  .u-txt { .fs(28); .lh(36); .medium; .w(283); .p(0,15); .-box; .rel; z-index: 1; overflow: hidden; .abs; .lt(50%,45%); transform: translate(-50%,-50%);}
+                  .u-txt { .fs(29); .lh(34);  .melody; .medium; .wh(283,100); .p(0,15); .-box; .rel; z-index: 1; overflow: hidden; .abs; .lt(50%,45%); transform: translate(-50%,-50%);overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; word-wrap:break-word; line-height: 1.2em; height: 3.6em;}
                 }
               }
               .swiper-button { .abs; .l(0); .wh(303,32); .mt(0); .ml(-10); opacity: 1; .bgc(#fff);
@@ -156,7 +167,7 @@ a { .ib; .pointer; z-index: 2; }
     .popup-swiper { .wh(686,723); .ib; overflow: hidden;
       .swiper-slide { .wh(686,683); .tc; display: flex;justify-content: center;align-items: center; z-index: 1;
         &:after { .cnt; .wh(686,683); .contain('../img/mo/popup-postit.png'); .abs; .lt; }
-        p { .fs(38); .lh(46); .w(520); .medium; z-index: 1; .mb(20); }
+        p { .fs(62); .lh1; .melody; .wh(520,280); .medium; z-index: 1; .mb(20); overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; word-wrap:break-word; line-height: 1.2em; height: 3.6em;}
       }
       .swiper-button { .abs; .lt(50%,47%); transform:translateY(-50%); .mt(0); .wh(16,26); opacity: 1; .r(0);
         &:after { .hide; }

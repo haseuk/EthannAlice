@@ -1,12 +1,15 @@
 /*--------------------------------------------------------------------------------------------------------------
 *  Template
 *--------------------------------------------------------------------------------------------------------------*/
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
 body {
   font-family: "Noto Sans KR", sans-serif !important;
 }
 img {
   display: block;
+  image-rendering: auto;
   backface-visibility: hidden;
+  -webkit-perspective: 1;
 }
 button,
 input,
@@ -24,6 +27,12 @@ a {
 .web {
   display: none;
 }
+.melody {
+  font-family: 'Hi Melody', cursive;
+}
+.nanum {
+  font-family: 'Nanum Pen Script', cursive;
+}
 .container .wrap {
   font-size: 0vw;
   text-align: center;
@@ -37,7 +46,7 @@ a {
   position: relative;
   z-index: 3;
 }
-.container .wrap h1 {
+.container .wrap .logo-kin {
   width: 22.25vw;
   height: 14.375vw;
   position: absolute;
@@ -46,17 +55,12 @@ a {
   right: auto;
   bottom: auto;
 }
-.container .wrap h1 img {
-  width: 100%;
-  height: 100%;
-}
 .container .wrap section {
   position: relative;
   overflow: hidden;
 }
 .container .wrap section.main img {
   height: 167.375vw;
-  margin-top: -11.625vw;
 }
 .container .wrap section.cont2 {
   background-repeat: no-repeat;
@@ -120,8 +124,10 @@ a {
   background-size: contain;
 }
 .container .wrap section.cont2 .swiper .swiper-slide p {
-  font-size: 3.875vw;
-  line-height: 5vw;
+  font-size: 4.25vw;
+  font-family: 'Hi Melody', cursive;
+  font-weight: 400;
+  line-height: 4.5vw;
   position: absolute;
   left: 50%;
   top: 45%;
@@ -254,8 +260,8 @@ a {
   text-align: left;
   padding-left: 0.75vw;
 }
-.container.event .wrap section.evt1 {
-  margin-top: -6vw;
+.container.event .wrap section {
+  margin-top: 6.25vw;
 }
 .container.event .wrap section.evt1 .tit {
   margin-top: 34.75vw;
@@ -286,24 +292,29 @@ a {
   bottom: auto;
 }
 .container.event .wrap section.evt1 .postit .post-txt {
+  font-size: 9.75vw;
+  line-height: 10vw;
+  font-family: 'Nanum Pen Script', cursive;
   width: 100%;
-  height: 100%;
   pointer-events: none;
   position: absolute;
-  left: 0vw;
-  top: 0vw;
+  left: 2.5vw;
+  top: 18.75vw;
   right: auto;
   bottom: auto;
 }
+.container.event .wrap section.evt1 .postit .post-txt s {
+  font-size: 4.75vw;
+  line-height: 1;
+  display: block;
+}
 .container.event .wrap section.evt1 .postit .post-txt.on {
-  background-repeat: no-repeat;
-  background-image: url('../img/mo/post-txt.png');
-  background-size: contain;
   display: block;
 }
 .container.event .wrap section.evt1 .postit textarea {
-  font-size: 4.75vw;
-  font-family: "Noto Sans KR", sans-serif;
+  font-size: 7.75vw;
+  line-height: 1;
+  font-family: 'Nanum Pen Script', cursive;
   width: 56.25vw;
   height: 25vw;
   text-align: center;
@@ -370,9 +381,6 @@ a {
   right: auto;
   bottom: auto;
 }
-.container.event .wrap section.evt2 {
-  margin-top: -6vw;
-}
 .container.event .wrap section.evt2 > .tit {
   margin-top: 34.75vw;
   background-repeat: no-repeat;
@@ -385,29 +393,59 @@ a {
 .container.event .wrap section.evt2 .agree {
   margin-top: 12vw;
   text-align: left;
-  background-repeat: no-repeat;
-  background-image: url('../img/mo/agree.png');
-  background-size: contain;
   width: 81.5vw;
-  height: 44.25vw;
   display: inline-block;
-  padding-left: 21vw;
-  box-sizing: border-box;
+}
+.container.event .wrap section.evt2 .agree table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.container.event .wrap section.evt2 .agree table tr th img,
+.container.event .wrap section.evt2 .agree table tr td img {
+  width: 20.125vw;
+  margin-top: -0.25vw;
 }
 .container.event .wrap section.evt2 .agree table tr th input {
   font-size: 2.5vw;
+  margin-top: 0vw;
+  margin-right: 0vw;
+  margin-bottom: 0.625vw;
+  margin-left: 0.875vw;
   width: 39.5vw;
   height: 6.75vw;
-  margin-bottom: 0.75vw;
-  border: 0;
+  border: 2px solid #484848;
+  border-radius: 1vw;
   background: transparent;
   padding-left: 1.875vw;
   box-sizing: border-box;
 }
 .container.event .wrap section.evt2 .agree table tr td a {
   width: 20.25vw;
-  height: 6.875vw;
+  height: 6.75vw;
   margin-left: 0.625vw;
+}
+.container.event .wrap section.evt2 .agree table tr.cert-input {
+  display: none;
+}
+.container.event .wrap section.evt2 .agree table tr.cert-input.on {
+  display: table-row;
+}
+.container.event .wrap section.evt2 .agree table tr.cert-comp {
+  display: none;
+}
+.container.event .wrap section.evt2 .agree table tr.cert-comp p {
+  font-size: 2.5vw;
+  line-height: 5vw;
+  margin-bottom: 0.625vw;
+  padding-left: 0.625vw;
+}
+.container.event .wrap section.evt2 .agree table tr.cert-comp.on {
+  display: table-row;
+}
+.container.event .wrap section.evt2 .agree table .name,
+.container.event .wrap section.evt2 .agree table .add1,
+.container.event .wrap section.evt2 .agree table .add2 {
+  width: 60.375vw;
 }
 .container.event .wrap section.evt2 .agree-box {
   margin-top: 3.75vw;
@@ -509,9 +547,6 @@ a {
   left: auto;
   bottom: auto;
 }
-.container.event .wrap section.evt3 {
-  margin-top: -6vw;
-}
 .container.event .wrap section.evt3 .tit {
   background-repeat: no-repeat;
   background-image: url('../img/mo/evt3-tit.png');
@@ -581,10 +616,12 @@ a {
   height: 100%;
 }
 .container.event .wrap section.evt3 .speech .mo-swiper .swiper-slide a .u-txt {
-  font-size: 3.5vw;
-  line-height: 4.5vw;
+  font-size: 3.625vw;
+  line-height: 4.25vw;
+  font-family: 'Hi Melody', cursive;
   font-weight: 500;
   width: 35.375vw;
+  height: 12.5vw;
   padding-top: 0vw;
   padding-right: 1.875vw;
   padding-bottom: 0vw;
@@ -592,13 +629,20 @@ a {
   box-sizing: border-box;
   position: relative;
   z-index: 1;
-  overflow: hidden;
   position: absolute;
   left: 50%;
   top: 45%;
   right: auto;
   bottom: auto;
   transform: translate(-50%, -50%);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  line-height: 1.2em;
+  height: 3.6em;
 }
 .container.event .wrap section.evt3 .speech .mo-swiper .swiper-button {
   position: absolute;
@@ -746,12 +790,22 @@ a {
   bottom: auto;
 }
 .popup .inner .popup-swiper .swiper-slide p {
-  font-size: 4.75vw;
-  line-height: 5.75vw;
+  font-size: 7.75vw;
+  line-height: 1;
+  font-family: 'Hi Melody', cursive;
   width: 65vw;
+  height: 35vw;
   font-weight: 500;
   z-index: 1;
   margin-bottom: 2.5vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  line-height: 1.2em;
+  height: 3.6em;
 }
 .popup .inner .popup-swiper .swiper-button {
   position: absolute;

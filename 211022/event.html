@@ -9,23 +9,35 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-pc.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+
+  <!--************추가***********-->
+  <link href="https://fonts.googleapis.com/css?family=Hi+Melody&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <!--************끝***********-->
+
+
   <script src="js/jquery.min.js"></script>
 </head>
 <body>
   <div class="container event" data-view="1">
     <div class="wrap">
-      <header>
-        <h1>kinder chocolate</h1>
-      </header>
-      <h1><img src="img/mo/logo.png" alt=""></h1>
-      <!--************이벤트1페이지***********-->
+
+      <!--************수정***********-->
+      <img src="img/mo/logo.png" alt="" class="logo-kin mo">
+      <img src="img/pc/logo.png" alt="" class="logo-kin web">
+      <!--************끝***********-->
+
+
       <section class="evt1">
         <div class="tit"></div>
         <div class="postit">
           <img src="img/mo/postit.png" alt="" class="postit-img post-it-wobble active mo">
           <img src="img/pc/postit.png" alt="" class="postit-img post-it-wobble active web">
-          <div class="post-txt on"></div>
+
+          <!--************수정***********-->
+          <div class="post-txt on">나만의 행복 꿀팁<br> 여기에 적어주세요 <s>예시)아이와 함께<br>핫초코를 마시면 행복해요!</s></div>
+          <!--************끝***********-->
+
           <textarea maxlength="300"></textarea>
         </div>
         <a class="share-go" data-page="2">공유하기</a>
@@ -38,37 +50,55 @@
         </div>
       </section>
 
-      <!--************이벤트2페이지***********-->
+
+      <!--************수정***********-->
       <section class="evt2">
         <div class="tit"></div>
         <div class="agree">
           <table cellpadding="0" cellspacing="0" border="0">
+            <colgroup>
+              <col width="25%">
+              <col width="50%">
+              <col width="25%">
+            </colgroup>
             <tr>
-              <th><input type="text" class="name"></th>
-              <td></td>
+              <th><img src="img/pc/a1.png" alt=""></th>
+              <th colspan="2"><input type="text" class="name"></th>
             </tr>
             <tr>
+              <th><img src="img/pc/a2.png" alt=""></th>
               <th><input type="text" class="phone"></th>
-              <td><a class="cert-btn">인증</a></td>
+              <td><a class="cert-btn"><img src="img/pc/a5.png" alt=""></a></td>
             </tr>
-            <tr>
+
+            <!-- ************인증완료 되면 on-->
+            <tr class="cert-input on">
+              <th><img src="img/pc/a3.png" alt=""></th>
               <th><input type="text" class="cert-input"></th>
-              <td><a class="cert-pass">확인</a></td>
+              <td><a class="cert-pass"><img src="img/pc/a6.png" alt=""></a></td>
             </tr>
+
+            <!-- ************인증완료 되었습니다. on-->
+            <tr class="cert-comp on">
+              <th></th>
+              <th colspan="2"><p>인증이 완료 되었습니다.</p></th>
+            </tr>
+
             <tr>
+              <th rowspan="3"><img src="img/pc/a4.png" alt=""></th>
               <th><input type="text" class="add-find"></th>
-              <td><a class="post-code">우편번호 검색</a></td>
+              <td><a class="post-code"><img src="img/pc/a7.png" alt=""></a></td>
             </tr>
             <tr>
-              <th><input type="text" class="add1" placeholder="0000시 00구 00로 00길 00"></th>
-              <td></td>
+              <th colspan="2"><input type="text" class="add1" placeholder="0000시 00구 00로 00길 00"></th>
             </tr>
             <tr>
-              <th><input type="text" class="add2" placeholder="나머지 상세주소를 입력해주세요."></th>
-              <td></td>
+              <th colspan="2"><input type="text" class="add2" placeholder="나머지 상세주소를 입력해주세요."></th>
             </tr>
           </table>
         </div>
+        <!--************끝***********-->
+
         <div class="agree-box">
           <p class="tit">개인 정보 수집 및 이용 동의 / 개인 정보 처리 위탁 동의</p>
           <label>
@@ -83,42 +113,46 @@
             <br>
             수집항목: 성명, 휴대전화번호, 주소<br>
             이용목적: 이벤트 당첨자 정보 취합 및 경품 배송<br>
-            보유기간: 이벤트 종료 후 60일까지는 귀하의 개인정보보허법에 따라 개인정보 수집 및 이용 동의를 거부할 수 있으며, 거부 시에는 해당 이벤트에 응모할 수 없음을 알려드립니다.귀하가 제공한 개인정보는 당사의 개인정보보호정책에 따라 안전하게 관리되며, 본 이벤트 종료 후 귀하로부터 제공받은 개인정보는 제 3자에게 제공되거나 활용되지 아니합니다.
+            보유기간: 이벤트 종료 후 60일까지는 귀하의 개인정보보허법에 따라 개인정보 수집 및 이용 동의를 거부할 수 있으며, 거부 시에는 해당 이벤트에 응모할 수 없음을 알려드립니다. 귀하가 제공한 개인정보는 당사의 개인정보보호정책에 따라 안전하게 관리되며, 본 이벤트 종료 후 귀하로부터 제공받은 개인정보는 제 3자에게 제공되거나 활용되지 아니합니다.
           </div>
         </div>
         <a class="evt3-go" data-page="3">제출하기</a>
         <img src="img/mo/doodle1.png" alt="" class="doodle1 mo">
       </section>
 
-      <!--************이벤트3페이지***********-->
+
+      <!--************수정***********-->
       <section class="evt3">
         <div class="tit"></div>
         <div class="speech">
           <div class="mo-swiper mo">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><a class="speech-a speech-a1"><p class="u-txt">텍스트텍스트텍스트텍스트텍스트텍스</p></a></div>
-              <div class="swiper-slide"><a class="speech-a speech-a2"><p class="u-txt">텍스트텍스트텍스트텍스트텍스트텍스</p></a></div>
-              <div class="swiper-slide"><a class="speech-a speech-a3"><p class="u-txt">텍스트텍스트텍스트텍스트텍스트텍스</p></a></div>
-              <div class="swiper-slide"><a class="speech-a speech-a4"><p class="u-txt">텍스트텍스트텍스트텍스트텍스트텍스</p></a></div>
-              <div class="swiper-slide"><a class="speech-a speech-a5"><p class="u-txt">텍스트텍스트텍스트텍스트텍스트텍스</p></a></div>
-              <div class="swiper-slide"><a class="speech-a speech-a6"><p class="u-txt">텍스트텍스트텍스트텍스트텍스트텍스</p></a></div>
+              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이요즘요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이요즘</p></a></div>
+              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">자기 전에 아이와 함께 늘 동화책을 읽는 것이 우리 가족이 행복한....</p></a></div>
+              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이....</p></a></div>
+              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이....</p></a></div>
+              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이....</p></a></div>
+              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이....</p></a></div>
             </div>
             <div class="swiper-button swiper-button-next"></div>
             <div class="swiper-button swiper-button-prev"></div>
           </div>
           <div class="web-swiper web">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><a class="speech-a speech-a1"><p class="u-txt">텍스트텍스트텍스트텍스트텍스트텍스트</p></a></div>
-              <div class="swiper-slide"><a class="speech-a speech-a2"><p class="u-txt">텍스트텍스트텍스트텍스트텍스트텍스트</p></a></div>
-              <div class="swiper-slide"><a class="speech-a speech-a3"><p class="u-txt">텍스트텍스트텍스트텍스트텍스트텍스트</p></a></div>
-              <div class="swiper-slide"><a class="speech-a speech-a4"><p class="u-txt">텍스트텍스트텍스트텍스트텍스트텍스트</p></a></div>
-              <div class="swiper-slide"><a class="speech-a speech-a5"><p class="u-txt">텍스트텍스트텍스트텍스트텍스트텍스트</p></a></div>
-              <div class="swiper-slide"><a class="speech-a speech-a6"><p class="u-txt">텍스트텍스트텍스트텍스트텍스트텍스트</p></a></div>
+              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이요즘요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이요즘</p></a></div>
+              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">자기 전에 아이와 함께 늘 동화책을 읽는 것이 우리 가족이 행복한....</p></a></div>
+              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이....</p></a></div>
+              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이....</p></a></div>
+              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이....</p></a></div>
+              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이....</p></a></div>
             </div>
             <div class="swiper-button-web web swiper-button-next"></div>
             <div class="swiper-button-web web swiper-button-prev"></div>
           </div>
         </div>
+        <!--************끝***********-->
+
+
         <div class="buy">
           <a href="https://brand.naver.com/maeil/category/a396baf9834f41b9bc8b9a85d0151351?cp=1" target="_blank" class="purchase">구매하기</a>
         </div>
@@ -133,12 +167,11 @@
         <div class="inner">
           <div class="popup-swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide slide1"><p>가나다라마바사아자차카</p></div>
-              <div class="swiper-slide slide2"><p>가나다라마바사</p></div>
-              <div class="swiper-slide slide3"><p>가나다라마바사</p></div>
-              <div class="swiper-slide slide4"><p>가나다라마바사아자차카타파</p></div>
-              <div class="swiper-slide slide5"><p>가나다라마바사</p></div>
-              <div class="swiper-slide slide6"><p>가나다라마바사</p></div>
+              <div class="swiper-slide slide1"><p>요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이요즘</p></div>
+              <div class="swiper-slide slide1"><p>요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이요즘</p></div>
+              <div class="swiper-slide slide1"><p>요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이요즘</p></div>
+              <div class="swiper-slide slide1"><p>요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이요즘</p></div>
+              <div class="swiper-slide slide1"><p>요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이요즘</p></div>
             </div>
             <div class="swiper-button swiper-button-next"></div>
             <div class="swiper-button swiper-button-prev"></div>
@@ -160,7 +193,7 @@
     </div>
   </div>
 
-<!--  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>-->
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     let postIt = document.querySelector('.postit');

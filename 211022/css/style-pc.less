@@ -1,15 +1,17 @@
 @import "asset";
 @use-vw: true;
 @vw: 1920;
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
 
 body {
   font-family: "Noto Sans KR", sans-serif !important;
 }
 html { font-size: 18px; }
-img { .block; backface-visibility: hidden; }
+img { .block; image-rendering: auto; backface-visibility: hidden; }
 button, input, textarea { outline: none; }
 a { .ib; .pointer; }
-
+.melody { font-family: 'Hi Melody', cursive; }
+.nanum { font-family: 'Nanum Pen Script', cursive; }
 
 @media screen and (min-width: 801px) {
   .mo { .hide; }
@@ -18,12 +20,10 @@ a { .ib; .pointer; }
   .container {
     .wrap { .fs(0); .tc; .rel; .min-h(1080); overflow: hidden; .mh-c; .bgc(#faf5ec);
       header { .contain('../img/pc/header.png'); .wh(1920,136); .rel; z-index: 3; }
-      h1 { .wh(246,159); .abs; .lt(50%,158); .ml(-895);
-        img { .f; }
-      }
+      .logo-kin { .wh(246,159); .abs; .lt(50%,158); .ml(-895); }
       section { .w(1360); .rel; left:auto; top:auto; transform:none; .mt(0); overflow: unset; .ib;
         &:after { .cnt; .wh(535,661); .abs; .lt(50%,188); .contain('../img/pc/mom-sun.png'); z-index: -1; .ml(390);}
-        &.main img { .h(975); .mt(-136);  }
+        &.main img { .h(975); }
         &.cont2 { .contain('../img/pc/img2.png'); .h(1425); }
         &.cont3 { .contain('../img/pc/img3.png'); .h(1453); }
         &.cont4 { .contain('../img/pc/img4.png'); .h(438); }
@@ -79,33 +79,42 @@ a { .ib; .pointer; }
     //이벤트페이지1
     &.event {
       .wrap { .bgc(#fff); .rel; .h(100vh);
-        section { .abs; .lt(50%,50%); transform: translate(-50%,-50%); .h(792);
+        section { .abs; .lt(50%,50%); transform: translate(-50%,-50%); .pb(120);
           &.evt1 { .mt(-18); .tc;
             .tit { .mt(0); .contain('../img/pc/evt1-tit.png'); .wh(1177,263); .block; .ml(50%); transform: translateX(-50%); }
             .postit { .wh(388,392); .m(36,0,0,26); .ib; .rel;
               .postit-img { .f; .abs; .lt(-26,0); }
-              .post-txt { .f; pointer-events: none; .abs; .lt(-26,0);
-                &.on { .contain('../img/pc/post-txt.png'); .block; }
+              .post-txt { .fs(52); .lh(58); .nanum; .wf; pointer-events: none; .abs; .lt(-20,75);
+                s { .fs(25); .lh1; .block; }
+                &.on { .block; }
               }
-              textarea { .fs(20); font-family: "Noto Sans KR", sans-serif; .wh(290,170); .tc; background: transparent; .abs; .lt(36,80); overflow-y:scroll;  -ms-overflow-style: none; scrollbar-width: none; }
+              textarea { .fs(45); .lh1; .nanum; .wh(290,170); .tc; background: transparent; .abs; .lt(36,80); overflow-y:scroll;  -ms-overflow-style: none; scrollbar-width: none; }
               textarea::-webkit-scrollbar { .hide; }
             }
             .share-go { .wh(342,74); .contain('../img/pc/share-btn.png'); .abs; .lb(50%,0); transform: translateX(-50%);}
           }
           &.evt2 {.mt(-18);
             > .tit { .mt(0); .contain('../img/pc/evt2-tit.png'); .wh(1181,213); .block; .mh-c; }
-            .agree { .mt(45); .tl; .contain('../img/pc/agree.png'); .wh(557,299); .block; .mh-c; .pl(144); .-box;
-              table { table-layout: fixed;
+            .agree { .mt(45); .tl; .w(557); .block; .mh-c;
+              table { table-layout: fixed; border-collapse: collapse;
                 tr {
+                  th img, td img { .w(138); .mt(-1); }
                   th { .w(270);
-                    &:last-child input { .mb(0); }
-                    input { .fs(16); .wh(270,48); .mb(2.5); .-a; background: transparent; .pl(15); .-box; }
+                    input { .fs(16); .wh(270,47); .m(0,0,4,5); .-a(#484848,2px); .br(8); background: transparent; .pl(15); .-box; }
                   }
 
                   td { .w(137);
                     a { .wh(137,48); .ml(3); }
                   }
+                  &.cert-input { .hide;
+                    &.on { display: table-row; }
+                  }
+                  &.cert-comp { .hide;
+                    p {.fs(20); .lh(40); .mb(5); .pl(5); }
+                    &.on { display: table-row; }
+                  }
                 }
+                .name, .add1, .add2 { .w(414);  }
               }
             }
             .agree-box { .mt(25); .w(557); .block; .mh-c; .clear; .tl;
@@ -134,7 +143,7 @@ a { .ib; .pointer; }
                   a { .ib; .f;
                     img { .f; }
                   }
-                  .u-txt { .fs(28); .lh(36); .tc; .p(0,15); .-box; .medium; .w(320); .rel; z-index: 1; overflow: hidden; .abs; .lt(50%,45%); transform: translate(-50%,-50%);}
+                  .u-txt { .fs(34); .lh(36); .melody; .tc; .p(0,15); .-box; .medium; .wh(320,110); .rel; z-index: 1; overflow: hidden; .abs; .lt(50%,45%); transform: translate(-50%,-50%); overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; word-wrap:break-word; line-height: 1.2em; height: 3.6em; }
                 }
               }
               .swiper-button-web { .abs; .lt(50%,0); .mt(0); .wh(45,184); opacity: 1; z-index: 5; .ib; .bgc(#fff);
@@ -185,7 +194,7 @@ a { .ib; .pointer; }
       .popup-swiper { .rel; .wh(717,714);
         .swiper-slide { .tc; .wh(717,714);
           &:after { .cnt; .wh(717,714); .abs; .lt; }
-          p { .fs(31); .lh(40); .abs; .lt(50%,45%); transform:translate(-50%,-50%); .w(260); z-index: 1; .pl(10); .-box; }
+          p { .fs(58); .lh1; .melody; .abs; .lt(50%,45%); transform:translate(-50%,-50%); .wh(520,264); z-index: 1; .mb(0); .pl(10); .-box; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; word-wrap:break-word; line-height: 1.2em; height: 3.6em;}
         }
         .swiper-button { .abs; .lt(50%,45%); transform:translateY(-50%); .mt(0); .wh(16,32); opacity: 1; .r(0);
           &:after { .hide; }

@@ -1,6 +1,7 @@
 /*--------------------------------------------------------------------------------------------------------------
 *  Template
 *--------------------------------------------------------------------------------------------------------------*/
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
 body {
   font-family: "Noto Sans KR", sans-serif !important;
 }
@@ -9,6 +10,7 @@ html {
 }
 img {
   display: block;
+  image-rendering: auto;
   backface-visibility: hidden;
 }
 button,
@@ -19,6 +21,12 @@ textarea {
 a {
   display: inline-block;
   cursor: pointer;
+}
+.melody {
+  font-family: 'Hi Melody', cursive;
+}
+.nanum {
+  font-family: 'Nanum Pen Script', cursive;
 }
 @media screen and (min-width: 801px) {
   .mo {
@@ -46,7 +54,7 @@ a {
     position: relative;
     z-index: 3;
   }
-  .container .wrap h1 {
+  .container .wrap .logo-kin {
     width: 12.8125vw;
     height: 8.28125vw;
     position: absolute;
@@ -55,10 +63,6 @@ a {
     right: auto;
     bottom: auto;
     margin-left: -46.61458333vw;
-  }
-  .container .wrap h1 img {
-    width: 100%;
-    height: 100%;
   }
   .container .wrap section {
     width: 70.83333333vw;
@@ -88,7 +92,6 @@ a {
   }
   .container .wrap section.main img {
     height: 50.78125vw;
-    margin-top: -7.08333333vw;
   }
   .container .wrap section.cont2 {
     background-repeat: no-repeat;
@@ -363,7 +366,7 @@ a {
     right: auto;
     bottom: auto;
     transform: translate(-50%, -50%);
-    height: 41.25vw;
+    padding-bottom: 6.25vw;
   }
   .container.event .wrap section.evt1 {
     margin-top: -0.9375vw;
@@ -400,24 +403,29 @@ a {
     bottom: auto;
   }
   .container.event .wrap section.evt1 .postit .post-txt {
+    font-size: 2.70833333vw;
+    line-height: 3.02083333vw;
+    font-family: 'Nanum Pen Script', cursive;
     width: 100%;
-    height: 100%;
     pointer-events: none;
     position: absolute;
-    left: -1.35416667vw;
-    top: 0vw;
+    left: -1.04166667vw;
+    top: 3.90625vw;
     right: auto;
     bottom: auto;
   }
+  .container.event .wrap section.evt1 .postit .post-txt s {
+    font-size: 1.30208333vw;
+    line-height: 1;
+    display: block;
+  }
   .container.event .wrap section.evt1 .postit .post-txt.on {
-    background-repeat: no-repeat;
-    background-image: url('../img/pc/post-txt.png');
-    background-size: contain;
     display: block;
   }
   .container.event .wrap section.evt1 .postit textarea {
-    font-size: 1.04166667vw;
-    font-family: "Noto Sans KR", sans-serif;
+    font-size: 2.34375vw;
+    line-height: 1;
+    font-family: 'Nanum Pen Script', cursive;
     width: 15.10416667vw;
     height: 8.85416667vw;
     text-align: center;
@@ -464,32 +472,33 @@ a {
   .container.event .wrap section.evt2 .agree {
     margin-top: 2.34375vw;
     text-align: left;
-    background-repeat: no-repeat;
-    background-image: url('../img/pc/agree.png');
-    background-size: contain;
     width: 29.01041667vw;
-    height: 15.57291667vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 7.5vw;
-    box-sizing: border-box;
   }
   .container.event .wrap section.evt2 .agree table {
     table-layout: fixed;
+    border-collapse: collapse;
+  }
+  .container.event .wrap section.evt2 .agree table tr th img,
+  .container.event .wrap section.evt2 .agree table tr td img {
+    width: 7.1875vw;
+    margin-top: -0.05208333vw;
   }
   .container.event .wrap section.evt2 .agree table tr th {
     width: 14.0625vw;
   }
-  .container.event .wrap section.evt2 .agree table tr th:last-child input {
-    margin-bottom: 0vw;
-  }
   .container.event .wrap section.evt2 .agree table tr th input {
     font-size: 0.83333333vw;
     width: 14.0625vw;
-    height: 2.5vw;
-    margin-bottom: 0.13020833vw;
-    border: 0;
+    height: 2.44791667vw;
+    margin-top: 0vw;
+    margin-right: 0vw;
+    margin-bottom: 0.20833333vw;
+    margin-left: 0.26041667vw;
+    border: 2px solid #484848;
+    border-radius: 0.41666667vw;
     background: transparent;
     padding-left: 0.78125vw;
     box-sizing: border-box;
@@ -501,6 +510,29 @@ a {
     width: 7.13541667vw;
     height: 2.5vw;
     margin-left: 0.15625vw;
+  }
+  .container.event .wrap section.evt2 .agree table tr.cert-input {
+    display: none;
+  }
+  .container.event .wrap section.evt2 .agree table tr.cert-input.on {
+    display: table-row;
+  }
+  .container.event .wrap section.evt2 .agree table tr.cert-comp {
+    display: none;
+  }
+  .container.event .wrap section.evt2 .agree table tr.cert-comp p {
+    font-size: 1.04166667vw;
+    line-height: 2.08333333vw;
+    margin-bottom: 0.26041667vw;
+    padding-left: 0.26041667vw;
+  }
+  .container.event .wrap section.evt2 .agree table tr.cert-comp.on {
+    display: table-row;
+  }
+  .container.event .wrap section.evt2 .agree table .name,
+  .container.event .wrap section.evt2 .agree table .add1,
+  .container.event .wrap section.evt2 .agree table .add2 {
+    width: 21.5625vw;
   }
   .container.event .wrap section.evt2 .agree-box {
     margin-top: 1.30208333vw;
@@ -683,8 +715,9 @@ a {
     height: 100%;
   }
   .container.event .wrap section.evt3 .speech .web-swiper .swiper-slide .u-txt {
-    font-size: 1.45833333vw;
+    font-size: 1.77083333vw;
     line-height: 1.875vw;
+    font-family: 'Hi Melody', cursive;
     text-align: center;
     padding-top: 0vw;
     padding-right: 0.78125vw;
@@ -693,15 +726,23 @@ a {
     box-sizing: border-box;
     font-weight: 500;
     width: 16.66666667vw;
+    height: 5.72916667vw;
     position: relative;
     z-index: 1;
-    overflow: hidden;
     position: absolute;
     left: 50%;
     top: 45%;
     right: auto;
     bottom: auto;
     transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    line-height: 1.2em;
+    height: 3.6em;
   }
   .container.event .wrap section.evt3 .speech .swiper-button-web {
     position: absolute;
@@ -929,18 +970,29 @@ a {
     bottom: auto;
   }
   .popup .inner .popup-swiper .swiper-slide p {
-    font-size: 1.61458333vw;
-    line-height: 2.08333333vw;
+    font-size: 3.02083333vw;
+    line-height: 1;
+    font-family: 'Hi Melody', cursive;
     position: absolute;
     left: 50%;
     top: 45%;
     right: auto;
     bottom: auto;
     transform: translate(-50%, -50%);
-    width: 13.54166667vw;
+    width: 27.08333333vw;
+    height: 13.75vw;
     z-index: 1;
+    margin-bottom: 0vw;
     padding-left: 0.52083333vw;
     box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    line-height: 1.2em;
+    height: 3.6em;
   }
   .popup .inner .popup-swiper .swiper-button {
     position: absolute;
