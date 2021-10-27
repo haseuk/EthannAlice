@@ -37,6 +37,7 @@ a {
   }
   .container {
     margin-top: 1.5625vw;
+    padding-bottom: 0vw;
   }
   .container .wrap {
     font-size: 0vw;
@@ -291,31 +292,18 @@ a {
     background: none;
     padding: 0vw;
     height: auto;
-    background-color: #888;
   }
   .container .wrap .footer .inner {
     background-color: #888;
     width: 70.83333333vw;
-    height: 19.79166667vw;
+    height: 25vw;
     padding-top: 3.64583333vw;
     box-sizing: border-box;
     display: inline-block;
     position: relative;
   }
   .container .wrap .footer .inner:after {
-    content: '';
-    display: block;
-    width: 7.70833333vw;
-    height: 7.70833333vw;
-    background-repeat: no-repeat;
-    background-image: url('../img/pc/cs.png');
-    background-size: contain;
-    position: absolute;
-    left: 50%;
-    top: 7.08333333vw;
-    right: auto;
-    bottom: auto;
-    margin-left: -17.23958333vw;
+    display: none;
   }
   .container .wrap .footer .inner p {
     font-size: 1.875vw;
@@ -444,6 +432,18 @@ a {
   }
   .container.event .wrap section.evt1 .postit textarea::-webkit-scrollbar {
     display: none;
+  }
+  .container.event .wrap section.evt1 .postit .txt-num {
+    font-size: 0.9375vw;
+    font-weight: 500;
+    position: absolute;
+    right: 1.40625vw;
+    bottom: 0vw;
+    left: auto;
+    top: auto;
+  }
+  .container.event .wrap section.evt1 .postit .txt-num s {
+    color: #f3410e;
   }
   .container.event .wrap section.evt1 .share-go {
     width: 17.8125vw;
@@ -974,7 +974,7 @@ a {
     bottom: auto;
   }
   .popup .inner .popup-swiper .swiper-slide p {
-    font-size: 3.02083333vw;
+    font-size: 1.77083333vw;
     line-height: 1;
     font-family: 'Hi Melody', cursive;
     position: absolute;
@@ -983,20 +983,13 @@ a {
     right: auto;
     bottom: auto;
     transform: translate(-50%, -50%);
-    width: 27.08333333vw;
+    width: 23.4375vw;
     height: 13.75vw;
     z-index: 1;
     margin-bottom: 0vw;
     padding-left: 0.52083333vw;
     box-sizing: border-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    word-wrap: break-word;
-    line-height: 1.2em;
-    height: 3.6em;
+    overflow: auto;
   }
   .popup .inner .popup-swiper .swiper-slide .txt-leng {
     font-size: 1.71875vw;
@@ -1082,10 +1075,13 @@ a {
     animation-iteration-count: infinite;
   }
 }
+.footer-wrapper {
+  margin-top: 0vw;
+}
 .footer-wrapper::before {
   content: '';
   display: block;
-  background-color: #888;
+  background: transparent;
 }
 .event + .footer-wrapper::before {
   content: '';

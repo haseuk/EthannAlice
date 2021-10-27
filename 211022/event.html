@@ -24,7 +24,17 @@
           <img src="img/mo/postit.png" alt="" class="postit-img post-it-wobble active mo">
           <img src="img/pc/postit.png" alt="" class="postit-img post-it-wobble active web">
           <div class="post-txt on">나만의 행복 꿀팁<br> 여기에 적어주세요 <s>예시)아이와 함께<br>핫초코를 마시면 행복해요!</s></div>
-          <textarea maxlength="300"></textarea>
+          <textarea maxlength="300" class="txt-count"></textarea>
+
+
+
+
+          <!--************추가***********-->
+          <p class="txt-num"><s>0</s>/300</p>
+          <!--************끝***********-->
+
+
+
         </div>
         <a class="share-go" data-page="2">공유하기</a>
         <div class="doodles mo">
@@ -145,11 +155,11 @@
         <div class="inner">
           <div class="popup-swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide slide1"><p>1</p><span class="txt-leng"><s class="num">125</s>/300</span></div>
-              <div class="swiper-slide slide2"><p>22</p><span class="txt-leng"><s class="num">125</s>/300</span></div>
-              <div class="swiper-slide slide3"><p>343</p><span class="txt-leng"><s class="num">125</s>/300</span></div>
-              <div class="swiper-slide slide4"><p>4444</p><span class="txt-leng"><s class="num">125</s>/300</span></div>
-              <div class="swiper-slide slide5"><p>55555</p><span class="txt-leng"><s class="num">125</s>/300</span></div>
+              <div class="swiper-slide slide1"><p>1</p></div>
+              <div class="swiper-slide slide2"><p>22</p></div>
+              <div class="swiper-slide slide3"><p>343</p></div>
+              <div class="swiper-slide slide4"><p>4444</p></div>
+              <div class="swiper-slide slide5"><p>55555</p></div>
             </div>
             <div class="swiper-button swiper-button-next"></div>
             <div class="swiper-button swiper-button-prev"></div>
@@ -317,6 +327,17 @@
       let txtNum = document.querySelector('.popup .slide'+v+' .txt-leng .num');
       txtNum.innerText = txtLeng;
     }
+
+    $('.txt-count').keyup(function (e){
+      var content = $(this).val();
+      $('.txt-num s').html(content.length);    //글자수 실시간 카운팅
+
+      if (content.length > 299){
+        alert("최대 300자까지 입력 가능합니다.");
+        $(this).val(content.substring(0, 299));
+      }
+    });
+
   </script>
   <!--************끝***********-->
 </body>

@@ -52,7 +52,7 @@ a { .ib; .pointer; z-index: 2; }
         p { .fs(19); color:#888; .lh(34); .ti(-10); .ml(10); .ls(-0.04em); .keep-all; }
       }
     }
-    .footer { .w(100%); .p(57,0,60); .-box; .bgc(#888); .rel;
+    .footer { .wh(100%,480); .p(57,0,60); .-box; .bgc(#888); .rel;
       &:after { .cnt; .abs; .lt(50%,120); .ml(-260); .wh(122,123); .contain('../img/mo/cs.png'); }
       p { .fs(30); .lh(39); .mb(38); color:#fff; .ls(-0.05em); }
       .tit, .txt { .fs(20); .lh(32); .ls(-0.05em); .w(50%); color:#fff; .ib; .vat; .tl; .ls(-0.05em); .-box; }
@@ -78,6 +78,9 @@ a { .ib; .pointer; z-index: 2; }
             }
             textarea { .fs(62); .lh1; .nanum; .wh(450,200); .tc; background: transparent; .abs; .lt(115,180); overflow-y:scroll; }
             textarea::-webkit-scrollbar { .hide; }
+            .txt-num { .fs(25); .medium; .abs; .rb;
+              s { color:#f3410e; }
+            }
           }
           .share-go { .wh(377,96); .contain('../img/mo/share-btn.png'); .mt(34); .ib; }
           .doodles {
@@ -137,7 +140,7 @@ a { .ib; .pointer; z-index: 2; }
                   .u-txt { .fs(29); .lh(34);  .melody; .medium; .w(283); .p(0,15); .-box; .rel; z-index: 1; overflow: hidden; .abs; .lt(50%,45%); transform: translate(-50%,-50%);  text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; word-wrap:break-word; line-height: 1.2em; }
                 }
               }
-              .swiper-button { .abs; .l(0); .wh(303,32); .mt(0); .ml(-10); opacity: 1; .bgc(#fff);
+              .swiper-button { .abs; .l(0); .wh(303,32); .mt(0); .ml(-10); opacity: 1; .bgc(#fff); .block; z-index: 1;
                 &:after { .hide; }
                 &.swiper-button-prev { .t(-2); .contain('../img/mo/up.png'); }
                 &.swiper-button-next { top:auto; .b(-2); .contain('../img/mo/down.png'); }
@@ -167,7 +170,7 @@ a { .ib; .pointer; z-index: 2; }
     .popup-swiper { .wh(686,723); .ib; overflow: hidden;
       .swiper-slide { .wh(686,683); .tc; display: flex;justify-content: center;align-items: center; z-index: 1;
         &:after { .cnt; .wh(686,683); .contain('../img/mo/popup-postit.png'); .abs; .lt; }
-        p { .fs(62); .lh1; .melody; .wh(520,280); .medium; z-index: 1; .mb(20); overflow: auto; }
+        p { .fs(30); .lh1; .melody; .wh(450,280); .medium; z-index: 1; .mb(30); overflow: auto; }
         .txt-leng { .fs(25); color:#fff; .abs; .rb(32,-18); .tr; }
       }
       .swiper-button { .abs; .lt(50%,47%); transform:translateY(-50%); .mt(0); .wh(16,26); opacity: 1; .r(0);
@@ -193,7 +196,8 @@ a { .ib; .pointer; z-index: 2; }
 .post-it-wobble.mo { .ib; .vam; transform-origin: 100% 0%; transform: perspective(1px) translateZ(0); }
 .post-it-wobble.active { animation-name: post-it-wobble; animation-duration: 6s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; }
 
-.footer-wrapper::before { .cnt; .bgc(#888); }
+.footer-wrapper { .mt(0); }
+.footer-wrapper::before { .cnt; background: transparent; }
 .event + .footer-wrapper::before { .cnt; .bgc(#fff); }
 
 
