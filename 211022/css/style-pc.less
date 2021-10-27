@@ -17,7 +17,7 @@ a { .ib; .pointer; }
   .mo { .hide; }
   .web { .ib; }
 
-  .container {
+  .container {  .mt(30);
     .wrap { .fs(0); .tc; .rel; .min-h(1080); overflow: hidden; .mh-c; .bgc(#faf5ec);
       header { .contain('../img/pc/header.png'); .wh(1920,136); .rel; z-index: 3; }
       .logo-kin { .wh(246,159); .abs; .lt(50%,158); .ml(-895); }
@@ -46,7 +46,7 @@ a { .ib; .pointer; }
           }
 
         }
-        .swiper-button { .ib; .abs; .lt(50%,720); .mt(0); opacity: 1; z-index: 3;
+        .swiper-button { .ib; .abs; .lt(50%,720); .mt(0); opacity: 1; z-index: 1;
           &:after { .hide; }
           &.swiper-button-prev { .ml(-616); .wh(28,420); .t(557); .contain('../img/pc/prev-l.png'); }
           &.swiper-button-next { .ml(610); .wh(16,32); .contain('../img/pc/arrow-next.png');  }
@@ -62,7 +62,7 @@ a { .ib; .pointer; }
           p { .fs(24); color:#888; .lh(39); .ti(-10); .ml(10); .ls(-0.04em); .keep-all; }
         }
       }
-      footer { background:none; .p(0); height:auto; .mb(380);
+      .footer { background:none; .p(0); height:auto; .bgc(#888);
         .inner { .bgc(#888); .wh(1360,380); .pt(70); .-box; .ib; .rel;
           &:after { .cnt; .wh(148,148); .contain('../img/pc/cs.png'); .abs; .lt(50%,136); .ml(-331); }
           p { .fs(36); .lh(39); .mb(38); color:#fff; .ls(-0.05em); }
@@ -191,10 +191,11 @@ a { .ib; .pointer; }
   .popup { .abs; .lt; .f; z-index: 10; .hide;
     .dim { .fix; .lt; .f; .bgc(#000); opacity: 0.8; }
     .inner { .abs; .w(800); .lt(50%,50%); transform: translate(-50%,-50%); z-index: 5; overflow: hidden; .p(0); .-box;
-      .popup-swiper { .rel; .wh(717,714);
+      .popup-swiper { .rel; .wh(717,714); .pb(20);
         .swiper-slide { .tc; .wh(717,714);
           &:after { .cnt; .wh(717,714); .abs; .lt; }
           p { .fs(58); .lh1; .melody; .abs; .lt(50%,45%); transform:translate(-50%,-50%); .wh(520,264); z-index: 1; .mb(0); .pl(10); .-box; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; word-wrap:break-word; line-height: 1.2em; height: 3.6em;}
+          .txt-leng { .fs(33); color:#fff; .abs; .rb(36,-20); .tr; }
         }
         .swiper-button { .abs; .lt(50%,45%); transform:translateY(-50%); .mt(0); .wh(16,32); opacity: 1; .r(0);
           &:after { .hide; }
@@ -222,7 +223,8 @@ a { .ib; .pointer; }
 }
 
 
-
+.footer-wrapper::before { .cnt; .bgc(#888); }
+.event + .footer-wrapper::before { .cnt; .bgc(#fff); }
 
 
 

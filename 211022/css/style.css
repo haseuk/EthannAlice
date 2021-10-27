@@ -3,6 +3,7 @@
 *--------------------------------------------------------------------------------------------------------------*/
 @import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
 body {
+  background-color: #fff;
   font-family: "Noto Sans KR", sans-serif !important;
 }
 img {
@@ -32,6 +33,11 @@ a {
 }
 .nanum {
   font-family: 'Nanum Pen Script', cursive;
+}
+.container {
+  margin-top: 7.5vw;
+  padding-bottom: 7.5vw;
+  box-sizing: border-box;
 }
 .container .wrap {
   font-size: 0vw;
@@ -212,23 +218,40 @@ a {
   letter-spacing: -0.04em;
   word-break: keep-all;
 }
-.container .wrap footer {
-  background-repeat: no-repeat;
-  background-image: url('../img/mo/footer.png');
-  background-size: contain;
-  height: 107.25vw;
+.container .wrap .footer {
+  width: 100%;
   padding-top: 7.125vw;
+  padding-right: 0vw;
+  padding-bottom: 7.5vw;
+  padding-left: 0vw;
   box-sizing: border-box;
+  background-color: #888;
+  position: relative;
 }
-.container .wrap footer p {
+.container .wrap .footer:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 15vw;
+  right: auto;
+  bottom: auto;
+  margin-left: -32.5vw;
+  width: 15.25vw;
+  height: 15.375vw;
+  background-repeat: no-repeat;
+  background-image: url('../img/mo/cs.png');
+  background-size: contain;
+}
+.container .wrap .footer p {
   font-size: 3.75vw;
   line-height: 4.875vw;
   margin-bottom: 4.75vw;
   color: #fff;
   letter-spacing: -0.05em;
 }
-.container .wrap footer .tit,
-.container .wrap footer .txt {
+.container .wrap .footer .tit,
+.container .wrap .footer .txt {
   font-size: 2.5vw;
   line-height: 4vw;
   width: 50%;
@@ -239,12 +262,12 @@ a {
   letter-spacing: -0.05em;
   box-sizing: border-box;
 }
-.container .wrap footer .tit {
+.container .wrap .footer .tit {
   text-align: right;
   padding-right: 5.375vw;
   position: relative;
 }
-.container .wrap footer .tit:after {
+.container .wrap .footer .tit:after {
   content: '';
   display: block;
   width: 0.125vw;
@@ -256,7 +279,7 @@ a {
   bottom: auto;
   background-color: #f8efe2;
 }
-.container .wrap footer .txt {
+.container .wrap .footer .txt {
   text-align: left;
   padding-left: 0.75vw;
 }
@@ -621,7 +644,6 @@ a {
   font-family: 'Hi Melody', cursive;
   font-weight: 500;
   width: 35.375vw;
-  height: 12.5vw;
   padding-top: 0vw;
   padding-right: 1.875vw;
   padding-bottom: 0vw;
@@ -629,20 +651,19 @@ a {
   box-sizing: border-box;
   position: relative;
   z-index: 1;
+  overflow: hidden;
   position: absolute;
   left: 50%;
   top: 45%;
   right: auto;
   bottom: auto;
   transform: translate(-50%, -50%);
-  overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   word-wrap: break-word;
   line-height: 1.2em;
-  height: 3.6em;
 }
 .container.event .wrap section.evt3 .speech .mo-swiper .swiper-button {
   position: absolute;
@@ -798,14 +819,17 @@ a {
   font-weight: 500;
   z-index: 1;
   margin-bottom: 2.5vw;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  word-wrap: break-word;
-  line-height: 1.2em;
-  height: 3.6em;
+  overflow: auto;
+}
+.popup .inner .popup-swiper .swiper-slide .txt-leng {
+  font-size: 3.125vw;
+  color: #fff;
+  position: absolute;
+  right: 4vw;
+  bottom: -2.25vw;
+  left: auto;
+  top: auto;
+  text-align: right;
 }
 .popup .inner .popup-swiper .swiper-button {
   position: absolute;
@@ -882,5 +906,15 @@ a {
   animation-duration: 6s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+}
+.footer-wrapper::before {
+  content: '';
+  display: block;
+  background-color: #888;
+}
+.event + .footer-wrapper::before {
+  content: '';
+  display: block;
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,7 +3,7 @@
 @vw: 800;
 @import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
 
-body {
+body { .bgc(#fff);
   font-family: "Noto Sans KR", sans-serif !important;
 }
 img { .block; image-rendering: auto; backface-visibility: hidden; -webkit-perspective: 1;}
@@ -15,7 +15,7 @@ a { .ib; .pointer; z-index: 2; }
 .nanum { font-family: 'Nanum Pen Script', cursive; }
 
 
-.container {
+.container { .mt(60); .pb(60); .-box;
   .wrap { .fs(0); .tc; .rel;
     header { .contain('../img/mo/header.png'); .h(93); .rel; z-index: 3; }
     .logo-kin { .wh(178,115); .abs; .lt(36,113); }
@@ -52,7 +52,8 @@ a { .ib; .pointer; z-index: 2; }
         p { .fs(19); color:#888; .lh(34); .ti(-10); .ml(10); .ls(-0.04em); .keep-all; }
       }
     }
-    footer { .contain('../img/mo/footer.png'); .h(858); .pt(57); .-box;
+    .footer { .w(100%); .p(57,0,60); .-box; .bgc(#888); .rel;
+      &:after { .cnt; .abs; .lt(50%,120); .ml(-260); .wh(122,123); .contain('../img/mo/cs.png'); }
       p { .fs(30); .lh(39); .mb(38); color:#fff; .ls(-0.05em); }
       .tit, .txt { .fs(20); .lh(32); .ls(-0.05em); .w(50%); color:#fff; .ib; .vat; .tl; .ls(-0.05em); .-box; }
       .tit { .tr; .pr(43); .rel;
@@ -60,7 +61,6 @@ a { .ib; .pointer; z-index: 2; }
       }
       .txt {  .tl; .pl(6); }
     }
-
   }
 
 
@@ -134,7 +134,7 @@ a { .ib; .pointer; z-index: 2; }
                 &:after { .cnt; .wh(283,162); .contain('../img/pc/speech1.png'); .abs; .lt; pointer-events: none; }
                 a { .ib; .f;
                   img { .f; }
-                  .u-txt { .fs(29); .lh(34);  .melody; .medium; .wh(283,100); .p(0,15); .-box; .rel; z-index: 1; overflow: hidden; .abs; .lt(50%,45%); transform: translate(-50%,-50%);overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; word-wrap:break-word; line-height: 1.2em; height: 3.6em;}
+                  .u-txt { .fs(29); .lh(34);  .melody; .medium; .w(283); .p(0,15); .-box; .rel; z-index: 1; overflow: hidden; .abs; .lt(50%,45%); transform: translate(-50%,-50%);  text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; word-wrap:break-word; line-height: 1.2em; }
                 }
               }
               .swiper-button { .abs; .l(0); .wh(303,32); .mt(0); .ml(-10); opacity: 1; .bgc(#fff);
@@ -167,7 +167,8 @@ a { .ib; .pointer; z-index: 2; }
     .popup-swiper { .wh(686,723); .ib; overflow: hidden;
       .swiper-slide { .wh(686,683); .tc; display: flex;justify-content: center;align-items: center; z-index: 1;
         &:after { .cnt; .wh(686,683); .contain('../img/mo/popup-postit.png'); .abs; .lt; }
-        p { .fs(62); .lh1; .melody; .wh(520,280); .medium; z-index: 1; .mb(20); overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; word-wrap:break-word; line-height: 1.2em; height: 3.6em;}
+        p { .fs(62); .lh1; .melody; .wh(520,280); .medium; z-index: 1; .mb(20); overflow: auto; }
+        .txt-leng { .fs(25); color:#fff; .abs; .rb(32,-18); .tr; }
       }
       .swiper-button { .abs; .lt(50%,47%); transform:translateY(-50%); .mt(0); .wh(16,26); opacity: 1; .r(0);
         &:after { .hide; }
@@ -192,7 +193,8 @@ a { .ib; .pointer; z-index: 2; }
 .post-it-wobble.mo { .ib; .vam; transform-origin: 100% 0%; transform: perspective(1px) translateZ(0); }
 .post-it-wobble.active { animation-name: post-it-wobble; animation-duration: 6s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; }
 
-
+.footer-wrapper::before { .cnt; .bgc(#888); }
+.event + .footer-wrapper::before { .cnt; .bgc(#fff); }
 
 
 

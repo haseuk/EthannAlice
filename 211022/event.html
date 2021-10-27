@@ -9,35 +9,21 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-pc.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
-
-  <!--************추가***********-->
   <link href="https://fonts.googleapis.com/css?family=Hi+Melody&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-  <!--************끝***********-->
-
-
   <script src="js/jquery.min.js"></script>
 </head>
 <body>
   <div class="container event" data-view="1">
     <div class="wrap">
-
-      <!--************수정***********-->
       <img src="img/mo/logo.png" alt="" class="logo-kin mo">
       <img src="img/pc/logo.png" alt="" class="logo-kin web">
-      <!--************끝***********-->
-
-
       <section class="evt1">
         <div class="tit"></div>
         <div class="postit">
           <img src="img/mo/postit.png" alt="" class="postit-img post-it-wobble active mo">
           <img src="img/pc/postit.png" alt="" class="postit-img post-it-wobble active web">
-
-          <!--************수정***********-->
           <div class="post-txt on">나만의 행복 꿀팁<br> 여기에 적어주세요 <s>예시)아이와 함께<br>핫초코를 마시면 행복해요!</s></div>
-          <!--************끝***********-->
-
           <textarea maxlength="300"></textarea>
         </div>
         <a class="share-go" data-page="2">공유하기</a>
@@ -50,8 +36,6 @@
         </div>
       </section>
 
-
-      <!--************수정***********-->
       <section class="evt2">
         <div class="tit"></div>
         <div class="agree">
@@ -70,20 +54,15 @@
               <th><input type="text" class="phone"></th>
               <td><a class="cert-btn"><img src="img/pc/a5.png" alt=""></a></td>
             </tr>
-
-            <!-- ************인증완료 되면 on-->
             <tr class="cert-input on">
               <th><img src="img/pc/a3.png" alt=""></th>
               <th><input type="text" class="cert-input"></th>
               <td><a class="cert-pass"><img src="img/pc/a6.png" alt=""></a></td>
             </tr>
-
-            <!-- ************인증완료 되었습니다. on-->
             <tr class="cert-comp on">
               <th></th>
               <th colspan="2"><p>인증이 완료 되었습니다.</p></th>
             </tr>
-
             <tr>
               <th rowspan="3"><img src="img/pc/a4.png" alt=""></th>
               <th><input type="text" class="add-find"></th>
@@ -97,7 +76,6 @@
             </tr>
           </table>
         </div>
-        <!--************끝***********-->
 
         <div class="agree-box">
           <p class="tit">개인 정보 수집 및 이용 동의 / 개인 정보 처리 위탁 동의</p>
@@ -121,30 +99,30 @@
       </section>
 
 
-      <!--************수정***********-->
+      <!--************수정 10.27***********-->
       <section class="evt3">
         <div class="tit"></div>
         <div class="speech">
           <div class="mo-swiper mo">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이요즘요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이요즘</p></a></div>
-              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">자기 전에 아이와 함께 늘 동화책을 읽는 것이 우리 가족이 행복한....</p></a></div>
-              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이....</p></a></div>
-              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이....</p></a></div>
-              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이....</p></a></div>
-              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이....</p></a></div>
+              <div class="swiper-slide"><a class="speech-a" onclick="swiperPage('1')"><p class="u-txt">아이와 모닝 허그, 넘 행복해요</p></a></div>
+              <div class="swiper-slide"><a class="speech-a" onclick="swiperPage('2')"><p class="u-txt">자기 전에 아이와 함께 늘 동화책을 읽는 것이 우리 가족이 행복한....</p></a></div>
+              <div class="swiper-slide"><a class="speech-a" onclick="swiperPage('3')"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이....</p></a></div>
+              <div class="swiper-slide"><a class="speech-a" onclick="swiperPage('4')"><p class="u-txt">아이와 모닝 허그, 넘 행복해요</p></a></div>
+              <div class="swiper-slide"><a class="speech-a" onclick="swiperPage('5')"><p class="u-txt">아이와 모닝 허그, 넘 행복해요</p></a></div>
+              <div class="swiper-slide"><a class="speech-a" onclick="swiperPage('6')"><p class="u-txt">아이와 모닝 허그, 넘 행복해요</p></a></div>
             </div>
             <div class="swiper-button swiper-button-next"></div>
             <div class="swiper-button swiper-button-prev"></div>
           </div>
           <div class="web-swiper web">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이요즘요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이요즘</p></a></div>
-              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">자기 전에 아이와 함께 늘 동화책을 읽는 것이 우리 가족이 행복한....</p></a></div>
-              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이....</p></a></div>
-              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이....</p></a></div>
-              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이....</p></a></div>
-              <div class="swiper-slide"><a class="speech-a"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이....</p></a></div>
+              <div class="swiper-slide"><a class="speech-a" onclick="swiperPage('1')"><p class="u-txt">아이와 모닝 허그, 넘 행복해요</p></a></div>
+              <div class="swiper-slide"><a class="speech-a" onclick="swiperPage('2')"><p class="u-txt">자기 전에 아이와 함께 늘 동화책을 읽는 것이 우리 가족이 행복한....</p></a></div>
+              <div class="swiper-slide"><a class="speech-a" onclick="swiperPage('3')"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이....</p></a></div>
+              <div class="swiper-slide"><a class="speech-a" onclick="swiperPage('4')"><p class="u-txt">아이와 모닝 허그, 넘 행복해요</p></a></div>
+              <div class="swiper-slide"><a class="speech-a" onclick="swiperPage('5')"><p class="u-txt">자기 전에 아이와 함께 늘 동화책을 읽는 것이 우리 가족이 행복한....</p></a></div>
+              <div class="swiper-slide"><a class="speech-a" onclick="swiperPage('6')"><p class="u-txt">요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이....</p></a></div>
             </div>
             <div class="swiper-button-web web swiper-button-next"></div>
             <div class="swiper-button-web web swiper-button-prev"></div>
@@ -161,17 +139,17 @@
       </section>
       <div class="bottom2"></div>
 
-
+      <!--************수정 10.27***********-->
       <div class="popup">
         <div class="dim"></div>
         <div class="inner">
           <div class="popup-swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide slide1"><p>요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이요즘</p></div>
-              <div class="swiper-slide slide1"><p>요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이요즘</p></div>
-              <div class="swiper-slide slide1"><p>요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이요즘</p></div>
-              <div class="swiper-slide slide1"><p>요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이요즘</p></div>
-              <div class="swiper-slide slide1"><p>요즘같은 추운 날씨에는 아이와 함께하는 따뜻한 핫초코 한잔이요즘</p></div>
+              <div class="swiper-slide slide1"><p>1</p><span class="txt-leng"><s class="num">125</s>/300</span></div>
+              <div class="swiper-slide slide2"><p>22</p><span class="txt-leng"><s class="num">125</s>/300</span></div>
+              <div class="swiper-slide slide3"><p>343</p><span class="txt-leng"><s class="num">125</s>/300</span></div>
+              <div class="swiper-slide slide4"><p>4444</p><span class="txt-leng"><s class="num">125</s>/300</span></div>
+              <div class="swiper-slide slide5"><p>55555</p><span class="txt-leng"><s class="num">125</s>/300</span></div>
             </div>
             <div class="swiper-button swiper-button-next"></div>
             <div class="swiper-button swiper-button-prev"></div>
@@ -179,6 +157,9 @@
           <a class="close">닫기</a>
         </div>
       </div>
+      <!--************끝***********-->
+
+
       <div class="doodles web">
         <img src="img/pc/doodle1.png" alt="" class="doodle1">
         <img src="img/pc/doodle2.png" alt="" class="doodle2">
@@ -193,8 +174,10 @@
     </div>
   </div>
 
+  <!--************수정 10.27***********-->
   <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     let postIt = document.querySelector('.postit');
     let postTxt = document.querySelector('.post-txt');
@@ -258,12 +241,16 @@
 
     function popupOpen() {
       popup.classList.add('on');
-      // window.scrollTo(0,0);
     }
     function popupClose() {
       popup.classList.remove('on');
     }
     popupX.addEventListener('click', popupClose);
+
+    function swiperPage(v) {
+      popSwiper.slideTo(v-1);
+      counter(v);
+    }
 
     function random(min, max) {
       return parseFloat((Math.random() * (max - min) + min).toFixed(2))
@@ -291,31 +278,8 @@
     dungdung('.doodle7', 2, 7)
     dungdung('.doodle8', 1, 9)
     dungdung('.doodle9', 0, 8)
-    // $(document).ready(function () {
-      // function ddmoving() {
-      //   $('.doodles.mo .doodle1').animate({'marginTop' : '0'}, 1200).animate({'marginTop' : '10'}, 1200, function() { ddmoving(); });
-      //   $('.doodles.mo .doodle2').animate({'marginTop' : '0'}, 1250).animate({'marginTop' : '10'}, 1250, function() { ddmoving(); });
-      //   $('.doodles.mo .doodle3').animate({'marginTop' : '0'}, 1300).animate({'marginTop' : '10'}, 1300, function() { ddmoving(); });
-      //   $('.doodles.mo .doodle4').animate({'marginTop' : '0'}, 1300).animate({'marginTop' : '10'}, 1300, function() { ddmoving(); });
-      //   $('.doodles.mo .doodle5').animate({'marginTop' : '0'}, 1300).animate({'marginTop' : '10'}, 1300, function() { ddmoving(); });
-      //
-      //   $('.doodles.web .doodle1').animate({'marginTop' : '-380'}, 1200).animate({'marginTop' : '-385'}, 1200, function() { ddmoving(); });
-      //   $('.doodles.web .doodle2').animate({'marginTop' : '50'}, 1250).animate({'marginTop' : '45'}, 1250, function() { ddmoving(); });
-      //   $('.doodles.web .doodle3').animate({'marginTop' : '90'}, 1300).animate({'marginTop' : '80'}, 1300, function() { ddmoving(); });
-      //   $('.doodles.web .doodle4').animate({'marginTop' : '-95'}, 1300).animate({'marginTop' : '-85'}, 1300, function() { ddmoving(); });
-      //   $('.doodles.web .doodle5').animate({'marginTop' : '-100'}, 1300).animate({'marginTop' : '-110'}, 1300, function() { ddmoving(); });
-      //   $('.doodles.web .doodle6').animate({'marginTop' : '-55'}, 1300).animate({'marginTop' : '-45'}, 1300, function() { ddmoving(); });
-      //   $('.doodles.web .doodle7').animate({'marginTop' : '95'}, 1300).animate({'marginTop' : '90'}, 1300, function() { ddmoving(); });
-      //   $('.doodles.web .doodle8').animate({'marginTop' : '120'}, 1300).animate({'marginTop' : '110'}, 1300, function() { ddmoving(); });
-      //   $('.doodles.web .doodle9').animate({'marginTop' : '242'}, 1300).animate({'marginTop' : '232'}, 1300, function() { ddmoving(); });
-      // }
-      // ddmoving();
-    // });
-  </script>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    new Swiper(".mo-swiper", {
+    let moSwiper = new Swiper(".mo-swiper", {
       direction: "vertical",
       slidesPerView: 3,
       spaceBetween: 12,
@@ -324,7 +288,9 @@
         prevEl: ".swiper-button-prev",
       },
     });
-    new Swiper(".web-swiper", {
+
+
+    let webSwiper = new Swiper(".web-swiper", {
       slidesPerView: 3,
       spaceBetween: 18,
       navigation: {
@@ -332,7 +298,7 @@
         prevEl: ".swiper-button-prev",
       },
     });
-    new Swiper(".popup-swiper", {
+    var popSwiper = new Swiper(".popup-swiper", {
       slidesPerView: 1,
       spaceBetween: 12,
       navigation: {
@@ -340,6 +306,18 @@
         prevEl: ".swiper-button-prev",
       },
     });
+    popSwiper.on('transitionEnd', function() {
+      let idx = popSwiper.realIndex;
+      counter(idx+1);
+    });
+
+
+    function counter(v) {
+      let txtLeng = document.querySelector('.popup .swiper-slide-active p').innerText.length;
+      let txtNum = document.querySelector('.popup .slide'+v+' .txt-leng .num');
+      txtNum.innerText = txtLeng;
+    }
   </script>
+  <!--************끝***********-->
 </body>
 </html>
