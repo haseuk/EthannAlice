@@ -1,0 +1,206 @@
+.poster {
+  display: inline-block;
+  position: relative;
+}
+
+.play-button {
+  position: absolute;
+  cursor: pointer;
+
+  .play-button-icon {
+    fill: $white;
+  }
+
+  .play-button-body {
+    fill: $primary-color;
+  }
+
+  .play-button-shadow {
+    fill: rgba($black, 0.1);
+  }
+
+  &:hover svg {
+    animation: buttonCtaBounce 0.5s;
+  }
+}
+
+.video-player {
+  display: none;
+
+  &--visible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba($black, 0.5);
+    z-index: 1000;
+  }
+
+  .player-wrapper {
+    position: relative;
+    margin: 48px;
+    padding: $indent;
+    width: 80%;
+    background: $white;
+
+    @include media(desktop-600) {
+      padding: $indent * 2;
+    }
+
+    @include media(tablet) {
+      max-width: 1200px;
+    }
+
+    @media (max-height: 730px) {
+      max-width: 950px;
+    }
+  }
+
+  .with-poster {
+    height: 50vw;
+  }
+
+  .button-close {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+  }
+
+  .video-embed-field-provider-ferrero-video-platform {
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 56.25%;
+    }
+  }
+
+  video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+
+  iframe {
+    @include media(desktop-900) {
+      min-height: 480px;
+    }
+  }
+}
+
+.poster-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.product-details-slide {
+  .play-button {
+    height: 52px;
+    width: 64px;
+
+    @media (min-width: 1650px) {
+      width: 90px;
+      height: 76px;
+    }
+  }
+}
+
+.lightbox-video {
+  &.contextual-region {
+    position: static;
+  }
+
+  .poster {
+    width: 100%;
+  }
+
+  .play-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    cursor: pointer;
+
+    @include media(desktop-900) {
+      bottom: 40px;
+      left: 40px;
+      right: auto;
+      top: auto;
+      transform: none;
+    }
+
+    @include media(desktop-600) {
+      display: flex;
+      align-items: center;
+    }
+
+    svg {
+      display: block;
+      width: 90px;
+      height: 80px;
+
+      @include media(desktop-600) {
+        width: 6.25vw;
+        height: 5.55556vw;
+      }
+    }
+
+    .field--name-video-title {
+      display: none;
+
+      @include media(desktop-600) {
+        display: block;
+        padding-left: 1em;
+        font-size: 1.66667vw;
+        color: $white;
+      }
+    }
+  }
+}
+
+.paragraph--type--kinder-product-details-carousel,
+.hub-header,
+.banners {
+  .lightbox-video .poster .play-button {
+    right: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.hub-header,
+.banners-large-image {
+  .lightbox-video .poster .play-button {
+    padding: 0 $indent;
+    width: 22vw;
+    height: 22vw;
+    z-index: 1;
+
+    @include media(tablet) {
+      width: 10vw;
+      height: 10vw;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+$wave-height-desktop: 8.61111vw;
+$wave-height-mobile: 18.48739vw;
+
+.footer-wrapper {
+  position: relative;
+  margin-top: 18.48739vw;
+  padding: 10vw 8vmin 5vmin;
+  background-color: $primary-color;
+  font-size: $font-size * 1.1;
+  color: $white;
+
+  @include media(desktop-900) {
+    margin-top: 8.61111vw;
+    padding: 1em 2vmin 1.5em;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -18.48739vw;
+    left: 0;
+    width: 100%;
+    height: 18.48739vw;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjQgMCA1MDAgNDMiPgogICAgICAgICAgICA8cGF0aCBkPSJNNTEzLjk5OTY5LDExLjQwODUxYy00LjAxNDgzLDEuNjAyMzYtNy45NDI4NywzLjE1Nzc4LTExLjQ5OTgyLDQuMzQzNDQtMTgsNi0yMS40LTQuMi0yMy4zLTguNS0yLjMtNS40LTExLjgtNS41LTMzLjgsMy45LTcuMiwzLjEtMTIuOCw1LjEtMTcsNS44LTMuNy42LTkuNC44LTEzLjQtMi4xLTQuOS0zLjYtMy4zLTEwLjItOS45LTExLjItNy4yLTEuMS0xOS43LDQuMi0yOS42LDguMS0xMC4zLDQuMS0xNS4xLDYuNC0yMi43LDUuMnMtOC43LTcuNi05LjktOS44Yy0xLjYtMy01LjEtNS42LTE4LjgtMS40LTE1LjgsNC45LTI0LjMsMTAuMi0zMywxMS40LTEyLjUsMS42LTE0LjktNC43LTE2LjUtOC4xLTEuOC00LTQuMy04LjgtMjIuOC0yLjQtMTguMyw2LjQtMjMuMywxMC42LTMyLjgsMTAuNy0xNi44LjEtOS41LTEyLjYtMTkuNi0xMy42LTguNC0uOC0xNy40LDMuMS0yNy45LDcuNGE5Mi45NzQ4Nyw5Mi45NzQ4NywwLDAsMS0xMy43LDQuOWMtMTUuMSwzLjgtMTguNy0yLjctMjAuOC03LjMtLjQtLjktMS4yLTMuMy0zLjItNC4zLTQuMS0yLTEyLjctMS0xOS4xLDEuOS03LjgsMy41LTE4LjQsMTEuMi0yNi4xLDExLjgtNS4xLjQtNi44LTEuOC03LjEtMy43YTQuNjc4MjYsNC42NzgyNiwwLDAsMSwuNS0yLjZjLjYtMS4zLDEuNS0zLjctLjItNS44LTIuMS0yLjctOS4zLTIuMi05LjMtMi4yLTE0LjcuNy0yMSw1LjQtMzIsMTAuNS03LDMuMi0xMiw0LjItMTUuOCwzLjRhOS44ODM3Miw5Ljg4MzcyLDAsMCwxLTMuMy0xLjVjLTEuNC0xLjEtMy4xLTMuNC0yLTUuOWE2LjQzNDg0LDYuNDM0ODQsMCwwLDEsMi4yLTIuNyw4LjYzNSw4LjYzNSwwLDAsMCwxLjMtMS40YzEuNC0xLjkuOC01LjEtMi45LTZhMTcuNjA1NDMsMTcuNjA1NDMsMCwwLDAtOS45LDEuMmMtMy43LDEuNi02LjcsMy4xLTEwLjEsNC44VjQzLjQwMTI1SDUxMy45OTk2OVoiIGZpbGw9IiNmMzQxMGUiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTY4LjI5OTY4LDEzLjM1MTkzYTQuNzY3MDcsNC43NjcwNywwLDAsMC00LjksMS43LDguODg3MzQsOC44ODczNCwwLDAsMC0xLjksNC43LDMuMjk0NzgsMy4yOTQ3OCwwLDAsMCwwLDEuNCwzLjIzMjEzLDMuMjMyMTMsMCwwLDAsMy45LDIuNWMyLjYtLjQsNC4zLTMuNyw0LjUtNi41QzcwLjA5OTcsMTMuOTUxOTQsNjguMjk5NjgsMTMuMzUxOTMsNjguMjk5NjgsMTMuMzUxOTNaIiBmaWxsPSIjZmZmIj48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01NS42OTk3MSwxMy43NTE5MmMtLjkuNC0xLjguOS0yLjcsMS40YTM2LjU5NCwzNi41OTQsMCwwLDAtOC4yLDhjLTMuNSw0LjctNC4zLDguNy00LjMsMTEuNmE3LjcyNTcxLDcuNzI1NzEsMCwwLDAsNy40LDcuNGM1LjguMyw4LjctNCw4LjctOC41LDAtMy43LTEuNS02LjctMS0xMS41YTE2LjEyNSwxNi4xMjUsMCwwLDEsMS4zLTQuOWgwYy4yLS4zLjQtLjcuNi0xLDEuMS0xLjMsMS4xLTIuMS41LTIuNkEyLjY1NzEzLDIuNjU3MTMsMCwwLDAsNTUuNjk5NzEsMTMuNzUxOTJaIiBmaWxsPSIjZmZmIj48L3BhdGg+CiAgICAgICAgICA8L3N2Zz4=');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include media(desktop-900) {
+      top: -8.61111vw;
+      height: 8.61111vw;
+    }
+  }
+
+  #footer {
+
+    @include media(desktop-900) {
+      display: flex;
+      margin: 0 auto;
+      max-width: 1056px;
+    }
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+#footer {
+  position: relative;
+
+  @include media-max(desktop-900) {
+    min-height: $indent * 6;
+  }
+
+  @include media-max(mobile) {
+    min-height: $indent * 10;
+  }
+}
+
+
+.bdi-local-activation-menu--footer,
+.bdi-local-activation-block-language {
+  @include media(desktop-900) {
+    margin-top: $indent * .7;
+    font-size: 0;
+  }
+
+  li {
+    line-height: 1.15;
+
+    @include media(desktop-900) {
+      display: inline-block;
+    }
+
+    a {
+      display: inline-block;
+      font-size: $font-size * 1.1;
+      line-height: 1;
+    }
+  }
+}
+
+.bdi-local-activation-block-international-globe {
+  position: static;
+
+  .bdi-local-activation-globe {
+    border-radius: 50%;
+    min-width: 52px;
+    width: 52px;
+    height: 52px;
+    box-shadow: 2px 4px 0 0 rgba($black, 0.1);
+    text-indent: 52px;
+    background: no-repeat url("https://www.kinder.com/de/brands/kinder/themes/custom/kinder_theme/assets/images/png/1cd9945ef6ef94d7ea9db97a39c528ca.png");
+    background-size: 100%;
+    color: transparent;
+
+    @include media(desktop-900) {
+      position: relative;
+      top: -1.25em;
+    }
+
+    @include media-max(desktop-1400) {
+      margin-left: 2em;
+    }
+
+    @include media-max(desktop-900) {
+      position: absolute;
+      bottom: $indent * 5.5;
+      right: 0;
+    }
+  }
+}

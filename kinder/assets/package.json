@@ -1,0 +1,19 @@
+{
+  "name": "kinder_theme",
+  "version": "0.0.1",
+  "description": "Kinder theme",
+  "dependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-notify": "^0.4.5",
+    "grunt-spritesmith": "^6.6.2",
+    "time-grunt": "^1.4.0"
+  },
+  "devDependencies": {
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-cli": "^1.2.0",
+    "grunt-sass": "^2.0.0",
+    "grunt-sass-lint": "^0.2.2"
+  }
+}

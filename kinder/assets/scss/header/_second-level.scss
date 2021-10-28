@@ -1,0 +1,78 @@
+@include media(desktop-1024) {
+  .bdi-local-activation-first-level {
+    .bdi-local-activation-next-level {
+      position: absolute;
+      top: 56px;
+      left: 0;
+      background-color: $white;
+      opacity: 1;
+      transition: opacity 1s linear;
+      box-shadow: 0 2px 27px 0 rgba(0, 0, 0, 0.3);
+
+      a {
+        padding: $indent ($indent * 2);
+        color: $black;
+        font-family: inherit;
+        font-size: $font-size * 1.6;
+        letter-spacing: 0.44px;
+
+        &:hover {
+          color: $blue;
+        }
+
+        &.is-active {
+          font-family: $noto-sans;
+          font-weight: 700;
+          color: $blue;
+        }
+      }
+
+      .bdi-local-activation-menu {
+        display: block;
+      }
+
+      .bdi-local-activation-menu-item.hide-md {
+        display: none;
+      }
+    }
+
+    .bdi-local-activation-show-full-width .bdi-local-activation-next-level {
+      width: 100vw;
+      right: 0;
+      left: auto;
+      padding: 0 40px 0 170px;
+
+      .bdi-local-activation-menu {
+        flex-wrap: wrap;
+        margin: 40px auto 30px;
+
+        .bdi-local-activation-menu-item {
+          width: 25%;
+          white-space: normal;
+        }
+      }
+
+      .bdi-local-activation-full-width-menu-wapper {
+        margin: $indent * 3 auto;
+
+        .bdi-local-activation-menu {
+          margin: 0;
+        }
+      }
+
+      a {
+        padding: $indent;
+      }
+    }
+
+    .bdi-local-activation-show-with-logos .bdi-local-activation-next-level {
+      a {
+        padding: $indent $indent * 1.5;
+      }
+
+      .hide-md {
+        display: none;
+      }
+    }
+  }
+}

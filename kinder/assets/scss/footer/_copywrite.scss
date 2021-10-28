@@ -1,0 +1,20 @@
+.bdi-local-activation-block--copywrite {
+  margin-right: auto;
+  font-size: $font-size * 1.2;
+
+  .bdi-local-activation-footer-logo {
+    margin-bottom: $indent;
+    width: 144px;
+    height: 19px;
+    background: $png_7608c14e2d3a3149a83b82a88bd96939;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .bdi-local-activation-field--name-kinder-footer-copyright-text-two {
+    a {
+      display: inline-block;
+      margin-top: $indent * .5;
+    }
+  }
+}

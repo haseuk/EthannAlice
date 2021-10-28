@@ -36,7 +36,6 @@ a {
 }
 .container {
   margin-top: 7.5vw;
-  padding-bottom: 7.5vw;
   box-sizing: border-box;
 }
 .container .wrap {
@@ -287,6 +286,9 @@ a {
 .container.event .wrap section {
   margin-top: 6.25vw;
 }
+.container.event .wrap section.evt1 {
+  padding-bottom: 31.25vw;
+}
 .container.event .wrap section.evt1 .tit {
   margin-top: 34.75vw;
   background-repeat: no-repeat;
@@ -338,7 +340,7 @@ a {
 .container.event .wrap section.evt1 .postit textarea {
   font-size: 7.75vw;
   line-height: 1;
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: 'Hi Melody', cursive;
   width: 56.25vw;
   height: 25vw;
   text-align: center;
@@ -416,6 +418,9 @@ a {
   top: 177vw;
   right: auto;
   bottom: auto;
+}
+.container.event .wrap section.evt2 {
+  padding-bottom: 31.25vw;
 }
 .container.event .wrap section.evt2 > .tit {
   margin-top: 34.75vw;
@@ -512,7 +517,7 @@ a {
 .container.event .wrap section.evt2 .agree-box label input[type=checkbox] + i {
   width: 2vw;
   height: 2vw;
-  border: 2px solid #b0b0b0;
+  border: 2px solid #000;
   box-sizing: border-box;
   display: inline-block;
   border-radius: 0.375vw;
@@ -522,7 +527,7 @@ a {
 .container.event .wrap section.evt2 .agree-box label input[type=checkbox]:checked + i {
   width: 2vw;
   height: 2vw;
-  border: 2px solid #b0b0b0;
+  border: 2px solid #000;
   background-color: #f3410e;
   box-sizing: border-box;
   display: inline-block;
@@ -543,7 +548,7 @@ a {
   font-size: 1.75vw;
   line-height: 3.125vw;
   color: #888;
-  border: 3px solid #b0b0b0;
+  border: 1px solid #b0b0b0;
   background-color: #fafafa;
   border-radius: 1.125vw;
   text-align: left;
@@ -556,11 +561,6 @@ a {
   width: 81.25vw;
   height: 23.75vw;
   overflow: auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.container.event .wrap section.evt2 .agree-box .agree-txt::-webkit-scrollbar {
-  display: none;
 }
 .container.event .wrap section.evt2 ::placeholder {
   color: #b8b8b8;
@@ -582,6 +582,9 @@ a {
   top: 16.25vw;
   left: auto;
   bottom: auto;
+}
+.container.event .wrap section.evt3 {
+  padding-bottom: 31.25vw;
 }
 .container.event .wrap section.evt3 .tit {
   background-repeat: no-repeat;
@@ -928,7 +931,6 @@ a {
 .footer-wrapper::before {
   content: '';
   display: block;
-  background: transparent;
 }
 .event + .footer-wrapper::before {
   content: '';

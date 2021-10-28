@@ -1,0 +1,111 @@
+.bdi-local-activation-menu--footer {
+  @include media-max(desktop-900) {
+    margin-top: $indent;
+  }
+
+  .bdi-local-activation-visually-hidden {
+    display: none;
+  }
+
+  ul {
+    max-width: 44vw;
+
+    @include media(desktop-1592){
+      max-width: 34vw;
+    }
+  }
+
+  li {
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+    font-size: $font-size * 1.2;
+
+    @include media(desktop-900) {
+      margin: 0 1.04167vw 1vw;
+    }
+  }
+
+  a {
+    font-family: $noto-sans;
+    font-weight: 700;
+  }
+}
+
+.bdi-local-activation-menu--main-wrapper .bdi-local-activation-nav-panel-content {
+  .bdi-local-activation-menu--footer {
+    .bdi-local-activation-visually-hidden {
+      display: none;
+    }
+
+    ul.bdi-local-activation-menu {
+      padding-bottom: 0;
+
+      li.bdi-local-activation-menu-item {
+        width: auto;
+        margin: 1.5em 0 .5em;
+        font-size: $font-size * 1.2;
+        text-align: left;
+
+        @include media(desktop-900) {
+          margin: 0 1.04167vw 1vw;
+        }
+
+        a {
+          display: inline-block;
+          font-family: $noto-sans;
+          font-weight: 700;
+          font-size: $font-size * 1.1;
+          line-height: 1;
+          color: $white;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .bdi-local-activation-block-language {
+    li a {
+      font-family: $noto-sans;
+      font-weight: 400;
+      color: $white;
+    }
+
+    @include media(desktop-900) {
+      li a {
+        padding: 0 1.31944vw;
+      }
+    }
+
+    @include media-max(desktop-900) {
+      position: absolute;
+      width: auto;
+
+      li a {
+        font-family: $noto-sans;
+        font-weight: 700;
+      }
+
+      ul.is-opened {
+        padding-bottom: 0;
+
+        li {
+          a {
+            color: $font-color;
+            text-transform: none;
+          }
+        }
+      }
+    }
+  }
+
+  .bdi-local-activation-block-international-globe {
+    a {
+      display: inline;
+      padding: 0;
+    }
+  }
+}

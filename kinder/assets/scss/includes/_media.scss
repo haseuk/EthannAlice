@@ -1,0 +1,72 @@
+// Media.
+@mixin media($breakpoint) {
+  @if $breakpoint == desktop-1592 {
+    @media (min-width: map-get($breakpoints, desktop-1592)) {
+      @content;
+    }
+  }  @else if $breakpoint == desktop-1440 {
+    @media (min-width: map-get($breakpoints, desktop-1440)) {
+      @content;
+    }
+  }  @else if $breakpoint == desktop-1024 {
+    @media (min-width: map-get($breakpoints, desktop-1024)) {
+      @content;
+    }
+  } @else if $breakpoint == desktop-1200 {
+    @media (min-width: map-get($breakpoints, desktop-1200)) {
+      @content;
+    }
+  }  @else if $breakpoint == desktop-1024 {
+    @media (min-width: map-get($breakpoints, desktop-1024)) {
+      @content;
+    }
+  } @else if $breakpoint == desktop-900 {
+    @media (min-width: map-get($breakpoints, desktop-900)) {
+      @content;
+    }
+  } @else if $breakpoint == desktop-600 {
+    @media (min-width: map-get($breakpoints, desktop-600)) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (min-width: map-get($breakpoints, tablet)) {
+      @content;
+    }
+  } @else if $breakpoint == mobile {
+    @media (min-width: map-get($breakpoints, mobile)) {
+      @content;
+    }
+  }
+}
+@mixin media-max($breakpoint) {
+  @if $breakpoint == desktop-1400 {
+    @media (max-width: (map-get($breakpoints, desktop-1400)) - 1) {
+      @content;
+    }
+  } @else if $breakpoint == desktop-1200 {
+    @media (max-width: (map-get($breakpoints, desktop-1200)) - 1) {
+      @content;
+    }
+  } @else if $breakpoint == desktop-1024 {
+    @media (max-width: (map-get($breakpoints, desktop-1024)) - 1) {
+      @content;
+    }
+  } @else if $breakpoint == desktop-900 {
+    @media (max-width: (map-get($breakpoints, desktop-900)) - 1) {
+      @content;
+    }
+  } @else if $breakpoint == desktop-600 {
+    @media (max-width: ( map-get($breakpoints, desktop-600)) - 1) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (max-width: ( map-get($breakpoints, tablet)) - 1) {
+      @content;
+    }
+  } @else if $breakpoint == mobile {
+    @media (max-width: ( map-get($breakpoints, mobile)) - 1) {
+      @content;
+    }
+  }
+}
+

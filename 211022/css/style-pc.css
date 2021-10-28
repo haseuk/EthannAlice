@@ -183,6 +183,13 @@ a {
     z-index: 1;
     padding-left: 0.52083333vw;
     box-sizing: border-box;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    line-height: 1.2em;
+    height: 3.6em;
   }
   .container .wrap section.cont2 .swiper .swiper-pagination {
     bottom: 0vw;
@@ -293,17 +300,30 @@ a {
     padding: 0vw;
     height: auto;
   }
+  .container .wrap .footer:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 7.03125vw;
+    right: auto;
+    bottom: auto;
+    margin-left: -17.1875vw;
+    width: 7.60416667vw;
+    height: 7.65625vw;
+    background-repeat: no-repeat;
+    background-image: url('../img/pc/cs.png');
+    background-size: contain;
+  }
   .container .wrap .footer .inner {
     background-color: #888;
     width: 70.83333333vw;
-    height: 25vw;
+    height: 19.79166667vw;
     padding-top: 3.64583333vw;
+    margin-bottom: 11.45833333vw;
     box-sizing: border-box;
     display: inline-block;
     position: relative;
-  }
-  .container .wrap .footer .inner:after {
-    display: none;
   }
   .container .wrap .footer .inner p {
     font-size: 1.875vw;
@@ -362,6 +382,7 @@ a {
   .container.event .wrap section.evt1 {
     margin-top: -0.9375vw;
     text-align: center;
+    padding-bottom: 5.20833333vw;
   }
   .container.event .wrap section.evt1 .tit {
     margin-top: 0vw;
@@ -416,7 +437,7 @@ a {
   .container.event .wrap section.evt1 .postit textarea {
     font-size: 2.34375vw;
     line-height: 1;
-    font-family: 'Nanum Pen Script', cursive;
+    font-family: 'Hi Melody', cursive;
     width: 15.10416667vw;
     height: 8.85416667vw;
     text-align: center;
@@ -457,9 +478,11 @@ a {
     right: auto;
     top: auto;
     transform: translateX(-50%);
+    margin-top: 0vw;
   }
   .container.event .wrap section.evt2 {
     margin-top: -0.9375vw;
+    padding-bottom: 6.25vw;
   }
   .container.event .wrap section.evt2 > .tit {
     margin-top: 0vw;
@@ -568,7 +591,7 @@ a {
   .container.event .wrap section.evt2 .agree-box label input[type=checkbox] + i {
     width: 0.83333333vw;
     height: 0.83333333vw;
-    border: 2px solid #b0b0b0;
+    border: 2px solid #000;
     box-sizing: border-box;
     display: inline-block;
     border-radius: 0.15625vw;
@@ -578,7 +601,7 @@ a {
   .container.event .wrap section.evt2 .agree-box label input[type=checkbox]:checked + i {
     width: 0.83333333vw;
     height: 0.83333333vw;
-    border: 2px solid #b0b0b0;
+    border: 2px solid #000;
     background-color: #f3410e;
     box-sizing: border-box;
     display: inline-block;
@@ -599,7 +622,7 @@ a {
     font-size: 0.72916667vw;
     line-height: 1.04166667vw;
     color: #888;
-    border: 2px solid #b0b0b0;
+    border: 1px solid #b0b0b0;
     background-color: #fafafa;
     border-radius: 0.26041667vw;
     text-align: left;
@@ -612,11 +635,6 @@ a {
     width: 29.01041667vw;
     height: 3.90625vw;
     overflow: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .container.event .wrap section.evt2 .agree-box .agree-txt::-webkit-scrollbar {
-    display: none;
   }
   .container.event .wrap section.evt2 ::placeholder {
     color: #b8b8b8;
@@ -637,6 +655,7 @@ a {
   }
   .container.event .wrap section.evt3 {
     margin-top: -0.9375vw;
+    padding-bottom: 6.25vw;
   }
   .container.event .wrap section.evt3 .tit {
     background-repeat: no-repeat;
@@ -1081,7 +1100,6 @@ a {
 .footer-wrapper::before {
   content: '';
   display: block;
-  background: transparent;
 }
 .event + .footer-wrapper::before {
   content: '';
