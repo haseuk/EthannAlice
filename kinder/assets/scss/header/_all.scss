@@ -1,8 +1,0 @@
-@import 'main';
-@import 'first-level';
-@import 'second-level';
-@import 'mobile-menu';
-
-[dir='rtl'] {
-  @import 'header-rtl';
-}

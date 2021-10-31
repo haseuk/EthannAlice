@@ -2,6 +2,13 @@
 *  Template
 *--------------------------------------------------------------------------------------------------------------*/
 @import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@font-face {
+  font-family: 'Poor Story';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poorstory/v10/jizfREFUsnUct9P6cDfd4Ok.ttf) format('truetype');
+}
 body {
   font-family: "Noto Sans KR", sans-serif !important;
 }
@@ -27,6 +34,9 @@ a {
 }
 .nanum {
   font-family: 'Nanum Pen Script', cursive;
+}
+.poor {
+  font-family: 'Poor Story', cursive;
 }
 @media screen and (min-width: 801px) {
   .mo {
@@ -144,52 +154,25 @@ a {
     z-index: 1;
   }
   .container .wrap section.cont2 .swiper {
-    margin-top: 28.95833333vw;
     width: 62.1875vw;
     overflow: hidden;
     padding-top: 0vw;
     padding-right: 0vw;
     padding-bottom: 1.5625vw;
     padding-left: 0vw;
+    margin: 0 auto;
+    margin-top: 28.95833333vw;
+  }
+  .container .wrap section.cont2 .swiper:after {
+    display: none;
   }
   .container .wrap section.cont2 .swiper .swiper-wrapper .swiper-slide {
-    width: 20.83333333vw;
-    height: 21.04166667vw;
+    width: 20.98958333vw;
+    height: 21.14583333vw;
   }
-  .container .wrap section.cont2 .swiper .swiper-wrapper .swiper-slide:after {
-    content: '';
-    display: block;
-    width: 20.83333333vw;
-    height: 21.04166667vw;
-    position: absolute;
-    left: 0vw;
-    top: 0vw;
-    right: auto;
-    bottom: auto;
-    background-repeat: no-repeat;
-    background-image: url('../img/pc/post1.png');
-    background-size: contain;
-  }
-  .container .wrap section.cont2 .swiper .swiper-wrapper .swiper-slide p {
-    font-size: 1.61458333vw;
-    line-height: 2.08333333vw;
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    right: auto;
-    bottom: auto;
-    transform: translate(-50%, -50%);
-    width: 13.54166667vw;
-    z-index: 1;
-    padding-left: 0.52083333vw;
-    box-sizing: border-box;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    word-wrap: break-word;
-    line-height: 1.2em;
-    height: 3.6em;
+  .container .wrap section.cont2 .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: 100%;
   }
   .container .wrap section.cont2 .swiper .swiper-pagination {
     bottom: 0vw;
@@ -387,10 +370,10 @@ a {
   .container.event .wrap section.evt1 .tit {
     margin-top: 0vw;
     background-repeat: no-repeat;
-    background-image: url('../img/pc/evt1-tit.png');
+    background-image: url('../img/pc/evt1-tit1.png');
     background-size: contain;
-    width: 61.30208333vw;
-    height: 13.69791667vw;
+    width: 49.11458333vw;
+    height: 13.07291667vw;
     display: block;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -398,7 +381,7 @@ a {
   .container.event .wrap section.evt1 .postit {
     width: 20.20833333vw;
     height: 20.41666667vw;
-    margin-top: 1.875vw;
+    margin-top: 2.86458333vw;
     margin-right: 0vw;
     margin-bottom: 0vw;
     margin-left: 1.35416667vw;
@@ -415,14 +398,14 @@ a {
     bottom: auto;
   }
   .container.event .wrap section.evt1 .postit .post-txt {
-    font-size: 2.70833333vw;
-    line-height: 3.02083333vw;
-    font-family: 'Nanum Pen Script', cursive;
+    font-size: 1.5625vw;
+    line-height: 1.875vw;
+    font-family: 'Poor Story', cursive;
     width: 100%;
     pointer-events: none;
     position: absolute;
-    left: -1.04166667vw;
-    top: 3.90625vw;
+    left: -0.78125vw;
+    top: 4.16666667vw;
     right: auto;
     bottom: auto;
   }
@@ -435,9 +418,9 @@ a {
     display: block;
   }
   .container.event .wrap section.evt1 .postit textarea {
-    font-size: 2.34375vw;
-    line-height: 1;
-    font-family: 'Hi Melody', cursive;
+    font-size: 1.5625vw;
+    line-height: 1.875vw;
+    font-family: 'Poor Story', cursive;
     width: 15.10416667vw;
     height: 8.85416667vw;
     text-align: center;
@@ -470,7 +453,7 @@ a {
     width: 17.8125vw;
     height: 3.85416667vw;
     background-repeat: no-repeat;
-    background-image: url('../img/pc/share-btn.png');
+    background-image: url('../img/pc/evt3-go.png');
     background-size: contain;
     position: absolute;
     left: 50%;
@@ -487,16 +470,16 @@ a {
   .container.event .wrap section.evt2 > .tit {
     margin-top: 0vw;
     background-repeat: no-repeat;
-    background-image: url('../img/pc/evt2-tit.png');
+    background-image: url('../img/pc/evt2-tit1.png');
     background-size: contain;
-    width: 61.51041667vw;
-    height: 11.09375vw;
+    width: 39.21875vw;
+    height: 12.44791667vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   .container.event .wrap section.evt2 .agree {
-    margin-top: 2.34375vw;
+    margin-top: 2.08333333vw;
     text-align: left;
     width: 29.01041667vw;
     display: block;
@@ -510,6 +493,7 @@ a {
   .container.event .wrap section.evt2 .agree table tr th img,
   .container.event .wrap section.evt2 .agree table tr td img {
     width: 7.1875vw;
+    height: 2.44791667vw;
     margin-top: -0.05208333vw;
   }
   .container.event .wrap section.evt2 .agree table tr th {
@@ -547,10 +531,11 @@ a {
     display: none;
   }
   .container.event .wrap section.evt2 .agree table tr.cert-comp p {
-    font-size: 1.04166667vw;
-    line-height: 2.08333333vw;
+    font-size: 0.83333333vw;
+    line-height: 1.5625vw;
     margin-bottom: 0.26041667vw;
     padding-left: 0.26041667vw;
+    margin-top: 0vw;
   }
   .container.event .wrap section.evt2 .agree table tr.cert-comp.on {
     display: table-row;
@@ -558,7 +543,7 @@ a {
   .container.event .wrap section.evt2 .agree table .name,
   .container.event .wrap section.evt2 .agree table .add1,
   .container.event .wrap section.evt2 .agree table .add2 {
-    width: 21.5625vw;
+    width: 14.0625vw;
   }
   .container.event .wrap section.evt2 .agree-box {
     margin-top: 1.30208333vw;
@@ -589,9 +574,9 @@ a {
     float: right;
   }
   .container.event .wrap section.evt2 .agree-box label input[type=checkbox] + i {
-    width: 0.83333333vw;
-    height: 0.83333333vw;
-    border: 2px solid #000;
+    width: 0.72916667vw;
+    height: 0.72916667vw;
+    border: 2px solid #b0b0b0;
     box-sizing: border-box;
     display: inline-block;
     border-radius: 0.15625vw;
@@ -599,9 +584,9 @@ a {
     margin-right: 0.26041667vw;
   }
   .container.event .wrap section.evt2 .agree-box label input[type=checkbox]:checked + i {
-    width: 0.83333333vw;
-    height: 0.83333333vw;
-    border: 2px solid #000;
+    width: 0.72916667vw;
+    height: 0.72916667vw;
+    border: 2px solid #b0b0b0;
     background-color: #f3410e;
     box-sizing: border-box;
     display: inline-block;
@@ -633,8 +618,12 @@ a {
     padding-left: 0.41666667vw;
     box-sizing: border-box;
     width: 29.01041667vw;
-    height: 3.90625vw;
+    height: 10.9375vw;
     overflow: auto;
+  }
+  .container.event .wrap section.evt2 .agree-box .agree-txt p {
+    text-indent: -0.36458333vw;
+    margin-left: 0.36458333vw;
   }
   .container.event .wrap section.evt2 ::placeholder {
     color: #b8b8b8;
@@ -659,10 +648,10 @@ a {
   }
   .container.event .wrap section.evt3 .tit {
     background-repeat: no-repeat;
-    background-image: url('../img/pc/evt3-tit.png');
+    background-image: url('../img/pc/evt3-tit1.png');
     background-size: contain;
-    width: 44.32291667vw;
-    height: 11.51041667vw;
+    width: 50.05208333vw;
+    height: 13.48958333vw;
     margin-top: 0vw;
     display: inline-block;
   }
@@ -738,8 +727,8 @@ a {
   }
   .container.event .wrap section.evt3 .speech .web-swiper .swiper-slide .u-txt {
     font-size: 1.77083333vw;
-    line-height: 1.875vw;
-    font-family: 'Hi Melody', cursive;
+    line-height: 2.08333333vw;
+    font-family: 'Poor Story', cursive;
     text-align: center;
     padding-top: 0vw;
     padding-right: 0.78125vw;
@@ -994,8 +983,8 @@ a {
   }
   .popup .inner .popup-swiper .swiper-slide p {
     font-size: 1.77083333vw;
-    line-height: 1;
-    font-family: 'Hi Melody', cursive;
+    line-height: 2.08333333vw;
+    font-family: 'Poor Story', cursive;
     position: absolute;
     left: 50%;
     top: 45%;

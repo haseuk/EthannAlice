@@ -2,6 +2,13 @@
 *  Template
 *--------------------------------------------------------------------------------------------------------------*/
 @import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@font-face {
+  font-family: 'Poor Story';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poorstory/v10/jizfREFUsnUct9P6cDfd4Ok.ttf) format('truetype');
+}
 body {
   background-color: #fff;
   font-family: "Noto Sans KR", sans-serif !important;
@@ -34,6 +41,9 @@ a {
 .nanum {
   font-family: 'Nanum Pen Script', cursive;
 }
+.poor {
+  font-family: 'Poor Story', cursive;
+}
 .container {
   margin-top: 7.5vw;
   box-sizing: border-box;
@@ -65,7 +75,7 @@ a {
   overflow: hidden;
 }
 .container .wrap section.main img {
-  height: 167.375vw;
+  height: 167.625vw;
 }
 .container .wrap section.cont2 {
   background-repeat: no-repeat;
@@ -106,43 +116,31 @@ a {
 }
 .container .wrap section.cont2 .swiper {
   margin-top: 54.75vw;
-  padding-left: 5vw;
-  box-sizing: border-box;
-}
-.container .wrap section.cont2 .swiper .swiper-slide {
-  width: 45.625vw;
-  height: 46.125vw;
+  margin-left: 5vw;
   position: relative;
 }
-.container .wrap section.cont2 .swiper .swiper-slide:after {
+.container .wrap section.cont2 .swiper:after {
   content: '';
   display: block;
-  width: 45.625vw;
-  height: 46.125vw;
+  width: 2.5vw;
+  height: 100%;
   position: absolute;
-  left: 0vw;
-  top: 0vw;
+  left: -1.25vw;
+  top: -1.875vw;
   right: auto;
   bottom: auto;
-  background-repeat: no-repeat;
-  background-image: url('../img/mo/post1.png');
-  background-size: contain;
-}
-.container .wrap section.cont2 .swiper .swiper-slide p {
-  font-size: 4.25vw;
-  font-family: 'Hi Melody', cursive;
-  font-weight: 400;
-  line-height: 4.5vw;
-  position: absolute;
-  left: 50%;
-  top: 45%;
-  right: auto;
-  bottom: auto;
-  transform: translate(-50%, -50%);
-  width: 32.5vw;
+  background-color: #fff;
   z-index: 1;
-  padding-left: 1.25vw;
-  box-sizing: border-box;
+}
+.container .wrap section.cont2 .swiper .swiper-slide {
+  width: 40.375vw;
+  height: 40.75vw;
+  position: relative;
+  padding-bottom: 4.375vw;
+}
+.container .wrap section.cont2 .swiper .swiper-slide img {
+  width: 40.375vw;
+  height: 40.75vw;
 }
 .container .wrap section.cont2 .swiper .swiper-pagination {
   bottom: 0vw;
@@ -290,12 +288,12 @@ a {
   padding-bottom: 31.25vw;
 }
 .container.event .wrap section.evt1 .tit {
-  margin-top: 34.75vw;
+  margin-top: 35vw;
   background-repeat: no-repeat;
-  background-image: url('../img/mo/evt1-tit.png');
+  background-image: url('../img/mo/evt1-tit1.png');
   background-size: contain;
-  width: 85.75vw;
-  height: 47.75vw;
+  width: 86.875vw;
+  height: 40.625vw;
   display: inline-block;
 }
 .container.event .wrap section.evt1 .postit {
@@ -318,9 +316,9 @@ a {
   bottom: auto;
 }
 .container.event .wrap section.evt1 .postit .post-txt {
-  font-size: 9.75vw;
-  line-height: 10vw;
-  font-family: 'Nanum Pen Script', cursive;
+  font-size: 6.25vw;
+  line-height: 6.875vw;
+  font-family: 'Poor Story', cursive;
   width: 100%;
   pointer-events: none;
   position: absolute;
@@ -328,6 +326,7 @@ a {
   top: 18.75vw;
   right: auto;
   bottom: auto;
+  color: #838383;
 }
 .container.event .wrap section.evt1 .postit .post-txt s {
   font-size: 4.75vw;
@@ -340,7 +339,7 @@ a {
 .container.event .wrap section.evt1 .postit textarea {
   font-size: 7.75vw;
   line-height: 1;
-  font-family: 'Hi Melody', cursive;
+  font-family: 'Poor Story', cursive;
   width: 56.25vw;
   height: 25vw;
   text-align: center;
@@ -371,7 +370,7 @@ a {
   width: 47.125vw;
   height: 12vw;
   background-repeat: no-repeat;
-  background-image: url('../img/mo/share-btn.png');
+  background-image: url('../img/mo/evt3-go.png');
   background-size: contain;
   margin-top: 4.25vw;
   display: inline-block;
@@ -423,18 +422,18 @@ a {
   padding-bottom: 31.25vw;
 }
 .container.event .wrap section.evt2 > .tit {
-  margin-top: 34.75vw;
+  margin-top: 36.25vw;
   background-repeat: no-repeat;
-  background-image: url('../img/mo/evt2-tit.png');
+  background-image: url('../img/mo/evt2-tit1.png');
   background-size: contain;
-  width: 85.25vw;
-  height: 41.125vw;
+  width: 86vw;
+  height: 33.875vw;
   display: inline-block;
 }
 .container.event .wrap section.evt2 .agree {
-  margin-top: 12vw;
+  margin-top: 8.75vw;
   text-align: left;
-  width: 81.5vw;
+  width: 87.75vw;
   display: inline-block;
 }
 .container.event .wrap section.evt2 .agree table {
@@ -443,17 +442,18 @@ a {
 }
 .container.event .wrap section.evt2 .agree table tr th img,
 .container.event .wrap section.evt2 .agree table tr td img {
-  width: 20.125vw;
-  margin-top: -0.25vw;
+  width: 21.75vw;
+  height: 9.25vw;
+  margin-top: -0.5vw;
 }
 .container.event .wrap section.evt2 .agree table tr th input {
-  font-size: 2.5vw;
-  margin-top: 0vw;
+  font-size: 3.5vw;
+  margin-top: 0.25vw;
   margin-right: 0vw;
   margin-bottom: 0.625vw;
   margin-left: 0.875vw;
-  width: 39.5vw;
-  height: 6.75vw;
+  width: 42.875vw;
+  height: 9.25vw;
   border: 2px solid #484848;
   border-radius: 1vw;
   background: transparent;
@@ -461,8 +461,8 @@ a {
   box-sizing: border-box;
 }
 .container.event .wrap section.evt2 .agree table tr td a {
-  width: 20.25vw;
-  height: 6.75vw;
+  width: 21.75vw;
+  height: 9.25vw;
   margin-left: 0.625vw;
 }
 .container.event .wrap section.evt2 .agree table tr.cert-input {
@@ -475,9 +475,12 @@ a {
   display: none;
 }
 .container.event .wrap section.evt2 .agree table tr.cert-comp p {
-  font-size: 2.5vw;
-  line-height: 5vw;
+  font-size: 3.5vw;
+  line-height: 4.375vw;
+  margin-top: 0.625vw;
+  margin-right: 0vw;
   margin-bottom: 0.625vw;
+  margin-left: 0vw;
   padding-left: 0.625vw;
 }
 .container.event .wrap section.evt2 .agree table tr.cert-comp.on {
@@ -486,11 +489,11 @@ a {
 .container.event .wrap section.evt2 .agree table .name,
 .container.event .wrap section.evt2 .agree table .add1,
 .container.event .wrap section.evt2 .agree table .add2 {
-  width: 60.375vw;
+  width: 65.375vw;
 }
 .container.event .wrap section.evt2 .agree-box {
-  margin-top: 3.75vw;
-  width: 81.25vw;
+  margin-top: 6.25vw;
+  width: 87.75vw;
   display: inline-block;
   zoom: 1;
   text-align: left;
@@ -504,63 +507,66 @@ a {
   visibility: hidden;
 }
 .container.event .wrap section.evt2 .agree-box .tit {
-  font-size: 2vw;
-  line-height: 2.625vw;
+  font-size: 3vw;
+  line-height: 3.875vw;
   font-weight: 700;
-  padding-left: 0.375vw;
-  box-sizing: border-box;
   display: inline-block;
+  letter-spacing: -0.02em;
 }
 .container.event .wrap section.evt2 .agree-box label {
   float: right;
 }
 .container.event .wrap section.evt2 .agree-box label input[type=checkbox] + i {
-  width: 2vw;
-  height: 2vw;
-  border: 2px solid #000;
+  width: 3.625vw;
+  height: 3.625vw;
+  border: 0.6vw solid #b0b0b0;
   box-sizing: border-box;
   display: inline-block;
-  border-radius: 0.375vw;
+  border-radius: 0.5vw;
   vertical-align: middle;
-  margin-right: 0.625vw;
+  margin-right: 1.25vw;
 }
 .container.event .wrap section.evt2 .agree-box label input[type=checkbox]:checked + i {
-  width: 2vw;
-  height: 2vw;
-  border: 2px solid #000;
+  width: 3.625vw;
+  height: 3.625vw;
+  border: 0.6vw solid #b0b0b0;
   background-color: #f3410e;
   box-sizing: border-box;
   display: inline-block;
   border-radius: 0.375vw;
   vertical-align: middle;
-  margin-right: 0.625vw;
+  margin-right: 1.25vw;
 }
 .container.event .wrap section.evt2 .agree-box label input {
   display: none;
 }
 .container.event .wrap section.evt2 .agree-box label s {
-  font-size: 2vw;
-  line-height: 2.625vw;
+  font-size: 3vw;
+  line-height: 3.875vw;
   display: inline-block;
   vertical-align: middle;
 }
 .container.event .wrap section.evt2 .agree-box .agree-txt {
-  font-size: 1.75vw;
-  line-height: 3.125vw;
+  font-size: 2.5vw;
+  line-height: 3.875vw;
   color: #888;
-  border: 1px solid #b0b0b0;
+  border: 2px solid #b0b0b0;
   background-color: #fafafa;
-  border-radius: 1.125vw;
+  border-radius: 2.125vw;
   text-align: left;
   margin-top: 1.875vw;
-  padding-top: 3.75vw;
-  padding-right: 1.25vw;
-  padding-bottom: 3.75vw;
-  padding-left: 1.25vw;
+  padding-top: 2.5vw;
+  padding-right: 3.125vw;
+  padding-bottom: 2.5vw;
+  padding-left: 3.125vw;
   box-sizing: border-box;
-  width: 81.25vw;
-  height: 23.75vw;
+  width: 87.75vw;
+  height: 42.75vw;
   overflow: auto;
+}
+.container.event .wrap section.evt2 .agree-box .agree-txt p {
+  text-indent: -1.5vw;
+  margin-left: 1.5vw;
 }
 .container.event .wrap section.evt2 ::placeholder {
   color: #b8b8b8;
@@ -579,7 +585,7 @@ a {
   height: 9.125vw;
   position: absolute;
   right: 0vw;
-  top: 16.25vw;
+  top: 23.75vw;
   left: auto;
   bottom: auto;
 }
@@ -588,11 +594,11 @@ a {
 }
 .container.event .wrap section.evt3 .tit {
   background-repeat: no-repeat;
-  background-image: url('../img/mo/evt3-tit.png');
+  background-image: url('../img/mo/evt3-tit1.png');
   background-size: contain;
-  width: 79.375vw;
-  height: 48.875vw;
-  margin-top: 27.5vw;
+  width: 87.25vw;
+  height: 42.875vw;
+  margin-top: 33.75vw;
   display: inline-block;
 }
 .container.event .wrap section.evt3 .speech {
@@ -616,10 +622,10 @@ a {
 }
 .container.event .wrap section.evt3 .speech .mo-swiper {
   width: 35.375vw;
-  height: 74.125vw;
-  padding-top: 5vw;
+  height: 76.625vw;
+  padding-top: 6.25vw;
   padding-right: 0vw;
-  padding-bottom: 5vw;
+  padding-bottom: 4.375vw;
   padding-left: 0vw;
   box-sizing: border-box;
   position: relative;
@@ -655,9 +661,9 @@ a {
   height: 100%;
 }
 .container.event .wrap section.evt3 .speech .mo-swiper .swiper-slide a .u-txt {
-  font-size: 3.625vw;
-  line-height: 4.25vw;
-  font-family: 'Hi Melody', cursive;
+  font-size: 3.5vw;
+  line-height: 3.75vw;
+  font-family: 'Poor Story', cursive;
   font-weight: 500;
   width: 35.375vw;
   padding-top: 0vw;
@@ -680,6 +686,8 @@ a {
   -webkit-box-orient: vertical;
   word-wrap: break-word;
   line-height: 1.2em;
+  word-break: keep-all;
+  letter-spacing: -0.05em;
 }
 .container.event .wrap section.evt3 .speech .mo-swiper .swiper-button {
   position: absolute;
@@ -734,7 +742,7 @@ a {
   height: 8vw;
   position: absolute;
   right: 0vw;
-  top: 15vw;
+  top: 23.75vw;
   left: auto;
   bottom: auto;
 }
@@ -829,9 +837,9 @@ a {
   bottom: auto;
 }
 .popup .inner .popup-swiper .swiper-slide p {
-  font-size: 3.75vw;
-  line-height: 1;
-  font-family: 'Hi Melody', cursive;
+  font-size: 3.5vw;
+  line-height: 3.75vw;
+  font-family: 'Poor Story', cursive;
   width: 56.25vw;
   height: 35vw;
   font-weight: 500;
