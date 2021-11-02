@@ -11,17 +11,23 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
   <link href="https://fonts.googleapis.com/css?family=Hi+Melody&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <script src="js/jquery.min.js"></script>
 </head>
 <body>
   <div class="container">
     <div class="wrap">
+
+
+
+      <!--**********수정 11.02*********-->
       <section class="main">
-        <img src="img/mo/img1.png" alt="" class="mo">
-        <img src="img/pc/img1.png" alt="" class="web">
+        <img src="img/mo/img1-1.png" alt="" class="mo">
+        <img src="img/pc/img1-1.png" alt="" class="web">
       </section>
+      <!--*********끝*********-->
 
 
-<!--*************수정 10.29*********-->
+
       <section class="cont2">
         <div class="swiper">
           <div class="swiper-wrapper">
@@ -31,8 +37,6 @@
             <div class="swiper-slide"><img src="img/mo/post4.png" alt="" class="mo"><img src="img/pc/post4.png" alt="" class="web"></div>
             <div class="swiper-slide"><img src="img/mo/post5.png" alt="" class="mo"><img src="img/pc/post5.png" alt="" class="web"></div>
           </div>
-          <!--*************끝*********-->
-
           <div class="swiper-pagination"></div>
         </div>
         <div class="swiper-button web swiper-button-next"></div>
@@ -77,11 +81,42 @@
         </div>
       </div>
       <div class="bottom web"></div>
+
+
+
+
+      <!--**********추가 11.02*********-->
+      <div class="dds mo">
+        <img src="img/mo/dd1.png" alt="" class="dd1">
+        <img src="img/mo/dd2.png" alt="" class="dd2">
+        <img src="img/mo/dd3.png" alt="" class="dd3">
+        <img src="img/mo/dd4.png" alt="" class="dd4">
+        <img src="img/mo/dd5.png" alt="" class="dd5">
+        <img src="img/mo/dd6.png" alt="" class="dd6">
+        <img src="img/mo/dd7.png" alt="" class="dd7">
+        <img src="img/mo/dd8.png" alt="" class="dd8">
+        <img src="img/mo/dd9.png" alt="" class="dd9">
+      </div>
+
+      <div class="dds web">
+        <img src="img/pc/dd1.png" alt="" class="dd1">
+        <img src="img/pc/dd2.png" alt="" class="dd2">
+        <img src="img/pc/dd3.png" alt="" class="dd3">
+        <img src="img/pc/dd4.png" alt="" class="dd4">
+        <img src="img/pc/dd5.png" alt="" class="dd5">
+        <img src="img/pc/dd6.png" alt="" class="dd6">
+        <img src="img/pc/dd7.png" alt="" class="dd7">
+        <img src="img/pc/dd8.png" alt="" class="dd8">
+        <img src="img/pc/dd9.png" alt="" class="dd9">
+      </div>
+      <!--*********끝*********-->
+
+
+
+
     </div>
   </div>
 
-
-  <!--*************수정 10.29*********-->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".swiper", {
@@ -102,6 +137,39 @@
       },
     });
   </script>
-  <!--*************끝*********-->
+
+
+  <!--**********추가 11.02*********-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    function random(min, max) {
+      return parseFloat((Math.random() * (max - min) + min).toFixed(2))
+    }
+    function dd(item, delayAfter, size) {
+      gsap.to(
+          item,
+          random(1.5, 2.0),
+          {
+            delay: random(0, delayAfter),
+            y: size,
+            repeat: -1,
+            yoyo: true,
+            ease: Power1.easeInOut
+          }
+      );
+    }
+
+    dd('.dd1', .5, 8)
+    dd('.dd2', 1.5, 9)
+    dd('.dd3', 1, 7)
+    dd('.dd4', 2.5, 8)
+    dd('.dd5', 1.5, 7)
+    dd('.dd6', 0, 8)
+    dd('.dd7', 2, 7)
+    dd('.dd8', 1, 9)
+    dd('.dd9', 0, 8)
+  </script>
+  <!--*********끝*********-->
+
 </body>
 </html>

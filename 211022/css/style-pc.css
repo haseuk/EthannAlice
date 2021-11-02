@@ -109,13 +109,13 @@ a {
   }
   .container .wrap section.cont2 {
     background-repeat: no-repeat;
-    background-image: url('../img/pc/img2.png');
+    background-image: url('../img/pc/img2-1.png');
     background-size: contain;
     height: 74.21875vw;
   }
   .container .wrap section.cont3 {
     background-repeat: no-repeat;
-    background-image: url('../img/pc/img3.png');
+    background-image: url('../img/pc/img3-1.png');
     background-size: contain;
     height: 75.67708333vw;
   }
@@ -347,6 +347,94 @@ a {
   .container .wrap .footer .inner .txt {
     text-align: left;
     padding-left: 0.3125vw;
+  }
+  .container .wrap .dds img {
+    position: absolute;
+    left: 50%;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+  }
+  .container .wrap .dds .dd1 {
+    width: 34.375vw;
+    height: 11.45833333vw;
+    left: 50%;
+    top: 4.58333333vw;
+    right: auto;
+    bottom: auto;
+    margin-left: 1.04166667vw;
+  }
+  .container .wrap .dds .dd2 {
+    width: 2.60416667vw;
+    height: 3.69791667vw;
+    left: 50%;
+    top: 22.86458333vw;
+    right: auto;
+    bottom: auto;
+    margin-left: 6.14583333vw;
+  }
+  .container .wrap .dds .dd3 {
+    width: 5.9375vw;
+    height: 4.6875vw;
+    left: 50%;
+    top: 23.80208333vw;
+    right: auto;
+    bottom: auto;
+    margin-left: 27.96875vw;
+  }
+  .container .wrap .dds .dd4 {
+    width: 6.71875vw;
+    height: 7.96875vw;
+    left: 50%;
+    top: 52.70833333vw;
+    right: auto;
+    bottom: auto;
+    margin-left: -27.96875vw;
+  }
+  .container .wrap .dds .dd5 {
+    width: 6.25vw;
+    height: 8.22916667vw;
+    left: 50%;
+    top: 59.94791667vw;
+    right: auto;
+    bottom: auto;
+    margin-left: 22.03125vw;
+  }
+  .container .wrap .dds .dd6 {
+    width: 5.15625vw;
+    height: 4.89583333vw;
+    left: 50%;
+    top: 112.29166667vw;
+    right: auto;
+    bottom: auto;
+    margin-left: 25.88541667vw;
+  }
+  .container .wrap .dds .dd7 {
+    width: 11.875vw;
+    height: 10.83333333vw;
+    left: 50%;
+    top: 119.84375vw;
+    right: auto;
+    bottom: auto;
+    margin-left: -35.41666667vw;
+  }
+  .container .wrap .dds .dd8 {
+    width: 6.25vw;
+    height: 8.22916667vw;
+    left: 50%;
+    top: 167.13541667vw;
+    right: auto;
+    bottom: auto;
+    margin-left: -22.44791667vw;
+  }
+  .container .wrap .dds .dd9 {
+    width: 16.14583333vw;
+    height: 21.35416667vw;
+    left: 50%;
+    top: 159.89583333vw;
+    right: auto;
+    bottom: auto;
+    margin-left: 18.85416667vw;
   }
   .container.event .wrap {
     background-color: #fff;

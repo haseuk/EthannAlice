@@ -18,12 +18,12 @@ a { .ib; .pointer; z-index: 2; }
 
 .container { .mt(60); .-box;
   .wrap { .fs(0); .tc; .rel;
-    header { .contain('../img/mo/header.png'); .h(93); .rel; z-index: 3; }
+    header { .contain('../img/mo/header.png'); .h(93); .rel; z-indemx: 3; }
     .logo-kin { .wh(178,115); .abs; .lt(36,113); }
     section { .rel; overflow: hidden;
       &.main img { .h(1341); }
-      &.cont2 { .contain('../img/mo/img2.png'); .h(1120); }
-      &.cont3 { .contain('../img/mo/img3.png'); .h(1778); }
+      &.cont2 { .contain('../img/mo/img2-1.png'); .h(1120); }
+      &.cont3 { .contain('../img/mo/img3-1.png'); .h(1824); }
       &.cont4 { .contain('../img/mo/img4.png'); .h(336); }
     }
     .bottom { .wh(100%,194); .mt(90); .contain('../img/mo/bottom.png'); }
@@ -67,6 +67,19 @@ a { .ib; .pointer; z-index: 2; }
         &:after { .cnt; .wh(1,90); .abs; .rt(18,5); .bgc(#f8efe2); }
       }
       .txt {  .tl; .pl(6); }
+    }
+
+    .dds {
+      img { .abs; .lt(0,0); }
+      .dd1 { .wh(651,205); .lt(112,91); }
+      .dd2 { .wh(74,88); .lt(67,362); }
+      .dd3 { .wh(46,67); .lt(205,393); }
+      .dd4 { .wh(107,84); .lt(602,414); }
+      .dd5 { .wh(142,168); .lt(636,1274); }
+      .dd6 { .wh(180,179); .lt(0,2415); }
+      .dd7 { .wh(85,80); .lt(664,2738); }
+      .dd8 { .wh(74,97); .lt(97,3597); }
+      .dd9 { .wh(203,262); .lt(596,3597); }
     }
   }
 
@@ -177,7 +190,7 @@ a { .ib; .pointer; z-index: 2; }
     .popup-swiper { .wh(686,723); .ib; overflow: hidden;
       .swiper-slide { .wh(686,683); .tc; display: flex;justify-content: center;align-items: center; z-index: 1;
         &:after { .cnt; .wh(686,683); .contain('../img/mo/popup-postit.png'); .abs; .lt; }
-        p { .fs(28); .lh(30); .poor; .wh(450,280); .medium; z-index: 1; .mb(30); overflow: auto; }
+        p { .fs(32); .lh(37); .poor; .wh(450,280); .medium; z-index: 1; .mb(30); overflow: auto; }
         .txt-leng { .fs(25); color:#fff; .abs; .rb(32,-18); .tr; }
       }
       .swiper-button { .abs; .lt(50%,47%); transform:translateY(-50%); .mt(0); .wh(16,26); opacity: 1; .r(0);

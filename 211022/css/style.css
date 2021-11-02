@@ -59,7 +59,7 @@ a {
   background-size: contain;
   height: 11.625vw;
   position: relative;
-  z-index: 3;
+  z-indemx: 3;
 }
 .container .wrap .logo-kin {
   width: 22.25vw;
@@ -79,15 +79,15 @@ a {
 }
 .container .wrap section.cont2 {
   background-repeat: no-repeat;
-  background-image: url('../img/mo/img2.png');
+  background-image: url('../img/mo/img2-1.png');
   background-size: contain;
   height: 140vw;
 }
 .container .wrap section.cont3 {
   background-repeat: no-repeat;
-  background-image: url('../img/mo/img3.png');
+  background-image: url('../img/mo/img3-1.png');
   background-size: contain;
-  height: 222.25vw;
+  height: 228vw;
 }
 .container .wrap section.cont4 {
   background-repeat: no-repeat;
@@ -280,6 +280,85 @@ a {
 .container .wrap .footer .txt {
   text-align: left;
   padding-left: 0.75vw;
+}
+.container .wrap .dds img {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+}
+.container .wrap .dds .dd1 {
+  width: 81.375vw;
+  height: 25.625vw;
+  left: 14vw;
+  top: 11.375vw;
+  right: auto;
+  bottom: auto;
+}
+.container .wrap .dds .dd2 {
+  width: 9.25vw;
+  height: 11vw;
+  left: 8.375vw;
+  top: 45.25vw;
+  right: auto;
+  bottom: auto;
+}
+.container .wrap .dds .dd3 {
+  width: 5.75vw;
+  height: 8.375vw;
+  left: 25.625vw;
+  top: 49.125vw;
+  right: auto;
+  bottom: auto;
+}
+.container .wrap .dds .dd4 {
+  width: 13.375vw;
+  height: 10.5vw;
+  left: 75.25vw;
+  top: 51.75vw;
+  right: auto;
+  bottom: auto;
+}
+.container .wrap .dds .dd5 {
+  width: 17.75vw;
+  height: 21vw;
+  left: 79.5vw;
+  top: 159.25vw;
+  right: auto;
+  bottom: auto;
+}
+.container .wrap .dds .dd6 {
+  width: 22.5vw;
+  height: 22.375vw;
+  left: 0vw;
+  top: 301.875vw;
+  right: auto;
+  bottom: auto;
+}
+.container .wrap .dds .dd7 {
+  width: 10.625vw;
+  height: 10vw;
+  left: 83vw;
+  top: 342.25vw;
+  right: auto;
+  bottom: auto;
+}
+.container .wrap .dds .dd8 {
+  width: 9.25vw;
+  height: 12.125vw;
+  left: 12.125vw;
+  top: 449.625vw;
+  right: auto;
+  bottom: auto;
+}
+.container .wrap .dds .dd9 {
+  width: 25.375vw;
+  height: 32.75vw;
+  left: 74.5vw;
+  top: 449.625vw;
+  right: auto;
+  bottom: auto;
 }
 .container.event .wrap section {
   margin-top: 6.25vw;
@@ -837,8 +916,8 @@ a {
   bottom: auto;
 }
 .popup .inner .popup-swiper .swiper-slide p {
-  font-size: 3.5vw;
-  line-height: 3.75vw;
+  font-size: 4vw;
+  line-height: 4.625vw;
   font-family: 'Poor Story', cursive;
   width: 56.25vw;
   height: 35vw;
